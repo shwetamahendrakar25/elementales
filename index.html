@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Elementales is a wedding and lifestyle photography studio preserving honest, luminous stories in stills and film.">
+  <meta name="theme-color" content="#171612">
+  <title>Elementales — Wedding Stories in Still & Motion</title>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="preconnect" href="https://assets.mixkit.co" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header" data-header>
+    <a class="brand" href="#top" aria-label="Elementales home">
+      <span>ELEMENTALES</span><small>STILLS & FILMS</small>
+    </a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+      <span class="sr-only">Open navigation</span><i></i><i></i>
+    </button>
+    <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
+      <a href="#portfolio">Work</a><a href="#about">Studio</a><a href="#testimonials">Kind Words</a><a href="#faq">FAQ</a>
+      <a class="nav-inquire" href="#contact">Inquire</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section id="top" class="hero" aria-labelledby="hero-title">
+      <video class="hero-video" data-hero-video autoplay muted loop playsinline preload="metadata"
+        poster="https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=2000&q=85">
+        <source src="https://assets.mixkit.co/videos/preview/mixkit-bride-and-groom-holding-hands-4046-large.mp4" type="video/mp4">
+      </video>
+      <div class="hero-scrim"></div>
+      <div class="hero-copy reveal">
+        <p class="eyebrow">Wedding photography & cinema · Worldwide</p>
+        <h1 id="hero-title">Stories of<br><em>Love & Joy</em></h1>
+        <p class="hero-note">Honest frames, artfully held.</p>
+      </div>
+      <a class="scroll-cue" href="#intro"><span>Explore</span><i aria-hidden="true"></i></a>
+    </section>
+
+    <section id="intro" class="manifesto section-pad reveal">
+      <p class="section-number">01 / The feeling</p>
+      <div>
+        <p class="kicker">For the wildly present</p>
+        <h2>Photographs should feel like <em>memory</em>—warm, imperfect, and entirely alive.</h2>
+        <p class="body-copy">We document the glance before the kiss, the hand held beneath the table, and every unruly burst of laughter. Nothing stiff. Nothing borrowed. Just your people, your rhythm, your story.</p>
+      </div>
+    </section>
+
+    <section id="portfolio" class="portfolio section-pad" aria-labelledby="portfolio-title">
+      <div class="section-heading reveal">
+        <p class="section-number">02 / Selected work</p>
+        <h2 id="portfolio-title">The <em>archive</em></h2>
+      </div>
+      <div class="portfolio-tabs reveal" role="tablist" aria-label="Filter portfolio">
+        <button role="tab" aria-selected="true" data-filter="stories">Wedding Stories</button>
+        <button role="tab" aria-selected="false" data-filter="films">Wedding Films</button>
+        <button role="tab" aria-selected="false" data-filter="couples">Couple Shoots</button>
+      </div>
+      <p class="sr-only" data-filter-status aria-live="polite">Showing Wedding Stories</p>
+
+      <div class="masonry" data-gallery>
+        <article class="work-card reveal" data-category="stories"><figure class="ratio-portrait"><img src="https://images.unsplash.com/photo-1606800052052-a08af7148866?auto=format&fit=crop&w=1100&q=82" alt="Newlyweds walking through tall sunlit grass" width="1100" height="1467" loading="lazy"></figure><div><span>Wedding Story · Tuscany</span><h3>Olivia & James</h3></div></article>
+        <article class="work-card reveal" data-category="stories"><figure class="ratio-landscape"><img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1300&q=82" alt="Outdoor wedding ceremony beneath leafy trees" width="1300" height="867" loading="lazy"></figure><div><span>Wedding Story · California</span><h3>A Garden in June</h3></div></article>
+        <article class="work-card reveal" data-category="stories"><figure class="ratio-tall"><img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=1000&q=82" alt="Bride and groom laughing during their reception" width="1000" height="1500" loading="lazy"></figure><div><span>Wedding Story · London</span><h3>Maya & Alexander</h3></div></article>
+        <article class="work-card reveal" data-category="stories"><figure class="ratio-square"><img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=1100&q=82" alt="Couple holding hands during an intimate ceremony" width="1100" height="1100" loading="lazy"></figure><div><span>Wedding Story · Provence</span><h3>The Long Table</h3></div></article>
+        <article class="work-card reveal" data-category="stories"><figure class="ratio-landscape"><img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=1300&q=82" alt="Joyful couple surrounded by wedding guests" width="1300" height="867" loading="lazy"></figure><div><span>Wedding Story · Jaipur</span><h3>Three Days of Color</h3></div></article>
+
+        <article class="work-card is-hidden" data-category="films"><figure class="ratio-landscape"><img src="https://images.unsplash.com/photo-1544078751-58fee2d8a03b?auto=format&fit=crop&w=1300&q=82" alt="Bride in a flowing gown beside a stone villa" width="1300" height="867" loading="lazy"><span class="play-mark" aria-hidden="true">Play film</span></figure><div><span>Wedding Film · Lake Como</span><h3>A Weekend by the Water</h3></div></article>
+        <article class="work-card is-hidden" data-category="films"><figure class="ratio-portrait"><img src="https://images.unsplash.com/photo-1537633552985-df8429e8048b?auto=format&fit=crop&w=1000&q=82" alt="Newlywed couple embracing outdoors" width="1000" height="1333" loading="lazy"><span class="play-mark" aria-hidden="true">Play film</span></figure><div><span>Wedding Film · New York</span><h3>City of Small Moments</h3></div></article>
+        <article class="work-card is-hidden" data-category="films"><figure class="ratio-square"><img src="https://images.unsplash.com/photo-1523438885200-e635ba2c371e?auto=format&fit=crop&w=1100&q=82" alt="Wedding celebration under glowing string lights" width="1100" height="1100" loading="lazy"><span class="play-mark" aria-hidden="true">Play film</span></figure><div><span>Wedding Film · Mallorca</span><h3>Dancing After Dark</h3></div></article>
+
+        <article class="work-card is-hidden" data-category="couples"><figure class="ratio-tall"><img src="https://images.unsplash.com/photo-1522673607200-164d1b6ce486?auto=format&fit=crop&w=1000&q=82" alt="Couple embracing on a quiet beach" width="1000" height="1500" loading="lazy"></figure><div><span>Couple Session · Big Sur</span><h3>Salt Air</h3></div></article>
+        <article class="work-card is-hidden" data-category="couples"><figure class="ratio-landscape"><img src="https://images.unsplash.com/photo-1529634597503-139d3726fed5?auto=format&fit=crop&w=1300&q=82" alt="Couple walking together in a wide landscape" width="1300" height="867" loading="lazy"></figure><div><span>Couple Session · Paris</span><h3>Sunday Morning</h3></div></article>
+        <article class="work-card is-hidden" data-category="couples"><figure class="ratio-portrait"><img src="https://images.unsplash.com/photo-1494774157365-9e04c6720e47?auto=format&fit=crop&w=1000&q=82" alt="Couple sharing a tender moment outdoors" width="1000" height="1333" loading="lazy"></figure><div><span>Couple Session · Copenhagen</span><h3>Home, Together</h3></div></article>
+      </div>
+    </section>
+
+    <section id="films" class="film-strip" aria-labelledby="film-title">
+      <div class="film-heading section-pad reveal"><p class="section-number">03 / In motion</p><div><p class="kicker">Wedding cinema</p><h2 id="film-title">Press play on the <em>feeling.</em></h2></div></div>
+      <div class="carousel" data-carousel data-label="Wedding films">
+        <div class="carousel-viewport">
+          <div class="carousel-track">
+            <article class="film-card"><img src="https://images.unsplash.com/photo-1544078751-58fee2d8a03b?auto=format&fit=crop&w=1400&q=82" alt="Bride walking beside a historic villa" width="1400" height="933" loading="lazy"><span class="film-index">Film 01</span><h3>Where the Light Falls</h3></article>
+            <article class="film-card"><img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1400&q=82" alt="Guests gathered at a garden wedding" width="1400" height="933" loading="lazy"><span class="film-index">Film 02</span><h3>All Our Favorite People</h3></article>
+            <article class="film-card"><img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=1400&q=82" alt="Couple exchanging vows in an outdoor ceremony" width="1400" height="933" loading="lazy"><span class="film-index">Film 03</span><h3>A Promise in Provence</h3></article>
+          </div>
+        </div>
+        <div class="carousel-controls"><button data-prev aria-label="Previous film">←</button><div class="carousel-dots" aria-label="Choose film"></div><button data-next aria-label="Next film">→</button></div>
+      </div>
+    </section>
+
+    <section id="about" class="about section-pad" aria-labelledby="about-title">
+      <div class="about-image reveal"><img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1200&q=82" alt="The Elementales founders working together in their studio" width="1200" height="1500" loading="lazy"><span>Founders · Amara & Theo</span></div>
+      <div class="about-copy reveal"><p class="section-number">04 / The studio</p><p class="kicker">Observers at heart</p><h2 id="about-title">We make space for life to <em>happen.</em></h2><p>Elementales began with a shared roll of film and a belief that the most meaningful images are rarely announced. For twelve years, we have photographed celebrations across five continents with a calm presence and an editorial eye.</p><p>Our work lives between documentary instinct and considered composition—images with atmosphere, movement, and room to breathe.</p><a class="text-link" href="mailto:hello@elementales.studio">Meet us over coffee <span>↗</span></a>
+        <div class="awards" aria-label="Selected recognition"><div><strong>12+</strong><span>Years documenting love</span></div><div><strong>38</strong><span>Countries photographed</span></div><div><strong>VOGUE</strong><span>Selected feature, 2025</span></div></div>
+      </div>
+    </section>
+
+    <section id="testimonials" class="testimonials" aria-labelledby="testimonial-title">
+      <div class="section-pad"><p class="section-number">05 / Kind words</p><h2 id="testimonial-title" class="sr-only">Client testimonials</h2>
+        <div class="quote-mark" aria-hidden="true">“</div>
+        <div class="carousel quote-carousel" data-carousel data-label="Client testimonials">
+          <div class="carousel-viewport"><div class="carousel-track">
+            <figure><blockquote>They caught the day as it actually felt—not a performance, but a beautiful, breathless blur of everyone we love.</blockquote><figcaption><strong>Isabel & Noah</strong><span>Creative Director & Architect · Lisbon</span></figcaption></figure>
+            <figure><blockquote>We forgot the cameras were there. What came back was intimate, cinematic, and somehow more us than we knew how to be.</blockquote><figcaption><strong>Leila & Arjun</strong><span>Founders · San Francisco</span></figcaption></figure>
+            <figure><blockquote>Every frame has texture and soul. Our photographs feel less like a record and more like a doorway back into the weekend.</blockquote><figcaption><strong>Clara & Tom</strong><span>Designer & Restaurateur · London</span></figcaption></figure>
+          </div></div>
+          <div class="carousel-controls"><button data-prev aria-label="Previous testimonial">←</button><div class="carousel-dots" aria-label="Choose testimonial"></div><button data-next aria-label="Next testimonial">→</button></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="faq section-pad" aria-labelledby="faq-title">
+      <div class="faq-intro reveal"><p class="section-number">06 / Good to know</p><h2 id="faq-title">A few thoughtful <em>answers.</em></h2><p>Planning is full of questions. These are the ones we hear most often.</p></div>
+      <div class="accordion reveal">
+        <div class="faq-item"><h3><button aria-expanded="false" aria-controls="answer-1">How far ahead should we inquire?<span>+</span></button></h3><div id="answer-1" class="faq-answer" hidden><p>Most couples reserve their date 10–16 months ahead. We accept a small number of celebrations each year, though intimate and weekday dates can sometimes be accommodated sooner.</p></div></div>
+        <div class="faq-item"><h3><button aria-expanded="false" aria-controls="answer-2">Do you travel for weddings?<span>+</span></button></h3><div id="answer-2" class="faq-answer" hidden><p>Gladly. Our work has taken us from windswept coastlines to city rooftops. Travel is quoted transparently and folded into a simple custom proposal.</p></div></div>
+        <div class="faq-item"><h3><button aria-expanded="false" aria-controls="answer-3">Can we book both photography and film?<span>+</span></button></h3><div id="answer-3" class="faq-answer" hidden><p>Yes. Our stills and cinema teams work from the same visual language, giving your final collection a cohesive rhythm without making the day feel like a production.</p></div></div>
+        <div class="faq-item"><h3><button aria-expanded="false" aria-controls="answer-4">What is your approach on the day?<span>+</span></button></h3><div id="answer-4" class="faq-answer" hidden><p>Quietly observant and gently directive when needed. We build enough structure to help you feel at ease, then leave generous room for the unscripted moments.</p></div></div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact" class="site-footer">
+    <div class="footer-cta section-pad reveal"><p class="kicker">Your story begins here</p><h2>Let’s make something<br><em>honest & lasting.</em></h2><a href="mailto:hello@elementales.studio">Tell us everything <span>↗</span></a></div>
+    <div class="footer-grid section-pad">
+      <div><a class="brand footer-brand" href="#top"><span>ELEMENTALES</span><small>STILLS & FILMS</small></a><p>Wedding and lifestyle stories,<br>made wherever love takes us.</p></div>
+      <div><h3>Navigate</h3><a href="#portfolio">Selected work</a><a href="#about">The studio</a><a href="#testimonials">Kind words</a><a href="#faq">Questions</a></div>
+      <div><h3>Connect</h3><a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram ↗</a><a href="https://www.pinterest.com/" target="_blank" rel="noopener">Pinterest ↗</a><a href="https://vimeo.com/" target="_blank" rel="noopener">Vimeo ↗</a></div>
+      <div><h3>Inquiries</h3><a href="mailto:hello@elementales.studio">hello@elementales.studio</a><a href="tel:+14155550184">+1 415 555 0184</a><p>California · Worldwide</p></div>
+    </div>
+    <div class="footer-bottom"><span>© <span data-year></span> Elementales Studio</span><span>Made with patience & good light</span><a href="#top">Back to top ↑</a></div>
+  </footer>
+</body>
+</html>
