@@ -36,15 +36,22 @@
   }
 
   const filters = [...document.querySelectorAll('[data-filter]')];
-  const cards = [...document.querySelectorAll('.work-card')];
+  const cards = [...document.querySelectorAll('.work-card, .gallery-empty')];
   function filterBy(button) {
     filters.forEach(item => item.setAttribute('aria-pressed', String(item === button)));
     cards.forEach(card => { card.hidden = card.dataset.category !== button.dataset.filter; });
+    document.querySelectorAll('[data-gallery]').forEach(gallery => {
+      gallery.hidden = ![...gallery.querySelectorAll('.work-card')].some(card => !card.hidden);
+    });
+    document.querySelectorAll('.gallery-next').forEach(el => { el.hidden = button.dataset.filter !== 'stories'; });
     const status = document.querySelector('[data-filter-status]');
     if (status) status.textContent = `Showing ${button.textContent.trim()}`;
   }
   filters.forEach(button => button.addEventListener('click', () => filterBy(button)));
-  if (filters.length) filterBy(filters[0]);
+  if (filters.length) {
+    document.querySelector('.portfolio-tabs').hidden = false;
+    filterBy(filters[0]);
+  }
 
   document.querySelectorAll('[data-carousel]').forEach(carousel => {
     carousel.classList.add('carousel-enhanced');
