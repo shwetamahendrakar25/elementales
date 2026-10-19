@@ -43,7 +43,7 @@
     document.querySelectorAll('[data-gallery]').forEach(gallery => {
       gallery.hidden = ![...gallery.querySelectorAll('.work-card')].some(card => !card.hidden);
     });
-    document.querySelectorAll('.gallery-next').forEach(el => { el.hidden = button.dataset.filter !== 'stories'; });
+    document.querySelectorAll('.gallery-next').forEach(el => { el.hidden = el.dataset.category ? el.dataset.category !== button.dataset.filter : button.dataset.filter !== 'stories'; });
     const status = document.querySelector('[data-filter-status]');
     if (status) status.textContent = `Showing ${button.textContent.trim()}`;
   }

@@ -1,0 +1,3011 @@
+{
+  "status": "Selection approved for publication on 2026-10-19",
+  "images": {
+    "1": {
+      "index": 1,
+      "category": "Dreamy Projects",
+      "filename": "03.jpg",
+      "alt": "Classical dancer in blue and turquoise holding a brass plate",
+      "variants": [
+        {
+          "src": "assets/photos/dreamy-projects-001-480.webp",
+          "width": 480,
+          "height": 719,
+          "bytes": 33764
+        },
+        {
+          "src": "assets/photos/dreamy-projects-001-960.webp",
+          "width": 960,
+          "height": 1438,
+          "bytes": 124368
+        },
+        {
+          "src": "assets/photos/dreamy-projects-001-1469.webp",
+          "width": 1469,
+          "height": 2200,
+          "bytes": 331094
+        }
+      ],
+      "full": {
+        "src": "assets/photos/dreamy-projects-001-1469.webp",
+        "width": 1469,
+        "height": 2200,
+        "bytes": 331094
+      },
+      "thumb": {
+        "src": "assets/photos/dreamy-projects-001-960.webp",
+        "width": 960,
+        "height": 1438,
+        "bytes": 124368
+      }
+    },
+    "4": {
+      "index": 4,
+      "category": "Weddings",
+      "filename": "drone-14.jpg",
+      "alt": "Partner kissing the cheek of a smiling woman in orange and gold wedding attire",
+      "variants": [
+        {
+          "src": "assets/photos/weddings-004-480.webp",
+          "width": 480,
+          "height": 720,
+          "bytes": 58552
+        },
+        {
+          "src": "assets/photos/weddings-004-960.webp",
+          "width": 960,
+          "height": 1440,
+          "bytes": 200874
+        },
+        {
+          "src": "assets/photos/weddings-004-1365.webp",
+          "width": 1365,
+          "height": 2048,
+          "bytes": 444432
+        }
+      ],
+      "full": {
+        "src": "assets/photos/weddings-004-1365.webp",
+        "width": 1365,
+        "height": 2048,
+        "bytes": 444432
+      },
+      "thumb": {
+        "src": "assets/photos/weddings-004-960.webp",
+        "width": 960,
+        "height": 1440,
+        "bytes": 200874
+      }
+    },
+    "8": {
+      "index": 8,
+      "category": "Weddings",
+      "filename": "drone-64.jpg",
+      "alt": "Couple sharing a quiet embrace in front of a decorated wedding stage",
+      "variants": [
+        {
+          "src": "assets/photos/weddings-008-480.webp",
+          "width": 480,
+          "height": 720,
+          "bytes": 71598
+        },
+        {
+          "src": "assets/photos/weddings-008-960.webp",
+          "width": 960,
+          "height": 1440,
+          "bytes": 232140
+        },
+        {
+          "src": "assets/photos/weddings-008-1365.webp",
+          "width": 1365,
+          "height": 2048,
+          "bytes": 531282
+        }
+      ],
+      "full": {
+        "src": "assets/photos/weddings-008-1365.webp",
+        "width": 1365,
+        "height": 2048,
+        "bytes": 531282
+      },
+      "thumb": {
+        "src": "assets/photos/weddings-008-960.webp",
+        "width": 960,
+        "height": 1440,
+        "bytes": 232140
+      }
+    },
+    "9": {
+      "index": 9,
+      "category": "Weddings",
+      "filename": "drone-109.jpg",
+      "alt": "Pastel gift bags tied with ribbons at a wedding celebration",
+      "variants": [
+        {
+          "src": "assets/photos/weddings-009-480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 18670
+        },
+        {
+          "src": "assets/photos/weddings-009-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 50870
+        },
+        {
+          "src": "assets/photos/weddings-009-1600.webp",
+          "width": 1600,
+          "height": 1066,
+          "bytes": 110888
+        },
+        {
+          "src": "assets/photos/weddings-009-2048.webp",
+          "width": 2048,
+          "height": 1365,
+          "bytes": 232232
+        }
+      ],
+      "full": {
+        "src": "assets/photos/weddings-009-2048.webp",
+        "width": 2048,
+        "height": 1365,
+        "bytes": 232232
+      },
+      "thumb": {
+        "src": "assets/photos/weddings-009-960.webp",
+        "width": 960,
+        "height": 640,
+        "bytes": 50870
+      }
+    },
+    "25": {
+      "index": 25,
+      "category": "Dreamy Projects",
+      "filename": "DSC00579_zpL 2.jpg",
+      "alt": "Classical dancer in blue and turquoise in a portrait against a pale smoky background",
+      "variants": [
+        {
+          "src": "assets/photos/dreamy-projects-025-480.webp",
+          "width": 480,
+          "height": 719,
+          "bytes": 50960
+        },
+        {
+          "src": "assets/photos/dreamy-projects-025-960.webp",
+          "width": 960,
+          "height": 1438,
+          "bytes": 171970
+        },
+        {
+          "src": "assets/photos/dreamy-projects-025-1469.webp",
+          "width": 1469,
+          "height": 2200,
+          "bytes": 418562
+        }
+      ],
+      "full": {
+        "src": "assets/photos/dreamy-projects-025-1469.webp",
+        "width": 1469,
+        "height": 2200,
+        "bytes": 418562
+      },
+      "thumb": {
+        "src": "assets/photos/dreamy-projects-025-960.webp",
+        "width": 960,
+        "height": 1438,
+        "bytes": 171970
+      }
+    },
+    "28": {
+      "index": 28,
+      "category": "Weddings",
+      "filename": "DSC00901.jpg",
+      "alt": "Hands preparing ceremonial ingredients on a leaf",
+      "variants": [
+        {
+          "src": "assets/photos/weddings-028-480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 22640
+        },
+        {
+          "src": "assets/photos/weddings-028-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 62570
+        },
+        {
+          "src": "assets/photos/weddings-028-1600.webp",
+          "width": 1600,
+          "height": 1066,
+          "bytes": 131352
+        },
+        {
+          "src": "assets/photos/weddings-028-2048.webp",
+          "width": 2048,
+          "height": 1365,
+          "bytes": 252362
+        }
+      ],
+      "full": {
+        "src": "assets/photos/weddings-028-2048.webp",
+        "width": 2048,
+        "height": 1365,
+        "bytes": 252362
+      },
+      "thumb": {
+        "src": "assets/photos/weddings-028-960.webp",
+        "width": 960,
+        "height": 640,
+        "bytes": 62570
+      }
+    },
+    "29": {
+      "index": 29,
+      "category": "Weddings",
+      "filename": "DSC00969.jpg",
+      "alt": "Man in a white traditional outfit standing in a doorway",
+      "variants": [
+        {
+          "src": "assets/photos/weddings-029-480.webp",
+          "width": 480,
+          "height": 828,
+          "bytes": 18272
+        },
+        {
+          "src": "assets/photos/weddings-029-960.webp",
+          "width": 960,
+          "height": 1656,
+          "bytes": 54024
+        },
+        {
+          "src": "assets/photos/weddings-029-1187.webp",
+          "width": 1187,
+          "height": 2048,
+          "bytes": 102490
+        }
+      ],
+      "full": {
+        "src": "assets/photos/weddings-029-1187.webp",
+        "width": 1187,
+        "height": 2048,
+        "bytes": 102490
+      },
+      "thumb": {
+        "src": "assets/photos/weddings-029-960.webp",
+        "width": 960,
+        "height": 1656,
+        "bytes": 54024
+      }
+    },
+    "31": {
+      "index": 31,
+      "category": "Family",
+      "filename": "DSC01550.jpg",
+      "alt": "Woman sitting on a wooden bridge with a young child in her arms",
+      "variants": [
+        {
+          "src": "assets/photos/family-031-480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 16684
+        },
+        {
+          "src": "assets/photos/family-031-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 47542
+        },
+        {
+          "src": "assets/photos/family-031-1600.webp",
+          "width": 1600,
+          "height": 1066,
+          "bytes": 115942
+        },
+        {
+          "src": "assets/photos/family-031-2048.webp",
+          "width": 2048,
+          "height": 1365,
+          "bytes": 333858
+        }
+      ],
+      "full": {
+        "src": "assets/photos/family-031-2048.webp",
+        "width": 2048,
+        "height": 1365,
+        "bytes": 333858
+      },
+      "thumb": {
+        "src": "assets/photos/family-031-960.webp",
+        "width": 960,
+        "height": 640,
+        "bytes": 47542
+      }
+    },
+    "32": {
+      "index": 32,
+      "category": "Family",
+      "filename": "DSC01563.jpg",
+      "alt": "Young child in blue traditional clothing standing on a wooden bridge",
+      "variants": [
+        {
+          "src": "assets/photos/family-032-480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 17700
+        },
+        {
+          "src": "assets/photos/family-032-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 49114
+        },
+        {
+          "src": "assets/photos/family-032-1600.webp",
+          "width": 1600,
+          "height": 1066,
+          "bytes": 138988
+        },
+        {
+          "src": "assets/photos/family-032-2048.webp",
+          "width": 2048,
+          "height": 1365,
+          "bytes": 467800
+        }
+      ],
+      "full": {
+        "src": "assets/photos/family-032-2048.webp",
+        "width": 2048,
+        "height": 1365,
+        "bytes": 467800
+      },
+      "thumb": {
+        "src": "assets/photos/family-032-960.webp",
+        "width": 960,
+        "height": 640,
+        "bytes": 49114
+      }
+    },
+    "34": {
+      "index": 34,
+      "category": "Family",
+      "filename": "DSC01770.jpg",
+      "alt": "Family posing beside balloons at a first-birthday celebration",
+      "variants": [
+        {
+          "src": "assets/photos/family-034-480.webp",
+          "width": 480,
+          "height": 720,
+          "bytes": 53632
+        },
+        {
+          "src": "assets/photos/family-034-960.webp",
+          "width": 960,
+          "height": 1440,
+          "bytes": 172218
+        },
+        {
+          "src": "assets/photos/family-034-1365.webp",
+          "width": 1365,
+          "height": 2048,
+          "bytes": 490870
+        }
+      ],
+      "full": {
+        "src": "assets/photos/family-034-1365.webp",
+        "width": 1365,
+        "height": 2048,
+        "bytes": 490870
+      },
+      "thumb": {
+        "src": "assets/photos/family-034-960.webp",
+        "width": 960,
+        "height": 1440,
+        "bytes": 172218
+      }
+    },
+    "37": {
+      "index": 37,
+      "category": "Maternity",
+      "filename": "DSC01832.jpg",
+      "alt": "Partner kissing an expectant mother on the forehead while a child stands beside them",
+      "variants": [
+        {
+          "src": "assets/photos/maternity-037-480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 14578
+        },
+        {
+          "src": "assets/photos/maternity-037-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 38572
+        },
+        {
+          "src": "assets/photos/maternity-037-1600.webp",
+          "width": 1600,
+          "height": 1067,
+          "bytes": 78414
+        },
+        {
+          "src": "assets/photos/maternity-037-2200.webp",
+          "width": 2200,
+          "height": 1467,
+          "bytes": 151548
+        }
+      ],
+      "full": {
+        "src": "assets/photos/maternity-037-2200.webp",
+        "width": 2200,
+        "height": 1467,
+        "bytes": 151548
+      },
+      "thumb": {
+        "src": "assets/photos/maternity-037-960.webp",
+        "width": 960,
+        "height": 640,
+        "bytes": 38572
+      }
+    },
+    "40": {
+      "index": 40,
+      "category": "Maternity",
+      "filename": "DSC01941.jpg",
+      "alt": "Expectant mother in a red sari with fabric flowing across a dramatic lakeside scene",
+      "variants": [
+        {
+          "src": "assets/photos/maternity-040-480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 13662
+        },
+        {
+          "src": "assets/photos/maternity-040-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 34590
+        },
+        {
+          "src": "assets/photos/maternity-040-1600.webp",
+          "width": 1600,
+          "height": 1067,
+          "bytes": 65800
+        },
+        {
+          "src": "assets/photos/maternity-040-2200.webp",
+          "width": 2200,
+          "height": 1467,
+          "bytes": 118228
+        }
+      ],
+      "full": {
+        "src": "assets/photos/maternity-040-2200.webp",
+        "width": 2200,
+        "height": 1467,
+        "bytes": 118228
+      },
+      "thumb": {
+        "src": "assets/photos/maternity-040-960.webp",
+        "width": 960,
+        "height": 640,
+        "bytes": 34590
+      }
+    },
+    "44": {
+      "index": 44,
+      "category": "Dreamy Projects",
+      "filename": "DSC03205-2.jpeg",
+      "alt": "Classical dancer in red posing beneath a glowing ornate arch",
+      "variants": [
+        {
+          "src": "assets/photos/dreamy-projects-044-480.webp",
+          "width": 480,
+          "height": 720,
+          "bytes": 27660
+        },
+        {
+          "src": "assets/photos/dreamy-projects-044-960.webp",
+          "width": 960,
+          "height": 1440,
+          "bytes": 74412
+        },
+        {
+          "src": "assets/photos/dreamy-projects-044-1467.webp",
+          "width": 1467,
+          "height": 2200,
+          "bytes": 164496
+        }
+      ],
+      "full": {
+        "src": "assets/photos/dreamy-projects-044-1467.webp",
+        "width": 1467,
+        "height": 2200,
+        "bytes": 164496
+      },
+      "thumb": {
+        "src": "assets/photos/dreamy-projects-044-960.webp",
+        "width": 960,
+        "height": 1440,
+        "bytes": 74412
+      }
+    },
+    "47": {
+      "index": 47,
+      "category": "Dreamy Projects",
+      "filename": "DSC04270.jpg",
+      "alt": "Classical dancer in purple and white holding an expressive hand gesture",
+      "variants": [
+        {
+          "src": "assets/photos/dreamy-projects-047-480.webp",
+          "width": 480,
+          "height": 720,
+          "bytes": 35002
+        },
+        {
+          "src": "assets/photos/dreamy-projects-047-960.webp",
+          "width": 960,
+          "height": 1440,
+          "bytes": 116462
+        },
+        {
+          "src": "assets/photos/dreamy-projects-047-1467.webp",
+          "width": 1467,
+          "height": 2200,
+          "bytes": 289542
+        }
+      ],
+      "full": {
+        "src": "assets/photos/dreamy-projects-047-1467.webp",
+        "width": 1467,
+        "height": 2200,
+        "bytes": 289542
+      },
+      "thumb": {
+        "src": "assets/photos/dreamy-projects-047-960.webp",
+        "width": 960,
+        "height": 1440,
+        "bytes": 116462
+      }
+    },
+    "48": {
+      "index": 48,
+      "category": "Dreamy Projects",
+      "filename": "DSC04290.jpg",
+      "alt": "Black-and-white detail of a dancer fastening ankle bells",
+      "variants": [
+        {
+          "src": "assets/photos/dreamy-projects-048-480.webp",
+          "width": 480,
+          "height": 720,
+          "bytes": 15974
+        },
+        {
+          "src": "assets/photos/dreamy-projects-048-960.webp",
+          "width": 960,
+          "height": 1440,
+          "bytes": 42808
+        },
+        {
+          "src": "assets/photos/dreamy-projects-048-1467.webp",
+          "width": 1467,
+          "height": 2200,
+          "bytes": 92764
+        }
+      ],
+      "full": {
+        "src": "assets/photos/dreamy-projects-048-1467.webp",
+        "width": 1467,
+        "height": 2200,
+        "bytes": 92764
+      },
+      "thumb": {
+        "src": "assets/photos/dreamy-projects-048-960.webp",
+        "width": 960,
+        "height": 1440,
+        "bytes": 42808
+      }
+    },
+    "49": {
+      "index": 49,
+      "category": "Dreamy Projects",
+      "filename": "DSC04658.jpg",
+      "alt": "Classical dancer in green and red standing in an ornate golden setting",
+      "variants": [
+        {
+          "src": "assets/photos/dreamy-projects-049-480.webp",
+          "width": 480,
+          "height": 720,
+          "bytes": 40056
+        },
+        {
+          "src": "assets/photos/dreamy-projects-049-960.webp",
+          "width": 960,
+          "height": 1440,
+          "bytes": 110470
+        },
+        {
+          "src": "assets/photos/dreamy-projects-049-1467.webp",
+          "width": 1467,
+          "height": 2200,
+          "bytes": 262892
+        }
+      ],
+      "full": {
+        "src": "assets/photos/dreamy-projects-049-1467.webp",
+        "width": 1467,
+        "height": 2200,
+        "bytes": 262892
+      },
+      "thumb": {
+        "src": "assets/photos/dreamy-projects-049-960.webp",
+        "width": 960,
+        "height": 1440,
+        "bytes": 110470
+      }
+    },
+    "53": {
+      "index": 53,
+      "category": "Dreamy Projects",
+      "filename": "DSC05150.png",
+      "alt": "Classical dancer in red using expressive hand gestures against a smoky background",
+      "variants": [
+        {
+          "src": "assets/photos/dreamy-projects-053-480.webp",
+          "width": 480,
+          "height": 720,
+          "bytes": 39820
+        },
+        {
+          "src": "assets/photos/dreamy-projects-053-960.webp",
+          "width": 960,
+          "height": 1440,
+          "bytes": 118600
+        },
+        {
+          "src": "assets/photos/dreamy-projects-053-1467.webp",
+          "width": 1467,
+          "height": 2200,
+          "bytes": 283052
+        }
+      ],
+      "full": {
+        "src": "assets/photos/dreamy-projects-053-1467.webp",
+        "width": 1467,
+        "height": 2200,
+        "bytes": 283052
+      },
+      "thumb": {
+        "src": "assets/photos/dreamy-projects-053-960.webp",
+        "width": 960,
+        "height": 1440,
+        "bytes": 118600
+      }
+    },
+    "54": {
+      "index": 54,
+      "category": "Dreamy Projects",
+      "filename": "DSC05157.png",
+      "alt": "Classical dancer framing her face with both hands in warm golden light",
+      "variants": [
+        {
+          "src": "assets/photos/dreamy-projects-054-480.webp",
+          "width": 480,
+          "height": 720,
+          "bytes": 69792
+        },
+        {
+          "src": "assets/photos/dreamy-projects-054-960.webp",
+          "width": 960,
+          "height": 1440,
+          "bytes": 222690
+        },
+        {
+          "src": "assets/photos/dreamy-projects-054-1467.webp",
+          "width": 1467,
+          "height": 2200,
+          "bytes": 507430
+        }
+      ],
+      "full": {
+        "src": "assets/photos/dreamy-projects-054-1467.webp",
+        "width": 1467,
+        "height": 2200,
+        "bytes": 507430
+      },
+      "thumb": {
+        "src": "assets/photos/dreamy-projects-054-960.webp",
+        "width": 960,
+        "height": 1440,
+        "bytes": 222690
+      }
+    },
+    "56": {
+      "index": 56,
+      "category": "Maternity",
+      "filename": "DSC06981.jpg",
+      "alt": "Expectant mother in a red sari smiling down at her belly",
+      "variants": [
+        {
+          "src": "assets/photos/maternity-056-480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 14688
+        },
+        {
+          "src": "assets/photos/maternity-056-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 37772
+        },
+        {
+          "src": "assets/photos/maternity-056-1600.webp",
+          "width": 1600,
+          "height": 1067,
+          "bytes": 74180
+        },
+        {
+          "src": "assets/photos/maternity-056-2200.webp",
+          "width": 2200,
+          "height": 1467,
+          "bytes": 138912
+        }
+      ],
+      "full": {
+        "src": "assets/photos/maternity-056-2200.webp",
+        "width": 2200,
+        "height": 1467,
+        "bytes": 138912
+      },
+      "thumb": {
+        "src": "assets/photos/maternity-056-960.webp",
+        "width": 960,
+        "height": 640,
+        "bytes": 37772
+      }
+    },
+    "57": {
+      "index": 57,
+      "category": "Family",
+      "filename": "DSC07121.jpg",
+      "alt": "Young boy in traditional clothing seated against warm gold drapery",
+      "variants": [
+        {
+          "src": "assets/photos/family-057-480.webp",
+          "width": 480,
+          "height": 720,
+          "bytes": 17234
+        },
+        {
+          "src": "assets/photos/family-057-960.webp",
+          "width": 960,
+          "height": 1440,
+          "bytes": 44474
+        },
+        {
+          "src": "assets/photos/family-057-1467.webp",
+          "width": 1467,
+          "height": 2200,
+          "bytes": 104464
+        }
+      ],
+      "full": {
+        "src": "assets/photos/family-057-1467.webp",
+        "width": 1467,
+        "height": 2200,
+        "bytes": 104464
+      },
+      "thumb": {
+        "src": "assets/photos/family-057-960.webp",
+        "width": 960,
+        "height": 1440,
+        "bytes": 44474
+      }
+    },
+    "61": {
+      "index": 61,
+      "category": "Maternity",
+      "filename": "DSC07244.jpg",
+      "alt": "Expectant mother in a red sari holding a lit ceremonial plate",
+      "variants": [
+        {
+          "src": "assets/photos/maternity-061-480.webp",
+          "width": 480,
+          "height": 720,
+          "bytes": 28698
+        },
+        {
+          "src": "assets/photos/maternity-061-960.webp",
+          "width": 960,
+          "height": 1440,
+          "bytes": 70662
+        },
+        {
+          "src": "assets/photos/maternity-061-1467.webp",
+          "width": 1467,
+          "height": 2200,
+          "bytes": 157560
+        }
+      ],
+      "full": {
+        "src": "assets/photos/maternity-061-1467.webp",
+        "width": 1467,
+        "height": 2200,
+        "bytes": 157560
+      },
+      "thumb": {
+        "src": "assets/photos/maternity-061-960.webp",
+        "width": 960,
+        "height": 1440,
+        "bytes": 70662
+      }
+    },
+    "67": {
+      "index": 67,
+      "category": "Family",
+      "filename": "DSC07873.jpg",
+      "alt": "Two parents smiling down at the baby held between them outdoors",
+      "variants": [
+        {
+          "src": "assets/photos/family-067-480.webp",
+          "width": 480,
+          "height": 720,
+          "bytes": 33592
+        },
+        {
+          "src": "assets/photos/family-067-960.webp",
+          "width": 960,
+          "height": 1440,
+          "bytes": 92350
+        },
+        {
+          "src": "assets/photos/family-067-1365.webp",
+          "width": 1365,
+          "height": 2048,
+          "bytes": 197490
+        }
+      ],
+      "full": {
+        "src": "assets/photos/family-067-1365.webp",
+        "width": 1365,
+        "height": 2048,
+        "bytes": 197490
+      },
+      "thumb": {
+        "src": "assets/photos/family-067-960.webp",
+        "width": 960,
+        "height": 1440,
+        "bytes": 92350
+      }
+    },
+    "70": {
+      "index": 70,
+      "category": "Family",
+      "filename": "DSC08101.jpg",
+      "alt": "Baby peeking out from beneath a soft cream blanket",
+      "variants": [
+        {
+          "src": "assets/photos/family-070-480.webp",
+          "width": 480,
+          "height": 340,
+          "bytes": 8780
+        },
+        {
+          "src": "assets/photos/family-070-960.webp",
+          "width": 960,
+          "height": 679,
+          "bytes": 23492
+        },
+        {
+          "src": "assets/photos/family-070-1600.webp",
+          "width": 1600,
+          "height": 1132,
+          "bytes": 50926
+        },
+        {
+          "src": "assets/photos/family-070-2048.webp",
+          "width": 2048,
+          "height": 1449,
+          "bytes": 98156
+        }
+      ],
+      "full": {
+        "src": "assets/photos/family-070-2048.webp",
+        "width": 2048,
+        "height": 1449,
+        "bytes": 98156
+      },
+      "thumb": {
+        "src": "assets/photos/family-070-960.webp",
+        "width": 960,
+        "height": 679,
+        "bytes": 23492
+      }
+    },
+    "71": {
+      "index": 71,
+      "category": "Family",
+      "filename": "DSC08130.jpg",
+      "alt": "Baby in a soft bear outfit sitting among plush toys",
+      "variants": [
+        {
+          "src": "assets/photos/family-071-480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 19708
+        },
+        {
+          "src": "assets/photos/family-071-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 54766
+        },
+        {
+          "src": "assets/photos/family-071-1600.webp",
+          "width": 1600,
+          "height": 1066,
+          "bytes": 110674
+        },
+        {
+          "src": "assets/photos/family-071-2048.webp",
+          "width": 2048,
+          "height": 1365,
+          "bytes": 198090
+        }
+      ],
+      "full": {
+        "src": "assets/photos/family-071-2048.webp",
+        "width": 2048,
+        "height": 1365,
+        "bytes": 198090
+      },
+      "thumb": {
+        "src": "assets/photos/family-071-960.webp",
+        "width": 960,
+        "height": 640,
+        "bytes": 54766
+      }
+    },
+    "77": {
+      "index": 77,
+      "category": "Weddings",
+      "filename": "DSC08551.jpg",
+      "alt": "Wedding stage with white seating, gold frames, and floral arches",
+      "variants": [
+        {
+          "src": "assets/photos/weddings-077-480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 53294
+        },
+        {
+          "src": "assets/photos/weddings-077-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 179798
+        },
+        {
+          "src": "assets/photos/weddings-077-1600.webp",
+          "width": 1600,
+          "height": 1066,
+          "bytes": 436632
+        },
+        {
+          "src": "assets/photos/weddings-077-2048.webp",
+          "width": 2048,
+          "height": 1365,
+          "bytes": 836194
+        }
+      ],
+      "full": {
+        "src": "assets/photos/weddings-077-2048.webp",
+        "width": 2048,
+        "height": 1365,
+        "bytes": 836194
+      },
+      "thumb": {
+        "src": "assets/photos/weddings-077-960.webp",
+        "width": 960,
+        "height": 640,
+        "bytes": 179798
+      }
+    },
+    "82": {
+      "index": 82,
+      "category": "Maternity",
+      "filename": "DSC09544.jpg",
+      "alt": "Expectant mother in a gold sari holding a lotus beneath an open sky",
+      "variants": [
+        {
+          "src": "assets/photos/maternity-082-480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 26928
+        },
+        {
+          "src": "assets/photos/maternity-082-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 84306
+        },
+        {
+          "src": "assets/photos/maternity-082-1600.webp",
+          "width": 1600,
+          "height": 1067,
+          "bytes": 186784
+        },
+        {
+          "src": "assets/photos/maternity-082-2200.webp",
+          "width": 2200,
+          "height": 1467,
+          "bytes": 364160
+        }
+      ],
+      "full": {
+        "src": "assets/photos/maternity-082-2200.webp",
+        "width": 2200,
+        "height": 1467,
+        "bytes": 364160
+      },
+      "thumb": {
+        "src": "assets/photos/maternity-082-960.webp",
+        "width": 960,
+        "height": 640,
+        "bytes": 84306
+      }
+    },
+    "84": {
+      "index": 84,
+      "category": "Maternity",
+      "filename": "DSC09596.jpg",
+      "alt": "Expectant couple seated facing one another in a field",
+      "variants": [
+        {
+          "src": "assets/photos/maternity-084-480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 16586
+        },
+        {
+          "src": "assets/photos/maternity-084-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 51378
+        },
+        {
+          "src": "assets/photos/maternity-084-1600.webp",
+          "width": 1600,
+          "height": 1067,
+          "bytes": 113906
+        },
+        {
+          "src": "assets/photos/maternity-084-2200.webp",
+          "width": 2200,
+          "height": 1467,
+          "bytes": 228682
+        }
+      ],
+      "full": {
+        "src": "assets/photos/maternity-084-2200.webp",
+        "width": 2200,
+        "height": 1467,
+        "bytes": 228682
+      },
+      "thumb": {
+        "src": "assets/photos/maternity-084-960.webp",
+        "width": 960,
+        "height": 640,
+        "bytes": 51378
+      }
+    },
+    "85": {
+      "index": 85,
+      "category": "Maternity",
+      "filename": "DSC09624.jpg",
+      "alt": "Expectant mother holding a sunflower as a gold drape flows around her",
+      "variants": [
+        {
+          "src": "assets/photos/maternity-085-480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 14018
+        },
+        {
+          "src": "assets/photos/maternity-085-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 40518
+        },
+        {
+          "src": "assets/photos/maternity-085-1600.webp",
+          "width": 1600,
+          "height": 1067,
+          "bytes": 93592
+        },
+        {
+          "src": "assets/photos/maternity-085-2200.webp",
+          "width": 2200,
+          "height": 1467,
+          "bytes": 226264
+        }
+      ],
+      "full": {
+        "src": "assets/photos/maternity-085-2200.webp",
+        "width": 2200,
+        "height": 1467,
+        "bytes": 226264
+      },
+      "thumb": {
+        "src": "assets/photos/maternity-085-960.webp",
+        "width": 960,
+        "height": 640,
+        "bytes": 40518
+      }
+    },
+    "86": {
+      "index": 86,
+      "category": "Maternity",
+      "filename": "DSC09636.jpg",
+      "alt": "Family gathered around an expectant mother in a gold drape",
+      "variants": [
+        {
+          "src": "assets/photos/maternity-086-480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 19846
+        },
+        {
+          "src": "assets/photos/maternity-086-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 58156
+        },
+        {
+          "src": "assets/photos/maternity-086-1600.webp",
+          "width": 1600,
+          "height": 1067,
+          "bytes": 128210
+        },
+        {
+          "src": "assets/photos/maternity-086-2200.webp",
+          "width": 2200,
+          "height": 1467,
+          "bytes": 279490
+        }
+      ],
+      "full": {
+        "src": "assets/photos/maternity-086-2200.webp",
+        "width": 2200,
+        "height": 1467,
+        "bytes": 279490
+      },
+      "thumb": {
+        "src": "assets/photos/maternity-086-960.webp",
+        "width": 960,
+        "height": 640,
+        "bytes": 58156
+      }
+    },
+    "87": {
+      "index": 87,
+      "category": "Maternity",
+      "filename": "DSC09699.jpg",
+      "alt": "Expectant mother in a gold sari framed by flowers and a tree",
+      "variants": [
+        {
+          "src": "assets/photos/maternity-087-480.webp",
+          "width": 480,
+          "height": 600,
+          "bytes": 46602
+        },
+        {
+          "src": "assets/photos/maternity-087-960.webp",
+          "width": 960,
+          "height": 1200,
+          "bytes": 130570
+        },
+        {
+          "src": "assets/photos/maternity-087-1600.webp",
+          "width": 1600,
+          "height": 2000,
+          "bytes": 269198
+        },
+        {
+          "src": "assets/photos/maternity-087-1760.webp",
+          "width": 1760,
+          "height": 2200,
+          "bytes": 371890
+        }
+      ],
+      "full": {
+        "src": "assets/photos/maternity-087-1760.webp",
+        "width": 1760,
+        "height": 2200,
+        "bytes": 371890
+      },
+      "thumb": {
+        "src": "assets/photos/maternity-087-960.webp",
+        "width": 960,
+        "height": 1200,
+        "bytes": 130570
+      }
+    },
+    "88": {
+      "index": 88,
+      "category": "Maternity",
+      "filename": "DSC09811.jpg",
+      "alt": "Expectant mother in a pink gown beneath a flowering tree",
+      "variants": [
+        {
+          "src": "assets/photos/maternity-088-480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 22222
+        },
+        {
+          "src": "assets/photos/maternity-088-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 55106
+        },
+        {
+          "src": "assets/photos/maternity-088-1600.webp",
+          "width": 1600,
+          "height": 1067,
+          "bytes": 110126
+        },
+        {
+          "src": "assets/photos/maternity-088-2200.webp",
+          "width": 2200,
+          "height": 1467,
+          "bytes": 199510
+        }
+      ],
+      "full": {
+        "src": "assets/photos/maternity-088-2200.webp",
+        "width": 2200,
+        "height": 1467,
+        "bytes": 199510
+      },
+      "thumb": {
+        "src": "assets/photos/maternity-088-960.webp",
+        "width": 960,
+        "height": 640,
+        "bytes": 55106
+      }
+    },
+    "89": {
+      "index": 89,
+      "category": "Maternity",
+      "filename": "DSC09912.jpg",
+      "alt": "Expectant mother in a pink gown with flowing fabric against a dark woodland background",
+      "variants": [
+        {
+          "src": "assets/photos/maternity-089-480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 10702
+        },
+        {
+          "src": "assets/photos/maternity-089-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 27576
+        },
+        {
+          "src": "assets/photos/maternity-089-1600.webp",
+          "width": 1600,
+          "height": 1067,
+          "bytes": 54394
+        },
+        {
+          "src": "assets/photos/maternity-089-2200.webp",
+          "width": 2200,
+          "height": 1467,
+          "bytes": 101320
+        }
+      ],
+      "full": {
+        "src": "assets/photos/maternity-089-2200.webp",
+        "width": 2200,
+        "height": 1467,
+        "bytes": 101320
+      },
+      "thumb": {
+        "src": "assets/photos/maternity-089-960.webp",
+        "width": 960,
+        "height": 640,
+        "bytes": 27576
+      }
+    },
+    "91": {
+      "index": 91,
+      "category": "Dreamy Projects",
+      "filename": "e.jpg",
+      "alt": "Classical dancer in red and purple in a poised studio stance",
+      "variants": [
+        {
+          "src": "assets/photos/dreamy-projects-091-480.webp",
+          "width": 480,
+          "height": 720,
+          "bytes": 21912
+        },
+        {
+          "src": "assets/photos/dreamy-projects-091-960.webp",
+          "width": 960,
+          "height": 1440,
+          "bytes": 69462
+        },
+        {
+          "src": "assets/photos/dreamy-projects-091-1467.webp",
+          "width": 1467,
+          "height": 2200,
+          "bytes": 171984
+        }
+      ],
+      "full": {
+        "src": "assets/photos/dreamy-projects-091-1467.webp",
+        "width": 1467,
+        "height": 2200,
+        "bytes": 171984
+      },
+      "thumb": {
+        "src": "assets/photos/dreamy-projects-091-960.webp",
+        "width": 960,
+        "height": 1440,
+        "bytes": 69462
+      }
+    },
+    "92": {
+      "index": 92,
+      "category": "Dreamy Projects",
+      "filename": "IMG_7630.jpeg",
+      "alt": "Classical dancer framed by a circular arrangement of costume pieces and ornaments",
+      "variants": [
+        {
+          "src": "assets/photos/dreamy-projects-092-480.webp",
+          "width": 480,
+          "height": 600,
+          "bytes": 29460
+        },
+        {
+          "src": "assets/photos/dreamy-projects-092-960.webp",
+          "width": 960,
+          "height": 1200,
+          "bytes": 89290
+        },
+        {
+          "src": "assets/photos/dreamy-projects-092-1600.webp",
+          "width": 1600,
+          "height": 2000,
+          "bytes": 218170
+        },
+        {
+          "src": "assets/photos/dreamy-projects-092-1760.webp",
+          "width": 1760,
+          "height": 2200,
+          "bytes": 362902
+        }
+      ],
+      "full": {
+        "src": "assets/photos/dreamy-projects-092-1760.webp",
+        "width": 1760,
+        "height": 2200,
+        "bytes": 362902
+      },
+      "thumb": {
+        "src": "assets/photos/dreamy-projects-092-960.webp",
+        "width": 960,
+        "height": 1200,
+        "bytes": 89290
+      }
+    },
+    "103": {
+      "index": 103,
+      "category": "Dreamy Projects",
+      "filename": "LKS-23.jpg",
+      "alt": "Dancer captured in a flowing turn with intentional motion blur",
+      "variants": [
+        {
+          "src": "assets/photos/dreamy-projects-103-480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 7408
+        },
+        {
+          "src": "assets/photos/dreamy-projects-103-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 19116
+        },
+        {
+          "src": "assets/photos/dreamy-projects-103-1600.webp",
+          "width": 1600,
+          "height": 1066,
+          "bytes": 41594
+        },
+        {
+          "src": "assets/photos/dreamy-projects-103-2048.webp",
+          "width": 2048,
+          "height": 1365,
+          "bytes": 78666
+        }
+      ],
+      "full": {
+        "src": "assets/photos/dreamy-projects-103-2048.webp",
+        "width": 2048,
+        "height": 1365,
+        "bytes": 78666
+      },
+      "thumb": {
+        "src": "assets/photos/dreamy-projects-103-960.webp",
+        "width": 960,
+        "height": 640,
+        "bytes": 19116
+      }
+    },
+    "107": {
+      "index": 107,
+      "category": "Dreamy Projects",
+      "filename": "LKS-49.jpg",
+      "alt": "Ensemble of dancers performing across a stage before a colorful backdrop",
+      "variants": [
+        {
+          "src": "assets/photos/dreamy-projects-107-480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 26580
+        },
+        {
+          "src": "assets/photos/dreamy-projects-107-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 90826
+        },
+        {
+          "src": "assets/photos/dreamy-projects-107-1600.webp",
+          "width": 1600,
+          "height": 1066,
+          "bytes": 243214
+        },
+        {
+          "src": "assets/photos/dreamy-projects-107-2048.webp",
+          "width": 2048,
+          "height": 1365,
+          "bytes": 576746
+        }
+      ],
+      "full": {
+        "src": "assets/photos/dreamy-projects-107-2048.webp",
+        "width": 2048,
+        "height": 1365,
+        "bytes": 576746
+      },
+      "thumb": {
+        "src": "assets/photos/dreamy-projects-107-960.webp",
+        "width": 960,
+        "height": 640,
+        "bytes": 90826
+      }
+    },
+    "108": {
+      "index": 108,
+      "category": "Dreamy Projects",
+      "filename": "LKS-86.jpg",
+      "alt": "Dancers in pale costumes captured with flowing motion blur on stage",
+      "variants": [
+        {
+          "src": "assets/photos/dreamy-projects-108-480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 11042
+        },
+        {
+          "src": "assets/photos/dreamy-projects-108-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 28390
+        },
+        {
+          "src": "assets/photos/dreamy-projects-108-1600.webp",
+          "width": 1600,
+          "height": 1066,
+          "bytes": 57212
+        },
+        {
+          "src": "assets/photos/dreamy-projects-108-2048.webp",
+          "width": 2048,
+          "height": 1365,
+          "bytes": 99738
+        }
+      ],
+      "full": {
+        "src": "assets/photos/dreamy-projects-108-2048.webp",
+        "width": 2048,
+        "height": 1365,
+        "bytes": 99738
+      },
+      "thumb": {
+        "src": "assets/photos/dreamy-projects-108-960.webp",
+        "width": 960,
+        "height": 640,
+        "bytes": 28390
+      }
+    },
+    "110": {
+      "index": 110,
+      "category": "Weddings",
+      "filename": "LKS-110 2.jpg",
+      "alt": "Couple in traditional wedding attire leaning together beneath trees",
+      "variants": [
+        {
+          "src": "assets/photos/weddings-110-480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 24868
+        },
+        {
+          "src": "assets/photos/weddings-110-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 68344
+        },
+        {
+          "src": "assets/photos/weddings-110-1600.webp",
+          "width": 1600,
+          "height": 1066,
+          "bytes": 160584
+        },
+        {
+          "src": "assets/photos/weddings-110-2048.webp",
+          "width": 2048,
+          "height": 1365,
+          "bytes": 368994
+        }
+      ],
+      "full": {
+        "src": "assets/photos/weddings-110-2048.webp",
+        "width": 2048,
+        "height": 1365,
+        "bytes": 368994
+      },
+      "thumb": {
+        "src": "assets/photos/weddings-110-960.webp",
+        "width": 960,
+        "height": 640,
+        "bytes": 68344
+      }
+    },
+    "116": {
+      "index": 116,
+      "category": "Weddings",
+      "filename": "LKS-128 2.jpg",
+      "alt": "Wedding couple holding hands, with henna and jewelry in close detail",
+      "variants": [
+        {
+          "src": "assets/photos/weddings-116-480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 15208
+        },
+        {
+          "src": "assets/photos/weddings-116-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 41330
+        },
+        {
+          "src": "assets/photos/weddings-116-1600.webp",
+          "width": 1600,
+          "height": 1066,
+          "bytes": 85722
+        },
+        {
+          "src": "assets/photos/weddings-116-2048.webp",
+          "width": 2048,
+          "height": 1365,
+          "bytes": 152680
+        }
+      ],
+      "full": {
+        "src": "assets/photos/weddings-116-2048.webp",
+        "width": 2048,
+        "height": 1365,
+        "bytes": 152680
+      },
+      "thumb": {
+        "src": "assets/photos/weddings-116-960.webp",
+        "width": 960,
+        "height": 640,
+        "bytes": 41330
+      }
+    },
+    "119": {
+      "index": 119,
+      "category": "Dreamy Projects",
+      "filename": "LKS-164.jpg",
+      "alt": "Stage ensemble rendered as sweeping bands of color through intentional motion blur",
+      "variants": [
+        {
+          "src": "assets/photos/dreamy-projects-119-480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 11248
+        },
+        {
+          "src": "assets/photos/dreamy-projects-119-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 31556
+        },
+        {
+          "src": "assets/photos/dreamy-projects-119-1600.webp",
+          "width": 1600,
+          "height": 1066,
+          "bytes": 68810
+        },
+        {
+          "src": "assets/photos/dreamy-projects-119-2048.webp",
+          "width": 2048,
+          "height": 1365,
+          "bytes": 128284
+        }
+      ],
+      "full": {
+        "src": "assets/photos/dreamy-projects-119-2048.webp",
+        "width": 2048,
+        "height": 1365,
+        "bytes": 128284
+      },
+      "thumb": {
+        "src": "assets/photos/dreamy-projects-119-960.webp",
+        "width": 960,
+        "height": 640,
+        "bytes": 31556
+      }
+    },
+    "128": {
+      "index": 128,
+      "category": "Family",
+      "filename": "LKS-637.jpg",
+      "alt": "Young child in a blue suit holding two adults by the hands",
+      "variants": [
+        {
+          "src": "assets/photos/family-128-480.webp",
+          "width": 480,
+          "height": 798,
+          "bytes": 94386
+        },
+        {
+          "src": "assets/photos/family-128-960.webp",
+          "width": 960,
+          "height": 1596,
+          "bytes": 425404
+        },
+        {
+          "src": "assets/photos/family-128-1232.webp",
+          "width": 1232,
+          "height": 2048,
+          "bytes": 817338
+        }
+      ],
+      "full": {
+        "src": "assets/photos/family-128-1232.webp",
+        "width": 1232,
+        "height": 2048,
+        "bytes": 817338
+      },
+      "thumb": {
+        "src": "assets/photos/family-128-960.webp",
+        "width": 960,
+        "height": 1596,
+        "bytes": 425404
+      }
+    },
+    "129": {
+      "index": 129,
+      "category": "Family",
+      "filename": "LKS-647.jpg",
+      "alt": "Silhouette of a family lifting a young child into the sky",
+      "variants": [
+        {
+          "src": "assets/photos/family-129-480.webp",
+          "width": 480,
+          "height": 383,
+          "bytes": 10760
+        },
+        {
+          "src": "assets/photos/family-129-960.webp",
+          "width": 960,
+          "height": 765,
+          "bytes": 27444
+        },
+        {
+          "src": "assets/photos/family-129-1600.webp",
+          "width": 1600,
+          "height": 1276,
+          "bytes": 58516
+        },
+        {
+          "src": "assets/photos/family-129-2048.webp",
+          "width": 2048,
+          "height": 1633,
+          "bytes": 115506
+        }
+      ],
+      "full": {
+        "src": "assets/photos/family-129-2048.webp",
+        "width": 2048,
+        "height": 1633,
+        "bytes": 115506
+      },
+      "thumb": {
+        "src": "assets/photos/family-129-960.webp",
+        "width": 960,
+        "height": 765,
+        "bytes": 27444
+      }
+    },
+    "130": {
+      "index": 130,
+      "category": "Family",
+      "filename": "LKS-657.jpg",
+      "alt": "Family of three smiling together outdoors in formal clothing",
+      "variants": [
+        {
+          "src": "assets/photos/family-130-480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 27738
+        },
+        {
+          "src": "assets/photos/family-130-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 83030
+        },
+        {
+          "src": "assets/photos/family-130-1600.webp",
+          "width": 1600,
+          "height": 1066,
+          "bytes": 192816
+        },
+        {
+          "src": "assets/photos/family-130-2048.webp",
+          "width": 2048,
+          "height": 1365,
+          "bytes": 366640
+        }
+      ],
+      "full": {
+        "src": "assets/photos/family-130-2048.webp",
+        "width": 2048,
+        "height": 1365,
+        "bytes": 366640
+      },
+      "thumb": {
+        "src": "assets/photos/family-130-960.webp",
+        "width": 960,
+        "height": 640,
+        "bytes": 83030
+      }
+    },
+    "135": {
+      "index": 135,
+      "category": "Weddings",
+      "filename": "LKS-6415.jpg",
+      "alt": "Bride smiling as grains fall over her hair during a wedding ceremony",
+      "variants": [
+        {
+          "src": "assets/photos/weddings-135-480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 28034
+        },
+        {
+          "src": "assets/photos/weddings-135-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 77834
+        },
+        {
+          "src": "assets/photos/weddings-135-1600.webp",
+          "width": 1600,
+          "height": 1066,
+          "bytes": 157242
+        },
+        {
+          "src": "assets/photos/weddings-135-2048.webp",
+          "width": 2048,
+          "height": 1365,
+          "bytes": 258736
+        }
+      ],
+      "full": {
+        "src": "assets/photos/weddings-135-2048.webp",
+        "width": 2048,
+        "height": 1365,
+        "bytes": 258736
+      },
+      "thumb": {
+        "src": "assets/photos/weddings-135-960.webp",
+        "width": 960,
+        "height": 640,
+        "bytes": 77834
+      }
+    },
+    "137": {
+      "index": 137,
+      "category": "Weddings",
+      "filename": "LKS-6418.jpg",
+      "alt": "Wedding couple seated beneath a floral mandap",
+      "variants": [
+        {
+          "src": "assets/photos/weddings-137-480.webp",
+          "width": 480,
+          "height": 720,
+          "bytes": 88096
+        },
+        {
+          "src": "assets/photos/weddings-137-960.webp",
+          "width": 960,
+          "height": 1440,
+          "bytes": 245768
+        },
+        {
+          "src": "assets/photos/weddings-137-1365.webp",
+          "width": 1365,
+          "height": 2048,
+          "bytes": 499878
+        }
+      ],
+      "full": {
+        "src": "assets/photos/weddings-137-1365.webp",
+        "width": 1365,
+        "height": 2048,
+        "bytes": 499878
+      },
+      "thumb": {
+        "src": "assets/photos/weddings-137-960.webp",
+        "width": 960,
+        "height": 1440,
+        "bytes": 245768
+      }
+    },
+    "139": {
+      "index": 139,
+      "category": "Weddings",
+      "filename": "LKS-6427.jpg",
+      "alt": "Couple seated together during a wedding ceremony, surrounded by guests",
+      "variants": [
+        {
+          "src": "assets/photos/weddings-139-480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 32590
+        },
+        {
+          "src": "assets/photos/weddings-139-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 91054
+        },
+        {
+          "src": "assets/photos/weddings-139-1600.webp",
+          "width": 1600,
+          "height": 1066,
+          "bytes": 191650
+        },
+        {
+          "src": "assets/photos/weddings-139-2048.webp",
+          "width": 2048,
+          "height": 1365,
+          "bytes": 342834
+        }
+      ],
+      "full": {
+        "src": "assets/photos/weddings-139-2048.webp",
+        "width": 2048,
+        "height": 1365,
+        "bytes": 342834
+      },
+      "thumb": {
+        "src": "assets/photos/weddings-139-960.webp",
+        "width": 960,
+        "height": 640,
+        "bytes": 91054
+      }
+    },
+    "140": {
+      "index": 140,
+      "category": "Weddings",
+      "filename": "LKS-6446.jpg",
+      "alt": "Bride in a pale gold sari with flowers in her hair",
+      "variants": [
+        {
+          "src": "assets/photos/weddings-140-480.webp",
+          "width": 480,
+          "height": 720,
+          "bytes": 50494
+        },
+        {
+          "src": "assets/photos/weddings-140-960.webp",
+          "width": 960,
+          "height": 1440,
+          "bytes": 156108
+        },
+        {
+          "src": "assets/photos/weddings-140-1365.webp",
+          "width": 1365,
+          "height": 2048,
+          "bytes": 350758
+        }
+      ],
+      "full": {
+        "src": "assets/photos/weddings-140-1365.webp",
+        "width": 1365,
+        "height": 2048,
+        "bytes": 350758
+      },
+      "thumb": {
+        "src": "assets/photos/weddings-140-960.webp",
+        "width": 960,
+        "height": 1440,
+        "bytes": 156108
+      }
+    },
+    "143": {
+      "index": 143,
+      "category": "Weddings",
+      "filename": "LKS-6477.jpg",
+      "alt": "Wedding couple holding hands and smiling at one another outdoors",
+      "variants": [
+        {
+          "src": "assets/photos/weddings-143-480.webp",
+          "width": 480,
+          "height": 387,
+          "bytes": 26098
+        },
+        {
+          "src": "assets/photos/weddings-143-960.webp",
+          "width": 960,
+          "height": 775,
+          "bytes": 69696
+        },
+        {
+          "src": "assets/photos/weddings-143-1600.webp",
+          "width": 1600,
+          "height": 1291,
+          "bytes": 136716
+        },
+        {
+          "src": "assets/photos/weddings-143-2048.webp",
+          "width": 2048,
+          "height": 1653,
+          "bytes": 236608
+        }
+      ],
+      "full": {
+        "src": "assets/photos/weddings-143-2048.webp",
+        "width": 2048,
+        "height": 1653,
+        "bytes": 236608
+      },
+      "thumb": {
+        "src": "assets/photos/weddings-143-960.webp",
+        "width": 960,
+        "height": 775,
+        "bytes": 69696
+      }
+    },
+    "148": {
+      "index": 148,
+      "category": "Weddings",
+      "filename": "LKS-6508.jpg",
+      "alt": "Outdoor wedding mandap decorated with pale flowers and hanging garlands",
+      "variants": [
+        {
+          "src": "assets/photos/weddings-148-480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 40504
+        },
+        {
+          "src": "assets/photos/weddings-148-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 142032
+        },
+        {
+          "src": "assets/photos/weddings-148-1600.webp",
+          "width": 1600,
+          "height": 1066,
+          "bytes": 334880
+        },
+        {
+          "src": "assets/photos/weddings-148-2048.webp",
+          "width": 2048,
+          "height": 1365,
+          "bytes": 573668
+        }
+      ],
+      "full": {
+        "src": "assets/photos/weddings-148-2048.webp",
+        "width": 2048,
+        "height": 1365,
+        "bytes": 573668
+      },
+      "thumb": {
+        "src": "assets/photos/weddings-148-960.webp",
+        "width": 960,
+        "height": 640,
+        "bytes": 142032
+      }
+    },
+    "151": {
+      "index": 151,
+      "category": "Weddings",
+      "filename": "LKS-6529.jpg",
+      "alt": "Guests throwing flower petals during a joyful turmeric celebration",
+      "variants": [
+        {
+          "src": "assets/photos/weddings-151-480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 53534
+        },
+        {
+          "src": "assets/photos/weddings-151-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 169306
+        },
+        {
+          "src": "assets/photos/weddings-151-1600.webp",
+          "width": 1600,
+          "height": 1066,
+          "bytes": 379240
+        },
+        {
+          "src": "assets/photos/weddings-151-2048.webp",
+          "width": 2048,
+          "height": 1365,
+          "bytes": 667710
+        }
+      ],
+      "full": {
+        "src": "assets/photos/weddings-151-2048.webp",
+        "width": 2048,
+        "height": 1365,
+        "bytes": 667710
+      },
+      "thumb": {
+        "src": "assets/photos/weddings-151-960.webp",
+        "width": 960,
+        "height": 640,
+        "bytes": 169306
+      }
+    },
+    "153": {
+      "index": 153,
+      "category": "Weddings",
+      "filename": "LKS-6539.jpg",
+      "alt": "Turmeric and water being poured over a person during a pre-wedding celebration",
+      "variants": [
+        {
+          "src": "assets/photos/weddings-153-480.webp",
+          "width": 480,
+          "height": 413,
+          "bytes": 59766
+        },
+        {
+          "src": "assets/photos/weddings-153-960.webp",
+          "width": 960,
+          "height": 826,
+          "bytes": 181848
+        },
+        {
+          "src": "assets/photos/weddings-153-1600.webp",
+          "width": 1600,
+          "height": 1377,
+          "bytes": 389398
+        },
+        {
+          "src": "assets/photos/weddings-153-2048.webp",
+          "width": 2048,
+          "height": 1762,
+          "bytes": 656468
+        }
+      ],
+      "full": {
+        "src": "assets/photos/weddings-153-2048.webp",
+        "width": 2048,
+        "height": 1762,
+        "bytes": 656468
+      },
+      "thumb": {
+        "src": "assets/photos/weddings-153-960.webp",
+        "width": 960,
+        "height": 826,
+        "bytes": 181848
+      }
+    },
+    "156": {
+      "index": 156,
+      "category": "Weddings",
+      "filename": "LKS-6550.jpg",
+      "alt": "Woman in yellow smiling beside a young child during a pre-wedding celebration",
+      "variants": [
+        {
+          "src": "assets/photos/weddings-156-480.webp",
+          "width": 480,
+          "height": 392,
+          "bytes": 48562
+        },
+        {
+          "src": "assets/photos/weddings-156-960.webp",
+          "width": 960,
+          "height": 784,
+          "bytes": 148648
+        },
+        {
+          "src": "assets/photos/weddings-156-1600.webp",
+          "width": 1600,
+          "height": 1306,
+          "bytes": 336140
+        },
+        {
+          "src": "assets/photos/weddings-156-2048.webp",
+          "width": 2048,
+          "height": 1672,
+          "bytes": 616688
+        }
+      ],
+      "full": {
+        "src": "assets/photos/weddings-156-2048.webp",
+        "width": 2048,
+        "height": 1672,
+        "bytes": 616688
+      },
+      "thumb": {
+        "src": "assets/photos/weddings-156-960.webp",
+        "width": 960,
+        "height": 784,
+        "bytes": 148648
+      }
+    },
+    "162": {
+      "index": 162,
+      "category": "Weddings",
+      "filename": "LKS-6590.jpg",
+      "alt": "Couple in pink and gold traditional attire surrounded by white floral decorations",
+      "variants": [
+        {
+          "src": "assets/photos/weddings-162-480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 42684
+        },
+        {
+          "src": "assets/photos/weddings-162-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 130282
+        },
+        {
+          "src": "assets/photos/weddings-162-1600.webp",
+          "width": 1600,
+          "height": 1066,
+          "bytes": 288982
+        },
+        {
+          "src": "assets/photos/weddings-162-2048.webp",
+          "width": 2048,
+          "height": 1365,
+          "bytes": 509350
+        }
+      ],
+      "full": {
+        "src": "assets/photos/weddings-162-2048.webp",
+        "width": 2048,
+        "height": 1365,
+        "bytes": 509350
+      },
+      "thumb": {
+        "src": "assets/photos/weddings-162-960.webp",
+        "width": 960,
+        "height": 640,
+        "bytes": 130282
+      }
+    },
+    "165": {
+      "index": 165,
+      "category": "Weddings",
+      "filename": "LKS-6606.jpg",
+      "alt": "Couple in purple evening attire smiling during their ring ceremony",
+      "variants": [
+        {
+          "src": "assets/photos/weddings-165-480.webp",
+          "width": 480,
+          "height": 720,
+          "bytes": 55958
+        },
+        {
+          "src": "assets/photos/weddings-165-960.webp",
+          "width": 960,
+          "height": 1440,
+          "bytes": 179810
+        },
+        {
+          "src": "assets/photos/weddings-165-1365.webp",
+          "width": 1365,
+          "height": 2048,
+          "bytes": 537784
+        }
+      ],
+      "full": {
+        "src": "assets/photos/weddings-165-1365.webp",
+        "width": 1365,
+        "height": 2048,
+        "bytes": 537784
+      },
+      "thumb": {
+        "src": "assets/photos/weddings-165-960.webp",
+        "width": 960,
+        "height": 1440,
+        "bytes": 179810
+      }
+    },
+    "167": {
+      "index": 167,
+      "category": "Weddings",
+      "filename": "LKS-6611 2.jpg",
+      "alt": "Couple exchanging rings with warm lights behind them",
+      "variants": [
+        {
+          "src": "assets/photos/weddings-167-480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 24720
+        },
+        {
+          "src": "assets/photos/weddings-167-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 71852
+        },
+        {
+          "src": "assets/photos/weddings-167-1600.webp",
+          "width": 1600,
+          "height": 1066,
+          "bytes": 167374
+        },
+        {
+          "src": "assets/photos/weddings-167-2048.webp",
+          "width": 2048,
+          "height": 1365,
+          "bytes": 350324
+        }
+      ],
+      "full": {
+        "src": "assets/photos/weddings-167-2048.webp",
+        "width": 2048,
+        "height": 1365,
+        "bytes": 350324
+      },
+      "thumb": {
+        "src": "assets/photos/weddings-167-960.webp",
+        "width": 960,
+        "height": 640,
+        "bytes": 71852
+      }
+    },
+    "170": {
+      "index": 170,
+      "category": "Weddings",
+      "filename": "LKS-6613.jpg",
+      "alt": "Candlelit reception table with flowers and glasses",
+      "variants": [
+        {
+          "src": "assets/photos/weddings-170-480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 27246
+        },
+        {
+          "src": "assets/photos/weddings-170-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 138230
+        },
+        {
+          "src": "assets/photos/weddings-170-1600.webp",
+          "width": 1600,
+          "height": 1066,
+          "bytes": 352994
+        },
+        {
+          "src": "assets/photos/weddings-170-2048.webp",
+          "width": 2048,
+          "height": 1365,
+          "bytes": 624854
+        }
+      ],
+      "full": {
+        "src": "assets/photos/weddings-170-2048.webp",
+        "width": 2048,
+        "height": 1365,
+        "bytes": 624854
+      },
+      "thumb": {
+        "src": "assets/photos/weddings-170-960.webp",
+        "width": 960,
+        "height": 640,
+        "bytes": 138230
+      }
+    },
+    "179": {
+      "index": 179,
+      "category": "Dreamy Projects",
+      "filename": "LKS01.jpg",
+      "alt": "Classical dancer in turquoise and red surrounded by warm orange and pale smoke",
+      "variants": [
+        {
+          "src": "assets/photos/dreamy-projects-179-480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 21020
+        },
+        {
+          "src": "assets/photos/dreamy-projects-179-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 64980
+        },
+        {
+          "src": "assets/photos/dreamy-projects-179-1600.webp",
+          "width": 1600,
+          "height": 1067,
+          "bytes": 148512
+        },
+        {
+          "src": "assets/photos/dreamy-projects-179-2200.webp",
+          "width": 2200,
+          "height": 1467,
+          "bytes": 299888
+        }
+      ],
+      "full": {
+        "src": "assets/photos/dreamy-projects-179-2200.webp",
+        "width": 2200,
+        "height": 1467,
+        "bytes": 299888
+      },
+      "thumb": {
+        "src": "assets/photos/dreamy-projects-179-960.webp",
+        "width": 960,
+        "height": 640,
+        "bytes": 64980
+      }
+    },
+    "180": {
+      "index": 180,
+      "category": "Weddings",
+      "filename": "LKS00008.jpg",
+      "alt": "Couple standing together during a ceremony in a decorated doorway",
+      "variants": [
+        {
+          "src": "assets/photos/weddings-180-480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 22996
+        },
+        {
+          "src": "assets/photos/weddings-180-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 65340
+        },
+        {
+          "src": "assets/photos/weddings-180-1600.webp",
+          "width": 1600,
+          "height": 1066,
+          "bytes": 149020
+        },
+        {
+          "src": "assets/photos/weddings-180-2048.webp",
+          "width": 2048,
+          "height": 1365,
+          "bytes": 267016
+        }
+      ],
+      "full": {
+        "src": "assets/photos/weddings-180-2048.webp",
+        "width": 2048,
+        "height": 1365,
+        "bytes": 267016
+      },
+      "thumb": {
+        "src": "assets/photos/weddings-180-960.webp",
+        "width": 960,
+        "height": 640,
+        "bytes": 65340
+      }
+    },
+    "186": {
+      "index": 186,
+      "category": "Weddings",
+      "filename": "LKS00038.jpg",
+      "alt": "Woman in a pink and gold sari holding a ceremonial tray",
+      "variants": [
+        {
+          "src": "assets/photos/weddings-186-480.webp",
+          "width": 480,
+          "height": 720,
+          "bytes": 52482
+        },
+        {
+          "src": "assets/photos/weddings-186-960.webp",
+          "width": 960,
+          "height": 1440,
+          "bytes": 176496
+        },
+        {
+          "src": "assets/photos/weddings-186-1365.webp",
+          "width": 1365,
+          "height": 2048,
+          "bytes": 398400
+        }
+      ],
+      "full": {
+        "src": "assets/photos/weddings-186-1365.webp",
+        "width": 1365,
+        "height": 2048,
+        "bytes": 398400
+      },
+      "thumb": {
+        "src": "assets/photos/weddings-186-960.webp",
+        "width": 960,
+        "height": 1440,
+        "bytes": 176496
+      }
+    },
+    "188": {
+      "index": 188,
+      "category": "Weddings",
+      "filename": "LKS00057.jpg",
+      "alt": "Couple in traditional clothing holding trays during a ceremony",
+      "variants": [
+        {
+          "src": "assets/photos/weddings-188-480.webp",
+          "width": 480,
+          "height": 720,
+          "bytes": 39164
+        },
+        {
+          "src": "assets/photos/weddings-188-960.webp",
+          "width": 960,
+          "height": 1440,
+          "bytes": 98940
+        },
+        {
+          "src": "assets/photos/weddings-188-1365.webp",
+          "width": 1365,
+          "height": 2048,
+          "bytes": 192934
+        }
+      ],
+      "full": {
+        "src": "assets/photos/weddings-188-1365.webp",
+        "width": 1365,
+        "height": 2048,
+        "bytes": 192934
+      },
+      "thumb": {
+        "src": "assets/photos/weddings-188-960.webp",
+        "width": 960,
+        "height": 1440,
+        "bytes": 98940
+      }
+    },
+    "190": {
+      "index": 190,
+      "category": "Dreamy Projects",
+      "filename": "LKS01650.jpg",
+      "alt": "Classical dancer holding a flute in a sunlit field of flowers",
+      "variants": [
+        {
+          "src": "assets/photos/dreamy-projects-190-480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 20476
+        },
+        {
+          "src": "assets/photos/dreamy-projects-190-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 58882
+        },
+        {
+          "src": "assets/photos/dreamy-projects-190-1600.webp",
+          "width": 1600,
+          "height": 1067,
+          "bytes": 128160
+        },
+        {
+          "src": "assets/photos/dreamy-projects-190-2200.webp",
+          "width": 2200,
+          "height": 1467,
+          "bytes": 256436
+        }
+      ],
+      "full": {
+        "src": "assets/photos/dreamy-projects-190-2200.webp",
+        "width": 2200,
+        "height": 1467,
+        "bytes": 256436
+      },
+      "thumb": {
+        "src": "assets/photos/dreamy-projects-190-960.webp",
+        "width": 960,
+        "height": 640,
+        "bytes": 58882
+      }
+    },
+    "193": {
+      "index": 193,
+      "category": "Maternity",
+      "filename": "LKS07343 2.jpg",
+      "alt": "Expectant mother in a textured peach gown beside a white porch",
+      "variants": [
+        {
+          "src": "assets/photos/maternity-193-480.webp",
+          "width": 480,
+          "height": 720,
+          "bytes": 22232
+        },
+        {
+          "src": "assets/photos/maternity-193-960.webp",
+          "width": 960,
+          "height": 1440,
+          "bytes": 57200
+        },
+        {
+          "src": "assets/photos/maternity-193-1467.webp",
+          "width": 1467,
+          "height": 2200,
+          "bytes": 130978
+        }
+      ],
+      "full": {
+        "src": "assets/photos/maternity-193-1467.webp",
+        "width": 1467,
+        "height": 2200,
+        "bytes": 130978
+      },
+      "thumb": {
+        "src": "assets/photos/maternity-193-960.webp",
+        "width": 960,
+        "height": 1440,
+        "bytes": 57200
+      }
+    },
+    "195": {
+      "index": 195,
+      "category": "Maternity",
+      "filename": "LKS07357 2.jpg",
+      "alt": "Expectant mother in a peach gown leaning toward her partner beside a wooden wall",
+      "variants": [
+        {
+          "src": "assets/photos/maternity-195-480.webp",
+          "width": 480,
+          "height": 720,
+          "bytes": 34130
+        },
+        {
+          "src": "assets/photos/maternity-195-960.webp",
+          "width": 960,
+          "height": 1440,
+          "bytes": 86694
+        },
+        {
+          "src": "assets/photos/maternity-195-1467.webp",
+          "width": 1467,
+          "height": 2200,
+          "bytes": 193288
+        }
+      ],
+      "full": {
+        "src": "assets/photos/maternity-195-1467.webp",
+        "width": 1467,
+        "height": 2200,
+        "bytes": 193288
+      },
+      "thumb": {
+        "src": "assets/photos/maternity-195-960.webp",
+        "width": 960,
+        "height": 1440,
+        "bytes": 86694
+      }
+    },
+    "197": {
+      "index": 197,
+      "category": "Maternity",
+      "filename": "LKS08066.jpg",
+      "alt": "Expectant mother in a red embroidered sari beside a dark lake",
+      "variants": [
+        {
+          "src": "assets/photos/maternity-197-480.webp",
+          "width": 480,
+          "height": 384,
+          "bytes": 16208
+        },
+        {
+          "src": "assets/photos/maternity-197-960.webp",
+          "width": 960,
+          "height": 768,
+          "bytes": 48232
+        },
+        {
+          "src": "assets/photos/maternity-197-1600.webp",
+          "width": 1600,
+          "height": 1280,
+          "bytes": 110872
+        },
+        {
+          "src": "assets/photos/maternity-197-2200.webp",
+          "width": 2200,
+          "height": 1760,
+          "bytes": 239260
+        }
+      ],
+      "full": {
+        "src": "assets/photos/maternity-197-2200.webp",
+        "width": 2200,
+        "height": 1760,
+        "bytes": 239260
+      },
+      "thumb": {
+        "src": "assets/photos/maternity-197-960.webp",
+        "width": 960,
+        "height": 768,
+        "bytes": 48232
+      }
+    },
+    "199": {
+      "index": 199,
+      "category": "Maternity",
+      "filename": "LKS08180 2.jpg",
+      "alt": "Expectant mother in red standing with her partner and a child against a warm backdrop",
+      "variants": [
+        {
+          "src": "assets/photos/maternity-199-480.webp",
+          "width": 480,
+          "height": 600,
+          "bytes": 31444
+        },
+        {
+          "src": "assets/photos/maternity-199-960.webp",
+          "width": 960,
+          "height": 1200,
+          "bytes": 84870
+        },
+        {
+          "src": "assets/photos/maternity-199-1600.webp",
+          "width": 1600,
+          "height": 2000,
+          "bytes": 179158
+        },
+        {
+          "src": "assets/photos/maternity-199-1760.webp",
+          "width": 1760,
+          "height": 2200,
+          "bytes": 253832
+        }
+      ],
+      "full": {
+        "src": "assets/photos/maternity-199-1760.webp",
+        "width": 1760,
+        "height": 2200,
+        "bytes": 253832
+      },
+      "thumb": {
+        "src": "assets/photos/maternity-199-960.webp",
+        "width": 960,
+        "height": 1200,
+        "bytes": 84870
+      }
+    },
+    "204": {
+      "index": 204,
+      "category": "Dreamy Projects",
+      "filename": "LKS017382.jpg",
+      "alt": "Classical dancer seen from behind with raised arms on a glowing staircase",
+      "variants": [
+        {
+          "src": "assets/photos/dreamy-projects-204-480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 14598
+        },
+        {
+          "src": "assets/photos/dreamy-projects-204-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 42636
+        },
+        {
+          "src": "assets/photos/dreamy-projects-204-1600.webp",
+          "width": 1600,
+          "height": 1067,
+          "bytes": 89532
+        },
+        {
+          "src": "assets/photos/dreamy-projects-204-2200.webp",
+          "width": 2200,
+          "height": 1467,
+          "bytes": 177242
+        }
+      ],
+      "full": {
+        "src": "assets/photos/dreamy-projects-204-2200.webp",
+        "width": 2200,
+        "height": 1467,
+        "bytes": 177242
+      },
+      "thumb": {
+        "src": "assets/photos/dreamy-projects-204-960.webp",
+        "width": 960,
+        "height": 640,
+        "bytes": 42636
+      }
+    },
+    "205": {
+      "index": 205,
+      "category": "Dreamy Projects",
+      "filename": "Untitled-8.jpg",
+      "alt": "Close detail of a dancer holding ankle bells in warm light",
+      "variants": [
+        {
+          "src": "assets/photos/dreamy-projects-205-480.webp",
+          "width": 480,
+          "height": 720,
+          "bytes": 61000
+        },
+        {
+          "src": "assets/photos/dreamy-projects-205-960.webp",
+          "width": 960,
+          "height": 1440,
+          "bytes": 187986
+        },
+        {
+          "src": "assets/photos/dreamy-projects-205-1365.webp",
+          "width": 1365,
+          "height": 2048,
+          "bytes": 396954
+        }
+      ],
+      "full": {
+        "src": "assets/photos/dreamy-projects-205-1365.webp",
+        "width": 1365,
+        "height": 2048,
+        "bytes": 396954
+      },
+      "thumb": {
+        "src": "assets/photos/dreamy-projects-205-960.webp",
+        "width": 960,
+        "height": 1440,
+        "bytes": 187986
+      }
+    },
+    "206": {
+      "index": 206,
+      "category": "Dreamy Projects",
+      "filename": "Untitled-10.jpg",
+      "alt": "Classical dancer in orange and purple standing outdoors beneath a blue evening sky",
+      "variants": [
+        {
+          "src": "assets/photos/dreamy-projects-206-480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 10696
+        },
+        {
+          "src": "assets/photos/dreamy-projects-206-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 32202
+        },
+        {
+          "src": "assets/photos/dreamy-projects-206-1600.webp",
+          "width": 1600,
+          "height": 1066,
+          "bytes": 78908
+        },
+        {
+          "src": "assets/photos/dreamy-projects-206-2048.webp",
+          "width": 2048,
+          "height": 1365,
+          "bytes": 156896
+        }
+      ],
+      "full": {
+        "src": "assets/photos/dreamy-projects-206-2048.webp",
+        "width": 2048,
+        "height": 1365,
+        "bytes": 156896
+      },
+      "thumb": {
+        "src": "assets/photos/dreamy-projects-206-960.webp",
+        "width": 960,
+        "height": 640,
+        "bytes": 32202
+      }
+    },
+    "215": {
+      "index": 215,
+      "category": "Maternity",
+      "filename": "Untitled-34 2.jpg",
+      "alt": "Expectant mother in a red outfit standing in patterned window light",
+      "variants": [
+        {
+          "src": "assets/photos/maternity-215-480.webp",
+          "width": 480,
+          "height": 600,
+          "bytes": 15240
+        },
+        {
+          "src": "assets/photos/maternity-215-960.webp",
+          "width": 960,
+          "height": 1200,
+          "bytes": 42170
+        },
+        {
+          "src": "assets/photos/maternity-215-1600.webp",
+          "width": 1600,
+          "height": 2000,
+          "bytes": 95572
+        },
+        {
+          "src": "assets/photos/maternity-215-1760.webp",
+          "width": 1760,
+          "height": 2200,
+          "bytes": 155954
+        }
+      ],
+      "full": {
+        "src": "assets/photos/maternity-215-1760.webp",
+        "width": 1760,
+        "height": 2200,
+        "bytes": 155954
+      },
+      "thumb": {
+        "src": "assets/photos/maternity-215-960.webp",
+        "width": 960,
+        "height": 1200,
+        "bytes": 42170
+      }
+    },
+    "219": {
+      "index": 219,
+      "category": "Dreamy Projects",
+      "filename": "Untitled-48.png",
+      "alt": "Composite of a classical dancer making several expressive gestures around a bright center",
+      "variants": [
+        {
+          "src": "assets/photos/dreamy-projects-219-480.webp",
+          "width": 480,
+          "height": 411,
+          "bytes": 22518
+        },
+        {
+          "src": "assets/photos/dreamy-projects-219-960.webp",
+          "width": 960,
+          "height": 823,
+          "bytes": 68718
+        },
+        {
+          "src": "assets/photos/dreamy-projects-219-1600.webp",
+          "width": 1600,
+          "height": 1372,
+          "bytes": 160262
+        },
+        {
+          "src": "assets/photos/dreamy-projects-219-2200.webp",
+          "width": 2200,
+          "height": 1886,
+          "bytes": 321740
+        }
+      ],
+      "full": {
+        "src": "assets/photos/dreamy-projects-219-2200.webp",
+        "width": 2200,
+        "height": 1886,
+        "bytes": 321740
+      },
+      "thumb": {
+        "src": "assets/photos/dreamy-projects-219-960.webp",
+        "width": 960,
+        "height": 823,
+        "bytes": 68718
+      }
+    },
+    "223": {
+      "index": 223,
+      "category": "Family",
+      "filename": "Untitled-149.jpg",
+      "alt": "Two families with young children standing together beneath flowering trees",
+      "variants": [
+        {
+          "src": "assets/photos/family-223-480.webp",
+          "width": 480,
+          "height": 720,
+          "bytes": 79312
+        },
+        {
+          "src": "assets/photos/family-223-960.webp",
+          "width": 960,
+          "height": 1440,
+          "bytes": 242352
+        },
+        {
+          "src": "assets/photos/family-223-1365.webp",
+          "width": 1365,
+          "height": 2048,
+          "bytes": 519048
+        }
+      ],
+      "full": {
+        "src": "assets/photos/family-223-1365.webp",
+        "width": 1365,
+        "height": 2048,
+        "bytes": 519048
+      },
+      "thumb": {
+        "src": "assets/photos/family-223-960.webp",
+        "width": 960,
+        "height": 1440,
+        "bytes": 242352
+      }
+    },
+    "226": {
+      "index": 226,
+      "category": "Family",
+      "filename": "Untitled-176.jpg",
+      "alt": "Family smiling together on the steps outside a home",
+      "variants": [
+        {
+          "src": "assets/photos/family-226-480.webp",
+          "width": 480,
+          "height": 753,
+          "bytes": 53260
+        },
+        {
+          "src": "assets/photos/family-226-960.webp",
+          "width": 960,
+          "height": 1507,
+          "bytes": 177582
+        },
+        {
+          "src": "assets/photos/family-226-1305.webp",
+          "width": 1305,
+          "height": 2048,
+          "bytes": 378914
+        }
+      ],
+      "full": {
+        "src": "assets/photos/family-226-1305.webp",
+        "width": 1305,
+        "height": 2048,
+        "bytes": 378914
+      },
+      "thumb": {
+        "src": "assets/photos/family-226-960.webp",
+        "width": 960,
+        "height": 1507,
+        "bytes": 177582
+      }
+    }
+  }
+}

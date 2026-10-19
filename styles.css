@@ -67,3 +67,15 @@ body.viewer-open{overflow:hidden}
 .viewer-controls{display:flex;justify-content:space-between;align-items:center;gap:1rem}.viewer-position,.viewer-loading{font-size:.875rem;text-align:center}.viewer-loading:empty{display:none}
 @media(max-width:1180px){.planning-grid{grid-template-columns:1fr}.path-grid,.about-introduction{grid-template-columns:1fr}.experience-section{padding-top:2rem;padding-bottom:3rem}.planning-grid{gap:.5rem}.image-viewer{padding:1rem}.viewer-image{height:55dvh}}
 @media(max-width:520px){.path-grid article,.service-status{padding:1.25rem}.viewer-header h2{font-size:1.25rem}.viewer-controls{gap:.5rem}.viewer-controls button{padding:.6rem .75rem}.viewer-position{font-size:.8125rem}.image-viewer{width:96vw}.viewer-image{height:48dvh}}
+
+/* Photography review: complete frames and responsive, color-managed local assets. */
+.photo-home>.site-header,.photo-home>.site-header.scrolled{position:relative;background:var(--paper);color:var(--ink)}
+.photo-hero{height:auto;min-height:0;display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(2rem,4vw,4rem);padding:clamp(2rem,5vw,5rem) var(--pad)}
+.photo-hero .hero-copy{text-align:left;max-width:none;min-width:0;padding:1rem 0}
+.photo-hero h1{font-size:clamp(3.25rem,6vw,5.75rem)}
+.photo-hero .hero-note{margin-left:0}.photo-hero .hero-actions{justify-content:flex-start}
+.hero-photograph{margin:0;min-width:0}.hero-photograph img{height:auto;object-fit:contain}
+.curated-gallery .work-card figure{aspect-ratio:auto}.curated-gallery .work-card img{height:auto;object-fit:contain}
+.curated-gallery .work-card:hover img{transform:none;filter:none}
+@media(min-width:1000px){.photo-home .service-grid{grid-template-columns:repeat(4,minmax(0,1fr))}}
+@media(max-width:900px){.photo-hero{grid-template-columns:1fr;gap:1.5rem}.photo-hero .hero-copy{max-width:40rem}.photo-hero h1{font-size:clamp(3.25rem,10vw,5.75rem)}}
