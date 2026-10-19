@@ -211,5 +211,34 @@
     const service = new URLSearchParams(location.search).get('service');
     if ([...enquiryService.options].some(option => option.value === service)) enquiryService.value = service;
   }
+  const emailEnquiry = document.querySelector('[data-email-enquiry]');
+  if (emailEnquiry) {
+    const destination = 'Lyckaclicksbysony@gmail.com';
+    function updateEmailDraft() {
+      const details = new FormData(emailEnquiry);
+      const service = enquiryService.selectedOptions[0]?.textContent || 'Photography';
+      const subject = `Elementales enquiry — ${service}`;
+      const body = [
+        'Hello Sony,', '', 'I would love to discuss photography with you.', '',
+        `Name: ${details.get('name') || ''}`,
+        `Email: ${details.get('email') || ''}`,
+        `Photography: ${service}`,
+        `Preferred date: ${details.get('date') || 'Flexible / to discuss'}`,
+        `Venue or city: ${details.get('location') || 'To discuss'}`,
+        `Phone: ${details.get('phone') || 'Not provided'}`, '',
+        'My plans:', details.get('message') || '', '', 'Thank you!'
+      ].join('\r\n');
+      emailEnquiry.action = `mailto:${destination}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    }
+    emailEnquiry.addEventListener('input', updateEmailDraft);
+    emailEnquiry.addEventListener('change', updateEmailDraft);
+    emailEnquiry.addEventListener('submit', event => {
+      event.preventDefault();
+      updateEmailDraft();
+      emailEnquiry.querySelector('[data-enquiry-feedback]').textContent = 'Your email app should open a draft. Please review it and send it there. If it does not open, use Sony’s email link below.';
+      location.href = emailEnquiry.action;
+    });
+    updateEmailDraft();
+  }
   document.querySelectorAll('[data-year]').forEach(el => { el.textContent = new Date().getFullYear(); });
 })();
