@@ -34,3 +34,9 @@ Confirm photographer biography/portrait, business contact information, service a
 ## Publishing
 
 Keep `main` unchanged until review and merge approval. Existing GitHub Pages publication uses `main`; this branch adds no deployment workflow. Production hosting and domain are still to be selected.
+
+## Homepage slideshow and enquiry flow
+
+The homepage cycles through five approved full-frame photographs every five seconds. It provides pause/resume, direct slide selection, previous/next, and full-image links. Manual navigation pauses rotation; hover, off-screen content, and hidden tabs suspend it. Reduced-motion visitors start paused. The previous photo montage remains on Films & Reels only.
+
+The existing contact URL now presents Hire Me, with the wedding enquiry process moved there and category-specific links directly below all four galleries. The enquiry form is visibly disabled until a submission destination is configured; Google Calendar consultation scheduling requires the photographer’s business appointment-booking URL. No inquiry data is collected or transmitted yet.

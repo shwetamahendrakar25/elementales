@@ -150,5 +150,66 @@
     previewVideo.addEventListener('error', () => { message.textContent = 'The preview could not play. Use the direct preview link below.'; });
     document.addEventListener('visibilitychange', () => { if (document.hidden) previewVideo.pause(); });
   }
+  const slideshow = document.querySelector('[data-hero-slideshow]');
+  if (slideshow) {
+    const slides = [...slideshow.querySelectorAll('[data-hero-slide]')];
+    const dots = [...slideshow.querySelectorAll('[data-hero-dot]')];
+    const pause = slideshow.querySelector('[data-slide-pause]');
+    const status = slideshow.querySelector('[data-slide-status]');
+    const full = slideshow.querySelector('[data-slide-full]');
+    let current = 0, timer = null, paused = motion.matches, hovering = false, onScreen = true, pointerPauseIntent = null;
+    function schedule() {
+      clearTimeout(timer);
+      pause.textContent = paused ? 'Resume slideshow' : 'Pause slideshow';
+      if (paused || hovering || !onScreen || document.hidden) return;
+      // Prepare only the next photograph, keeping the initial page light.
+      slides[(current + 1) % slides.length].querySelector('img').loading = 'eager';
+      timer = setTimeout(() => { show(current + 1); }, 5000);
+    }
+    function show(index, announce = false) {
+      current = (index + slides.length) % slides.length;
+      slides.forEach((slide, i) => { slide.hidden = i !== current; });
+      dots.forEach((dot, i) => dot.setAttribute('aria-pressed', String(i === current)));
+      const slide = slides[current];
+      slide.querySelector('img').loading = 'eager';
+      const caption = `${slide.dataset.label} · ${current + 1} / ${slides.length}`;
+      slideshow.querySelector('[data-slide-caption]').textContent = caption;
+      full.href = slide.dataset.full;
+      full.setAttribute('aria-label', `View full ${slide.dataset.label} photograph in a new tab`);
+      if (announce) status.textContent = caption;
+      schedule();
+    }
+    slideshow.querySelector('[data-slide-controls]').hidden = false;
+    pause.addEventListener('pointerdown', () => { pointerPauseIntent = !paused; });
+    pause.addEventListener('click', () => {
+      paused = pointerPauseIntent === null ? !paused : pointerPauseIntent;
+      pointerPauseIntent = null; schedule();
+    });
+    dots.forEach((dot, index) => dot.addEventListener('click', () => { paused = true; show(index, true); }));
+    slideshow.querySelector('[data-slide-prev]').addEventListener('click', () => { paused = true; show(current - 1, true); });
+    slideshow.querySelector('[data-slide-next]').addEventListener('click', () => { paused = true; show(current + 1, true); });
+    slideshow.addEventListener('focusin', event => {
+      // Pause on entry. Keep the pause/resume button operable on repeated clicks.
+      if (!slideshow.contains(event.relatedTarget)) { paused = true; schedule(); }
+    });
+    slideshow.addEventListener('mouseenter', () => { hovering = true; schedule(); });
+    slideshow.addEventListener('mouseleave', () => { hovering = false; schedule(); });
+    slideshow.addEventListener('keydown', event => {
+      if (event.key !== 'ArrowLeft' && event.key !== 'ArrowRight') return;
+      event.preventDefault(); paused = true;
+      show(current + (event.key === 'ArrowRight' ? 1 : -1), true);
+    });
+    motion.addEventListener('change', () => { if (motion.matches) paused = true; schedule(); });
+    document.addEventListener('visibilitychange', schedule);
+    if ('IntersectionObserver' in window) new IntersectionObserver(entries => {
+      onScreen = entries[0].isIntersecting; schedule();
+    }, { threshold: 0.15 }).observe(slideshow);
+    show(0);
+  }
+  const enquiryService = document.querySelector('[data-enquiry-service]');
+  if (enquiryService) {
+    const service = new URLSearchParams(location.search).get('service');
+    if ([...enquiryService.options].some(option => option.value === service)) enquiryService.value = service;
+  }
   document.querySelectorAll('[data-year]').forEach(el => { el.textContent = new Date().getFullYear(); });
 })();
