@@ -16,8 +16,8 @@ class Page(HTMLParser):
         if tag=='h1': self.h1+=1
         if tag=='title': self.title+=1
         if tag=='img' and 'alt' not in a: self.errors.append('image missing alt')
-        if tag=='script' and a.get('src') and not (ROOT/a['src']).exists(): self.errors.append('missing script')
-        if tag=='link' and a.get('rel')=='stylesheet' and not (ROOT/a['href']).exists(): self.errors.append('missing stylesheet')
+        if tag=='script' and a.get('src') and not (ROOT/urlsplit(a['src']).path).exists(): self.errors.append('missing script')
+        if tag=='link' and a.get('rel')=='stylesheet' and not (ROOT/urlsplit(a['href']).path).exists(): self.errors.append('missing stylesheet')
 
 pages={}
 for path in ROOT.glob('*.html'):
