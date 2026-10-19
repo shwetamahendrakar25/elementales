@@ -21,6 +21,11 @@ class Page(HTMLParser):
                 u=urlsplit(src)
                 if src and not u.scheme and not u.netloc and not (ROOT/unquote(u.path)).is_file():
                     self.errors.append('missing image '+src)
+        if tag in ['video','source']:
+            for key in ['src','data-src','poster','data-poster']:
+                src=a.get(key,''); u=urlsplit(src)
+                if src and not u.scheme and not u.netloc and not (ROOT/unquote(u.path)).is_file():
+                    self.errors.append('missing media '+src)
         if tag=='script' and a.get('src') and not (ROOT/urlsplit(a['src']).path).exists(): self.errors.append('missing script')
         if tag=='link' and a.get('rel')=='stylesheet' and not (ROOT/urlsplit(a['href']).path).exists(): self.errors.append('missing stylesheet')
 

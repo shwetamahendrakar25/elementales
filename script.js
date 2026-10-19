@@ -119,5 +119,36 @@
     }, { threshold: 0.15 }).observe(video);
     syncVideo();
   }
+  const preview = document.querySelector('[data-photo-preview]');
+  const previewVideo = preview?.querySelector('[data-preview-video]');
+  if (previewVideo && typeof preview.showModal === 'function') {
+    const source = previewVideo.querySelector('source');
+    const message = preview.querySelector('[data-preview-message]');
+    let opener = null;
+    document.querySelectorAll('[data-preview-open]').forEach(link => {
+      link.setAttribute('aria-controls', preview.id);
+      link.addEventListener('click', event => {
+        if (event.button !== 0 || event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
+        event.preventDefault(); opener = link;
+        if (!source.getAttribute('src')) {
+          previewVideo.poster = previewVideo.dataset.poster;
+          source.src = source.dataset.src; previewVideo.load();
+        }
+        preview.showModal(); document.body.classList.add('preview-open');
+        message.textContent = 'Loading photo preview…';
+        previewVideo.play().catch(() => { message.textContent = 'Press Play in the player to start the photo preview.'; });
+      });
+    });
+    preview.querySelector('[data-preview-close]').addEventListener('click', () => preview.close());
+    preview.addEventListener('click', event => { if (event.target === preview) preview.close(); });
+    preview.addEventListener('close', () => {
+      previewVideo.pause(); if (previewVideo.readyState) previewVideo.currentTime = 0;
+      document.body.classList.remove('preview-open'); if (opener?.isConnected) opener.focus({ preventScroll: true });
+    });
+    previewVideo.addEventListener('playing', () => { message.textContent = ''; });
+    previewVideo.addEventListener('waiting', () => { message.textContent = 'Loading photo preview…'; });
+    previewVideo.addEventListener('error', () => { message.textContent = 'The preview could not play. Use the direct preview link below.'; });
+    document.addEventListener('visibilitychange', () => { if (document.hidden) previewVideo.pause(); });
+  }
   document.querySelectorAll('[data-year]').forEach(el => { el.textContent = new Date().getFullYear(); });
 })();

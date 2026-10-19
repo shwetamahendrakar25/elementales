@@ -17,7 +17,10 @@ No dependencies or build step are required. Use a local preview for this develop
 - Biography, contact details, packages, and policies are pending.
 - No inquiry submission, scheduling, or payment processing is enabled.
 - Essential content and mobile navigation remain available without JavaScript.
-- The homepage pairs a complete wedding photograph with text on a solid background.
+- The homepage opens with approved floral wedding décor and leads directly into the portfolio. Mobile shows the complete décor frame before the heading.
+- Collection pages pair compact headings with prominent photographs; on mobile, photographs come before descriptions and links.
+- The shared palette uses ivory, soft sage, dusty blush, and charcoal.
+- Home and Films include a silent 15-second photo preview with native controls, a direct MP4 fallback, and no automatic video download. It uses approved still images, not filmed footage.
 
 ## Validation
 
