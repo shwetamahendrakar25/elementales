@@ -15,7 +15,12 @@ class Page(HTMLParser):
         if tag=='a' and a.get('href'): self.links.append(a['href'])
         if tag=='h1': self.h1+=1
         if tag=='title': self.title+=1
-        if tag=='img' and 'alt' not in a: self.errors.append('image missing alt')
+        if tag=='img':
+            if 'alt' not in a: self.errors.append('image missing alt')
+            for src in [a.get('src',''), *[s.strip().split()[0] for s in a.get('srcset','').split(',') if s.strip()]]:
+                u=urlsplit(src)
+                if src and not u.scheme and not u.netloc and not (ROOT/unquote(u.path)).is_file():
+                    self.errors.append('missing image '+src)
         if tag=='script' and a.get('src') and not (ROOT/urlsplit(a['src']).path).exists(): self.errors.append('missing script')
         if tag=='link' and a.get('rel')=='stylesheet' and not (ROOT/urlsplit(a['href']).path).exists(): self.errors.append('missing stylesheet')
 
@@ -30,7 +35,8 @@ for name,page in pages.items():
         u=urlsplit(href)
         if u.scheme or u.netloc: continue
         target=unquote(u.path) or name
-        if target not in pages: errors.append(f'{name}: missing page {href}')
+        if target not in pages:
+            if not (ROOT/target).is_file(): errors.append(f'{name}: missing destination {href}')
         elif u.fragment and u.fragment not in pages[target].ids: errors.append(f'{name}: missing fragment {href}')
     text=page.path.read_text()
     if 'Design preview' not in text: errors.append(f'{name}: missing draft disclosure')
