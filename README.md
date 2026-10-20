@@ -1,60 +1,36 @@
 # Elementales
 
-A buildless HTML, CSS, and JavaScript photography portfolio.
+A buildless HTML, CSS, and JavaScript photography portfolio for Sony Kurapati.
 
-## Preview
+## Current experience
 
-From this directory run `python3 -m http.server 8080`, then open http://localhost:8080.
-No dependencies or build step are required. Use a local preview for this development branch; do not deploy it publicly until approved.
+- Home and dedicated Weddings, Maternity, Family, Dreamy Projects, Films & Reels, About, Hire Me, and session-information pages.
+- A full-width homepage carousel cycles through five approved photographs every three seconds with a one-second overlapping crossfade. It waits for the next image to decode before changing photographs.
+- Only photo-selection dots are visible. Keyboard arrows and touch swipe select photographs. Space pauses/resumes when the carousel region is focused. Keyboard focus, reduced-motion preferences, off-screen content, and hidden tabs suspend automatic rotation as appropriate; hovering does not pause it.
+- The homepage has no preview notice. Other pages retain their booking-status notice.
+- Near-ivory, pale sage, and faint blush backgrounds blend gently between sections, with charcoal text.
+- Sony’s supplied portrait and first-person introduction appear on Home and About. No qualifications or career history have been inferred.
 
-## Phase 1
+## Photographs and media
 
-- Homepage and dedicated Weddings, Maternity, Family, Dreamy Projects, Films, About, Contact, and Booking Information pages.
-- Shared editorial colors, typography, galleries, and footer styles.
-- This checkout contains the approved 72-photo selection from the supplied Drive collection: 24 wedding, 16 maternity, 12 family, and 20 dance photographs.
-- Responsive WebP files retain complete frames, convert embedded color profiles to sRGB, and omit source EXIF metadata. Original files remain in Drive.
-- The user approved the photograph selection and publication on October 19, 2026.
-- Biography, contact details, packages, and policies are pending.
-- No inquiry submission, scheduling, or payment processing is enabled.
-- Essential content and mobile navigation remain available without JavaScript.
-- The homepage opens with approved floral wedding décor and leads directly into the portfolio. Mobile shows the complete décor frame before the heading.
-- Collection pages pair compact headings with prominent photographs; on mobile, photographs come before descriptions and links.
-- The shared palette uses ivory, soft sage, dusty blush, and charcoal.
-- Home and Films include a silent 15-second photo preview with native controls, a direct MP4 fallback, and no automatic video download. It uses approved still images, not filmed footage.
+The approved selection contains 72 photographs: 24 wedding, 16 maternity, 12 family, and 20 classical-dance photographs. Publication was approved on October 19, 2026. Gallery images preserve complete frames and accessible descriptions. Responsive WebP assets omit source metadata. Original approved photographs remain in Drive.
 
-## Validation
+The homepage uses a wide cover crop on desktop and full 3:2 frames on smaller screens, with full-photograph links available. Sony’s portrait remains uncropped in three responsive WebP sizes, with the uploaded source unchanged.
 
-Run `python3 checks/site_check.py` for local links, image assets, fragments, duplicate IDs, and shared page checks. Run `node --check script.js` and `node --check portfolio.js` for JavaScript syntax.
-Browser layout and assistive-technology checks are still required before launch.
+Films & Reels currently contains a silent 15-second photo montage with native controls. It is clearly labelled as photographs rather than filmed footage. Approved films are still pending.
 
-## Next decisions
+## Enquiries and prices
 
-Confirm photographer biography/portrait, business contact information, service area, approved client work, package names and inclusions, prices, deposits, availability, session lengths, buffers, and cancellation/rescheduling policies. Verify managed booking service behavior in a test environment before selecting it.
+Enquire/enquiry spelling is used consistently. Category-specific links below the galleries preselect the photography type on Hire Me. The enquiry form appears before pricing and prepares a mailto draft to Lyckaclicksbysony@gmail.com. Visitors review and send through their own email app. A direct email link is available; there is no server submission or delivery confirmation.
 
-## Publishing
+Numeric starting rates appear only on Hire Me: wedding photography $300/hour; basic family sessions $380/hour; family portraits $380/hour; professional headshots $380/hour. The accompanying note explains that every experience and price is unique and the final quote reflects the agreed coverage. No maternity or dance rate is assumed.
 
-Keep `main` unchanged until review and merge approval. Existing GitHub Pages publication uses `main`; this branch adds no deployment workflow. Production hosting and domain are still to be selected.
+Google Calendar consultation booking needs Sony’s public appointment-booking link. Scheduling, shoot reservations, and payment collection are not enabled.
 
-## Homepage slideshow and enquiry flow
+## Validation and preview
 
-The homepage cycles through five approved photographs every three seconds. It provides pause/resume, direct slide selection, previous/next, and full-image links. Manual navigation pauses rotation; off-screen content and hidden tabs suspend it. Reduced-motion visitors start paused. The previous photo montage remains on Films & Reels only.
+Run `python3 checks/site_check.py`, `node --check script.js`, `node --check portfolio.js`, and `git diff --check` for the static checks. Use the managed Sites preview workflow in this environment for browser QA; no dependencies or build are required.
 
-The existing contact URL now presents Hire Me, with the wedding enquiry process moved there and category-specific links directly below all four galleries. The enquiry fields are enabled and prepare a mailto draft to the supplied business email, Lyckaclicksbysony@gmail.com. Visitors review and send from their own email app; there is no server submission or delivery confirmation. A direct email link is also available. Google Calendar scheduling still requires Sony’s appointment-booking URL.
+## Publication and remaining details
 
-## Full-width pastel revision
-
-The slideshow spans the viewport, with a cropped cover presentation on desktop and complete 3:2 frames on smaller screens. Full-photograph links remain available. Hero copy, controls, film section, and footer use ivory, sage, and blush with charcoal text. Sony Kurapati’s supplied name and contact address are shown without adding an unapproved biography. The mailbox has not been tested by sending a message.
-
-## Three-second slideshow and starting prices
-
-The slideshow advances every 3 seconds and no longer pauses when hovered. Explicit pause/play, keyboard focus, manual photo selection, reduced-motion preferences, off-screen state, and hidden tabs continue to control rotation. The pastel controls are inside the image. Numbered labels beneath portfolio photos are removed while image alt descriptions and viewer captions remain.
-
-Owner-supplied starting rates: wedding photography $300/hour; basic family sessions $380/hour; family portraits $380/hour; professional headshots $380/hour. All starting prices appear only on Hire Me. Home and session information link to that central pricing section. Each is a starting guide, with final quotes tailored to each customer. No maternity or dance rate is inferred. Family portraits and professional headshots are available as enquiry selections.
-
-## Gallery copy cleanup
-
-Collection pages omit the redundant Explore N photographs links and photo-count toolbars. Image-viewer counts and accessible descriptions remain. Numeric prices and the tailored-pricing explanation appear in a single location on Hire Me. Home and session information link there; gallery pages lead to the shared enquiry flow. Pastel colours and the three-second slideshow remain intact.
-
-## Sony Kurapati portrait and introduction
-
-The owner-supplied portrait replaces the placeholders on Home and About. Three responsive WebP copies preserve the complete frame and original appearance; only size and encoding are changed, and metadata is omitted. The uploaded source is unchanged. First-person copy reflects the supplied creative focus, attention to detail, personal client relationships, and mission to create lasting photographs. No credentials, awards, or career history are inferred.
+The public site uses GitHub Pages from `main`. Changes are published through reviewed branch commits and pull-request merges within the user’s authorised scope. A custom domain, service area, package inclusions, deposits, availability, session lengths, buffers, delivery details, and cancellation/rescheduling policies remain to be confirmed.
