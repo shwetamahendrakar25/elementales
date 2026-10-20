@@ -1,0 +1,65 @@
+name: Prepare requested homepage photographs
+on:
+  push:
+    branches: [prepare-home-slide-assets-20261020]
+    paths: [.github/workflows/prepare-home-slide-assets.yml]
+permissions:
+  contents: write
+jobs:
+  prepare:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install Pillow gdown
+      - name: Prepare responsive photographs
+        run: |
+          python - <<'PY'
+          import io, json, tempfile
+          from pathlib import Path
+          import gdown
+          from PIL import Image, ImageOps, ImageCms
+          
+          sources = [
+              ("DSC00355.jpg", "1OMa_IxL2WwBTjOkJU-TvNmUUkflpd6qO", "home-dsc00355"),
+              ("LKS07361 2.jpg", "1uaKDRvjdMI_tg7etAbPGyBVcvosplOCL", "home-lks07361-2"),
+          ]
+          manifest = []
+          for original, drive_id, stem in sources:
+              with tempfile.TemporaryDirectory() as tmp:
+                  source = str(Path(tmp) / "original.jpg")
+                  gdown.download(id=drive_id, output=source, quiet=False)
+                  with Image.open(source) as loaded:
+                      image = ImageOps.exif_transpose(loaded)
+                      profile = loaded.info.get("icc_profile")
+                      if profile:
+                          image = ImageCms.profileToProfile(image, ImageCms.ImageCmsProfile(io.BytesIO(profile)), ImageCms.createProfile("sRGB"), outputMode="RGB")
+                      else:
+                          image = image.convert("RGB")
+                      width, height = image.size
+                      files = []
+                      for target in sorted(set([480, 960, 1600, min(2200, width)])):
+                          if target > width:
+                              continue
+                          resized = image.resize((target, round(height * target / width)), Image.Resampling.LANCZOS)
+                          clean = Image.frombytes("RGB", resized.size, resized.tobytes())
+                          dest = Path("assets/photos") / f"{stem}-{target}.webp"
+                          clean.save(dest, "WEBP", quality=86, method=6)
+                          with Image.open(dest) as check:
+                              check.verify()
+                          files.append({"path":str(dest), "width":clean.width, "height":clean.height, "bytes":dest.stat().st_size})
+                      manifest.append({"original":original, "width":width, "height":height, "files":files})
+          Path(".slide-preparation.json").write_text(json.dumps(manifest, indent=2) + "\n")
+          print(json.dumps(manifest, indent=2))
+          
+          PY
+      - name: Save prepared assets on this branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/photos/home-dsc00355-*.webp assets/photos/home-lks07361-2-*.webp .slide-preparation.json
+          git commit -m "Prepare the two requested homepage photos"
+          git push origin HEAD:prepare-home-slide-assets-20261020
