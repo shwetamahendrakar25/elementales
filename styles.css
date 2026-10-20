@@ -202,7 +202,7 @@ body.viewer-open{overflow:hidden}
 /* A clearer, more substantial wordmark alongside the original lens artwork. */
 .site-header .brand-wordmark>span{font:500 clamp(1.15rem,1.6vw,1.4rem)/1.15 "Cinzel",Georgia,serif;letter-spacing:.11em}
 .site-header .brand-wordmark small{font-weight:500;font-size:.5625rem;line-height:1.25;letter-spacing:.27em;color:var(--gold);margin-top:.35rem}
-.slideshow-hero .hero-slide img{object-fit:cover;object-position:center 25%}
+.slideshow-hero .hero-slide img{object-fit:cover;object-position:center top}
 .social-links>a{flex-direction:row;align-items:center;gap:.75rem;padding:.7rem .1rem}
 .social-icon{display:block;flex:none;width:1.75rem;height:1.75rem}
 .photographer-story{align-items:start}
