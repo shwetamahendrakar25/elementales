@@ -15,7 +15,7 @@ A buildless HTML, CSS, and JavaScript photography portfolio for Sony Kurapati.
 
 The approved selection contains 72 photographs: 24 wedding, 16 maternity, 12 family, and 20 classical-dance photographs. Publication was approved on October 19, 2026. Gallery images preserve complete frames and accessible descriptions. Responsive WebP assets omit source metadata. Original approved photographs remain in Drive.
 
-The homepage uses a wide cover crop on desktop and full 3:2 frames on smaller screens, with full-photograph links available. Sony’s portrait remains uncropped in three responsive WebP sizes, with the uploaded source unchanged.
+The homepage fits complete photographs inside a viewport-limited stage at every screen size, without cropping or stretching; pastel space fills any remaining area. Full-photograph links remain available. Sony’s portrait remains uncropped in three responsive WebP sizes, with the uploaded source unchanged.
 
 Films & Reels currently contains a silent 15-second photo montage with native controls. It is clearly labelled as photographs rather than filmed footage. Approved films are still pending.
 
@@ -34,3 +34,7 @@ Run `python3 checks/site_check.py`, `node --check script.js`, `node --check port
 ## Publication and remaining details
 
 The public site uses GitHub Pages from `main`. Changes are published through reviewed branch commits and pull-request merges within the user’s authorised scope. A custom domain, service area, package inclusions, deposits, availability, session lengths, buffers, delivery details, and cancellation/rescheduling policies remain to be confirmed.
+
+## Brand and social profiles
+
+The supplied original Elementales logo and Instagram QR artwork are stored unchanged in `assets/brand/`. The header uses a CSS-framed lens emblem beside the wordmark; the footer displays the complete original logo at a larger size to retain its five-element detailing. Every page includes Instagram @wedding.elementales, YouTube @wedding-elementales, and the supplied Instagram QR card with a full-size link. Profile links omit tracking parameters and open in a new tab. No third-party social embed or tracking script is loaded.

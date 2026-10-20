@@ -162,3 +162,39 @@ body.viewer-open{overflow:hidden}
 @media(prefers-reduced-motion:reduce){.hero-slideshow.is-enhanced .hero-slide{transition:none}}
 
 .pricing-summary{padding-top:2rem;padding-bottom:2rem;background:var(--paper);border-top:1px solid var(--line)}.pricing-summary h2{font:400 clamp(1.5rem,3vw,2rem)/1.3 var(--serif);margin:0 0 .35rem}.pricing-summary h2 strong{font-weight:400}.pricing-duration{font-size:.8125rem;line-height:1.6;margin:0;color:#5a554c}
+
+/* The supplied artwork stays intact; the header frames its lens at native detail. */
+.site-header .brand{flex-direction:row;align-items:center;gap:.75rem;flex-shrink:0}
+.site-header .brand-mark{position:relative;display:block;flex:none;width:4rem;height:4rem;overflow:hidden;border-radius:50%;background:#272b2c}
+.site-header .brand-mark img{position:absolute;max-width:none;width:281.3187%;height:auto;left:-18.1319%;top:-27.1978%}
+.site-header .brand-wordmark{display:flex;flex-direction:column;gap:0;font-size:inherit}
+.site-header .brand-wordmark>span{font:400 1.1rem/1 var(--serif);letter-spacing:.12em}
+.site-header .brand-wordmark small{font-size:.5625rem;letter-spacing:.24em;margin-top:.5rem}
+.site-header{gap:1.5rem;padding-top:.85rem;padding-bottom:.85rem}
+.footer-grid .footer-brand-logo{display:block;width:min(100%,22rem);min-height:0;overflow:hidden;border-radius:.3rem}
+.footer-brand-logo img{width:100%;height:auto}
+
+/* Full frames fit inside the viewport without cropping or stretching. */
+.slideshow-hero .hero-slides{height:min(66.6667vw,calc(100svh - 10rem));min-height:0;aspect-ratio:auto;background:var(--cream)}
+.slideshow-hero .hero-slide img{object-fit:contain;object-position:center}
+
+/* Social profiles and the original Instagram QR artwork on every page. */
+.social-section{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:clamp(2rem,6vw,6rem);padding-top:3rem;padding-bottom:3rem;border-bottom:1px solid var(--line)}
+.social-copy{max-width:42rem}.social-copy .kicker{margin-bottom:.75rem}
+.social-copy h2{font:400 clamp(2.25rem,4vw,3.5rem)/1.15 var(--serif);margin:0 0 1rem}
+.social-copy>p:not(.kicker){font-size:1rem;max-width:35rem;margin:0 0 1.5rem}
+.social-links{display:flex;flex-wrap:wrap;gap:1rem 2.5rem}
+.social-links>a{display:flex;flex-direction:column;align-items:flex-start;justify-content:center;gap:.25rem;min-height:44px;padding:.6rem 0;border-bottom:1px solid var(--line);font-size:.875rem;overflow-wrap:anywhere}
+.social-platform{font-size:.75rem;text-transform:uppercase;letter-spacing:.1em}
+.social-links>a:hover{border-color:var(--ink)}
+.instagram-qr{margin:0;width:18rem;max-width:100%;justify-self:end}
+.qr-artwork{position:relative;display:block;width:100%;aspect-ratio:1;overflow:hidden;border-radius:1.25rem;background:#fff}
+.qr-artwork img{position:absolute;max-width:none;width:124.8447%;height:auto;left:-12.4224%;top:-39.441%}
+.instagram-qr figcaption{margin-top:.75rem;font-size:.8125rem;line-height:1.6;text-align:center}
+.instagram-qr figcaption a{text-decoration:underline;text-underline-offset:.2em;display:inline-flex;align-items:center;min-height:32px}
+@media(max-width:1300px) and (min-width:1181px){.site-nav{gap:1rem;font-size:.8125rem;letter-spacing:.05em}.site-header{padding-left:2rem;padding-right:2rem}}
+@media(max-width:760px){
+ .site-header .brand-mark{width:3.5rem;height:3.5rem}.site-header .brand{gap:.6rem}.site-header .brand-wordmark>span{font-size:1rem}.site-header .brand-wordmark small{font-size:.5rem}
+ .slideshow-hero .hero-slides{height:min(66.6667vw,calc(100svh - 9rem))}
+ .social-section{grid-template-columns:minmax(0,1fr);gap:2rem;padding-top:2.5rem;padding-bottom:2.5rem}.instagram-qr{justify-self:start}.social-links{gap:1rem 2rem}
+}
