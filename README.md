@@ -49,4 +49,8 @@ The slideshow spans the viewport, with a cropped cover presentation on desktop a
 
 The slideshow advances every 3 seconds and no longer pauses when hovered. Explicit pause/play, keyboard focus, manual photo selection, reduced-motion preferences, off-screen state, and hidden tabs continue to control rotation. The pastel controls are inside the image. Numbered labels beneath portfolio photos are removed while image alt descriptions and viewer captions remain.
 
-Owner-supplied starting rates: wedding photography $300/hour; basic family sessions $380/hour; family portraits $380/hour; professional headshots $380/hour. Starting prices appear on Home and Hire Me, with relevant rates on Weddings, Family, and session information. Each is a starting guide, with final quotes tailored to each customer. No maternity or dance rate is inferred. Family portraits and professional headshots are available as enquiry selections.
+Owner-supplied starting rates: wedding photography $300/hour; basic family sessions $380/hour; family portraits $380/hour; professional headshots $380/hour. All starting prices appear only on Hire Me. Home and session information link to that central pricing section. Each is a starting guide, with final quotes tailored to each customer. No maternity or dance rate is inferred. Family portraits and professional headshots are available as enquiry selections.
+
+## Gallery copy cleanup
+
+Collection pages omit the redundant Explore N photographs links and photo-count toolbars. Image-viewer counts and accessible descriptions remain. Numeric prices and the tailored-pricing explanation appear in a single location on Hire Me. Home and session information link there; gallery pages lead to the shared enquiry flow. Pastel colours and the three-second slideshow remain intact.
