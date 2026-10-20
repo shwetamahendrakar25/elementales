@@ -227,3 +227,34 @@ body.viewer-open{overflow:hidden}
 
 .footer-grid a[href^="mailto:"]{font-size:.875rem;line-height:1.6}
 @media(max-width:760px){.footer-grid>div:last-child{grid-column:1/-1}}
+
+/* Navigation remains available as the page scrolls, without a layout jump. */
+html{scroll-padding-top:7.5rem}
+body{overflow-x:clip}
+.site-header,.site-header.scrolled,.inner-page .site-header,.inner-page .site-header.scrolled{position:sticky;top:0;background:rgba(250,248,244,.97);color:var(--ink);border-bottom:1px solid var(--line);box-shadow:0 1px 8px rgba(43,41,38,.035)}
+.photographer-story .photographer-portrait{top:7.5rem}
+
+/* Four full-frame previews, in two columns balanced by their native ratios. */
+.home-preview-pair{display:grid;grid-template-columns:var(--preview-columns,1fr 1fr);gap:clamp(1rem,2.1vw,2rem);align-items:start}
+.home-preview-column{min-width:0;display:flex;flex-direction:column;gap:clamp(1rem,2.1vw,2rem)}
+.home-preview-gallery .work-card{margin:0;min-width:0;break-inside:auto}
+.home-preview-gallery .work-card figure{margin:0}
+.home-preview-gallery .work-card img{display:block;width:100%;height:auto;object-fit:contain}
+
+/* Films and portrait reels use YouTube’s on-demand players, without autoplay. */
+.films-intro{padding-top:2rem;padding-bottom:2rem;background:linear-gradient(180deg,var(--sage),var(--paper))}
+.films-intro .kicker{margin-bottom:.75rem}
+.films-heading{display:grid;grid-template-columns:1.05fr 1fr;gap:3rem;align-items:center}
+.films-heading h1{font:400 clamp(2.8rem,4.5vw,4.5rem)/1.06 var(--serif);letter-spacing:-.03em;margin:0}
+.films-heading h1 em{font-weight:400}.films-heading .page-lede{max-width:35rem;margin:0 0 .75rem;font-size:1rem}
+.selected-films{padding-top:1rem;padding-bottom:3rem}.selected-films h2,.selected-reels h2{font:400 clamp(2rem,3.5vw,3rem)/1.12 var(--serif);margin:0 0 1.5rem}
+.selected-reels{padding-top:2.5rem;padding-bottom:3rem;background:linear-gradient(180deg,var(--paper),var(--sage) 30%,var(--sage) 75%,var(--paper))}
+.selected-reels .kicker{margin-bottom:.75rem}.selected-reels h2 em{font-weight:400}
+.films-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(1.25rem,3vw,3rem)}
+.reels-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(1.25rem,3vw,3rem)}
+.film-selection-card{min-width:0}.youtube-player{aspect-ratio:16/9;width:100%;background:#171816;overflow:hidden}.youtube-player iframe{display:block;width:100%;height:100%;border:0}.youtube-short{aspect-ratio:9/16}
+.film-card-copy{padding:1rem 0}.film-category{font-size:.75rem;letter-spacing:.08em;text-transform:uppercase;margin:0 0 .4rem;color:var(--gold)}
+.film-card-copy h3{font:400 clamp(1.5rem,2.2vw,2rem)/1.25 var(--serif);margin:0 0 .5rem}
+.film-card-copy .text-link{font-size:.875rem;min-height:44px;margin-top:0}
+@media(max-width:760px){.films-heading{grid-template-columns:1fr;gap:1rem}.films-intro{padding-top:1.5rem;padding-bottom:1.5rem}.films-heading h1{font-size:clamp(2.8rem,10vw,4rem)}.films-grid{grid-template-columns:1fr}.reels-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.reels-grid>article:last-child{grid-column:1/-1;width:calc((100% - clamp(1.25rem,3vw,3rem))/2);justify-self:center}}
+@media(max-width:520px){.home-preview-pair{grid-template-columns:1fr}.reels-grid{grid-template-columns:minmax(0,1fr)}.reels-grid>article:last-child{grid-column:auto;width:100%}.youtube-short{max-width:22rem;margin-inline:auto}}

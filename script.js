@@ -40,6 +40,7 @@
   function filterBy(button) {
     filters.forEach(item => item.setAttribute('aria-pressed', String(item === button)));
     cards.forEach(card => { card.hidden = card.dataset.category !== button.dataset.filter; });
+    document.querySelectorAll('[data-preview-category]').forEach(pair => { pair.hidden = pair.dataset.previewCategory !== button.dataset.filter; });
     document.querySelectorAll('[data-gallery]').forEach(gallery => {
       gallery.hidden = ![...gallery.querySelectorAll('.work-card')].some(card => !card.hidden);
     });

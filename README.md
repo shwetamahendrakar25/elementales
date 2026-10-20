@@ -17,7 +17,7 @@ The approved selection contains 72 photographs: 24 wedding, 16 maternity, 12 fam
 
 The homepage now fills the image stage edge to edge with a responsive cover crop; its height stays within the viewport. Full-photograph links preserve access to the complete frames. Sony’s portrait remains uncropped in three responsive WebP sizes, with the uploaded source unchanged.
 
-Films & Reels currently contains a silent 15-second photo montage with native controls. It is clearly labelled as photographs rather than filmed footage. Approved films are still pending.
+Films & Reels contains two films and three portrait reels from Sony’s public @lyckaklickzbysony YouTube channel. YouTube oEmbed confirmed each title, creator, and available embed. Responsive privacy-enhanced players load lazily, do not autoplay, and retain native playback/fullscreen controls. Every player has a direct YouTube link. The earlier silent photo montage remains in the assets as historical media, but has been replaced in the page.
 
 ## Enquiries and prices
 
@@ -44,3 +44,9 @@ The supplied original Elementales logo and Instagram QR artwork are stored uncha
 The Feedback page collects the customer’s name, email, photography type, 1–5 rating, and comments. Native required-field validation applies. Like enquiries, it prepares an email draft to elementalesbysony@gmail.com; the customer reviews and sends it through their email app. No server submission, automatic publication of reviews, or delivery confirmation is implemented. No test email was sent.
 
 Sony supplied the updated biography, including seven years in photography, four years in videography, and her interest in drone cinematography. About contains her complete copy; Home uses an excerpt. The header wordmark uses Cinzel and social profile links use accessible Instagram and YouTube SVG icons.
+
+## Balanced previews and persistent navigation
+
+Each homepage filter now has four approved photographs. An extra bride portrait (140), maternity portrait (193), child portrait (057), and stage performance (107) are reused from the existing curated galleries. Portrait and landscape pairs are arranged in two columns whose widths account for native aspect ratios, aligning their lower edges without cropping photographs. Single-column phone layouts preserve complete frames. Dedicated galleries and their 72 unique photographs are unchanged.
+
+The header is sticky on all ten pages. Anchor offsets account for its height, and the About portrait remains below it when sticky. The mobile navigation retains keyboard focus handling and Escape support.
