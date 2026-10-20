@@ -1,0 +1,64 @@
+[
+  {
+    "original": "DSC00355.jpg",
+    "width": 2048,
+    "height": 1365,
+    "files": [
+      {
+        "path": "assets/photos/home-dsc00355-480.webp",
+        "width": 480,
+        "height": 320,
+        "bytes": 37316
+      },
+      {
+        "path": "assets/photos/home-dsc00355-960.webp",
+        "width": 960,
+        "height": 640,
+        "bytes": 121576
+      },
+      {
+        "path": "assets/photos/home-dsc00355-1600.webp",
+        "width": 1600,
+        "height": 1066,
+        "bytes": 283272
+      },
+      {
+        "path": "assets/photos/home-dsc00355-2048.webp",
+        "width": 2048,
+        "height": 1365,
+        "bytes": 462808
+      }
+    ]
+  },
+  {
+    "original": "LKS07361 2.jpg",
+    "width": 6336,
+    "height": 9504,
+    "files": [
+      {
+        "path": "assets/photos/home-lks07361-2-480.webp",
+        "width": 480,
+        "height": 720,
+        "bytes": 36866
+      },
+      {
+        "path": "assets/photos/home-lks07361-2-960.webp",
+        "width": 960,
+        "height": 1440,
+        "bytes": 93968
+      },
+      {
+        "path": "assets/photos/home-lks07361-2-1600.webp",
+        "width": 1600,
+        "height": 2400,
+        "bytes": 252718
+      },
+      {
+        "path": "assets/photos/home-lks07361-2-2200.webp",
+        "width": 2200,
+        "height": 3300,
+        "bytes": 916032
+      }
+    ]
+  }
+]
