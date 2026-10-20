@@ -241,7 +241,7 @@
   }
   const emailEnquiry = document.querySelector('[data-email-enquiry]');
   if (emailEnquiry) {
-    const destination = 'Lyckaclicksbysony@gmail.com';
+    const destination = 'elementalesbysony@gmail.com';
     function updateEmailDraft() {
       const details = new FormData(emailEnquiry);
       const service = enquiryService.selectedOptions[0]?.textContent || 'Photography';
@@ -267,6 +267,32 @@
       location.href = emailEnquiry.action;
     });
     updateEmailDraft();
+  }
+  const customerFeedback = document.querySelector('[data-email-feedback]');
+  if (customerFeedback) {
+    function updateFeedbackDraft() {
+      const details = new FormData(customerFeedback);
+      const rating = details.get('rating');
+      const subject = `Elementales customer feedback — ${details.get('service') || 'Photography'}`;
+      const body = [
+        'Hello Sony,', '', 'I would like to share feedback about my Elementales experience.', '',
+        `Name: ${details.get('name') || ''}`,
+        `Email: ${details.get('email') || ''}`,
+        `Photography: ${details.get('service') || ''}`,
+        `Overall experience: ${rating ? `${rating} / 5` : 'Not selected'}`, '',
+        'My experience:', details.get('message') || '', '', 'Thank you!'
+      ].join('\r\n');
+      customerFeedback.action = `mailto:elementalesbysony@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    }
+    customerFeedback.addEventListener('input', updateFeedbackDraft);
+    customerFeedback.addEventListener('change', updateFeedbackDraft);
+    customerFeedback.addEventListener('submit', event => {
+      event.preventDefault();
+      updateFeedbackDraft();
+      customerFeedback.querySelector('[data-feedback-feedback]').textContent = 'Your email app should open a draft. Review and send your feedback there. If it does not open, use Sony’s email link below.';
+      location.href = customerFeedback.action;
+    });
+    updateFeedbackDraft();
   }
   document.querySelectorAll('[data-year]').forEach(el => { el.textContent = new Date().getFullYear(); });
 })();

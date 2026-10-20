@@ -4,7 +4,7 @@ A buildless HTML, CSS, and JavaScript photography portfolio for Sony Kurapati.
 
 ## Current experience
 
-- Home and dedicated Weddings, Maternity, Family, Dreamy Projects, Films & Reels, About, Hire Me, and session-information pages.
+- Home and dedicated Weddings, Maternity, Family, Dreamy Projects, Films & Reels, About, Hire Me, Feedback, and session-information pages.
 - A full-width homepage carousel cycles through five approved photographs every three seconds with a one-second overlapping crossfade. It waits for the next image to decode before changing photographs.
 - Only photo-selection dots are visible. Keyboard arrows and touch swipe select photographs. Space pauses/resumes when the carousel region is focused. Keyboard focus, reduced-motion preferences, off-screen content, and hidden tabs suspend automatic rotation as appropriate; hovering does not pause it.
 - Preview notices have been removed from every page. Functional email-draft and pending scheduling information remain where relevant.
@@ -15,13 +15,13 @@ A buildless HTML, CSS, and JavaScript photography portfolio for Sony Kurapati.
 
 The approved selection contains 72 photographs: 24 wedding, 16 maternity, 12 family, and 20 classical-dance photographs. Publication was approved on October 19, 2026. Gallery images preserve complete frames and accessible descriptions. Responsive WebP assets omit source metadata. Original approved photographs remain in Drive.
 
-The homepage fits complete photographs inside a viewport-limited stage at every screen size, without cropping or stretching; pastel space fills any remaining area. Full-photograph links remain available. Sony’s portrait remains uncropped in three responsive WebP sizes, with the uploaded source unchanged.
+The homepage now fills the image stage edge to edge with a responsive cover crop; its height stays within the viewport. Full-photograph links preserve access to the complete frames. Sony’s portrait remains uncropped in three responsive WebP sizes, with the uploaded source unchanged.
 
 Films & Reels currently contains a silent 15-second photo montage with native controls. It is clearly labelled as photographs rather than filmed footage. Approved films are still pending.
 
 ## Enquiries and prices
 
-Enquire/enquiry spelling is used consistently. Category-specific links below the galleries preselect the photography type on Hire Me. The enquiry form appears before pricing and prepares a mailto draft to Lyckaclicksbysony@gmail.com. Visitors review and send through their own email app. A direct email link is available; there is no server submission or delivery confirmation.
+Enquire/enquiry spelling is used consistently. Category-specific links below the galleries preselect the photography type on Hire Me. The enquiry form appears before pricing and prepares a mailto draft to elementalesbysony@gmail.com. Visitors review and send through their own email app. A direct email link is available; there is no server submission or delivery confirmation.
 
 Detailed service pricing is currently hidden. Hire Me shows only “Pricing starts from $150” with a smaller “for 30 minutes” note. The pricing anchor and links remain available.
 
@@ -38,3 +38,9 @@ The public site uses GitHub Pages from `main`. Changes are published through rev
 ## Brand and social profiles
 
 The supplied original Elementales logo and Instagram QR artwork are stored unchanged in `assets/brand/`. The header uses a CSS-framed lens emblem beside the wordmark; the footer displays the complete original logo at a larger size to retain its five-element detailing. Every page includes Instagram @wedding.elementales, YouTube @wedding-elementales, and the supplied Instagram QR card with a full-size link. Profile links omit tracking parameters and open in a new tab. No third-party social embed or tracking script is loaded.
+
+## Customer feedback and updated biography
+
+The Feedback page collects the customer’s name, email, photography type, 1–5 rating, and comments. Native required-field validation applies. Like enquiries, it prepares an email draft to elementalesbysony@gmail.com; the customer reviews and sends it through their email app. No server submission, automatic publication of reviews, or delivery confirmation is implemented. No test email was sent.
+
+Sony supplied the updated biography, including seven years in photography, four years in videography, and her interest in drone cinematography. About contains her complete copy; Home uses an excerpt. The header wordmark uses Cinzel and social profile links use accessible Instagram and YouTube SVG icons.
