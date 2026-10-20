@@ -7,7 +7,7 @@ A buildless HTML, CSS, and JavaScript photography portfolio for Sony Kurapati.
 - Home and dedicated Weddings, Maternity, Family, Dreamy Projects, Films & Reels, About, Hire Me, and session-information pages.
 - A full-width homepage carousel cycles through five approved photographs every three seconds with a one-second overlapping crossfade. It waits for the next image to decode before changing photographs.
 - Only photo-selection dots are visible. Keyboard arrows and touch swipe select photographs. Space pauses/resumes when the carousel region is focused. Keyboard focus, reduced-motion preferences, off-screen content, and hidden tabs suspend automatic rotation as appropriate; hovering does not pause it.
-- The homepage has no preview notice. Other pages retain their booking-status notice.
+- Preview notices have been removed from every page. Functional email-draft and pending scheduling information remain where relevant.
 - Near-ivory, pale sage, and faint blush backgrounds blend gently between sections, with charcoal text.
 - Sony’s supplied portrait and first-person introduction appear on Home and About. No qualifications or career history have been inferred.
 
@@ -23,7 +23,7 @@ Films & Reels currently contains a silent 15-second photo montage with native co
 
 Enquire/enquiry spelling is used consistently. Category-specific links below the galleries preselect the photography type on Hire Me. The enquiry form appears before pricing and prepares a mailto draft to Lyckaclicksbysony@gmail.com. Visitors review and send through their own email app. A direct email link is available; there is no server submission or delivery confirmation.
 
-Numeric starting rates appear only on Hire Me: wedding photography $300/hour; basic family sessions $380/hour; family portraits $380/hour; professional headshots $380/hour. The accompanying note explains that every experience and price is unique and the final quote reflects the agreed coverage. No maternity or dance rate is assumed.
+Detailed service pricing is currently hidden. Hire Me shows only “Pricing starts from $150” with a smaller “for 30 minutes” note. The pricing anchor and links remain available.
 
 Google Calendar consultation booking needs Sony’s public appointment-booking link. Scheduling, shoot reservations, and payment collection are not enabled.
 

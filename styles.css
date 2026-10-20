@@ -160,3 +160,5 @@ body.viewer-open{overflow:hidden}
 .enquiry-section .service-status{background:var(--cream)}
 @media(max-width:760px){.slideshow-hero .hero-slideshow-controls{padding:.1rem .4rem}.slideshow-hero .hero-slide-dots button{width:32px;min-height:36px}.film-strip.section-pad{padding-top:2.5rem;padding-bottom:2.5rem}}
 @media(prefers-reduced-motion:reduce){.hero-slideshow.is-enhanced .hero-slide{transition:none}}
+
+.pricing-summary{padding-top:2rem;padding-bottom:2rem;background:var(--paper);border-top:1px solid var(--line)}.pricing-summary h2{font:400 clamp(1.5rem,3vw,2rem)/1.3 var(--serif);margin:0 0 .35rem}.pricing-summary h2 strong{font-weight:400}.pricing-duration{font-size:.8125rem;line-height:1.6;margin:0;color:#5a554c}
