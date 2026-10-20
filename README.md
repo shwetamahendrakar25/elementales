@@ -54,3 +54,7 @@ Owner-supplied starting rates: wedding photography $300/hour; basic family sessi
 ## Gallery copy cleanup
 
 Collection pages omit the redundant Explore N photographs links and photo-count toolbars. Image-viewer counts and accessible descriptions remain. Numeric prices and the tailored-pricing explanation appear in a single location on Hire Me. Home and session information link there; gallery pages lead to the shared enquiry flow. Pastel colours and the three-second slideshow remain intact.
+
+## Sony Kurapati portrait and introduction
+
+The owner-supplied portrait replaces the placeholders on Home and About. Three responsive WebP copies preserve the complete frame and original appearance; only size and encoding are changed, and metadata is omitted. The uploaded source is unchanged. First-person copy reflects the supplied creative focus, attention to detail, personal client relationships, and mission to create lasting photographs. No credentials, awards, or career history are inferred.
