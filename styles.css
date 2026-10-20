@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500&family=Italiana&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600&family=DM+Sans:wght@300;400;500&family=Italiana&display=swap');
 
 :root{--ink:#2b2926;--cream:#f6f3ed;--paper:#faf8f4;--sage:#eff2ec;--blush:#f5efec;--taupe:#aaa08e;--gold:#6a624a;--line:rgba(43,41,38,.18);--serif:"Italiana",Georgia,serif;--sans:"DM Sans",Arial,sans-serif;--pad:clamp(1.4rem,5vw,5.5rem);--ease:cubic-bezier(.22,1,.36,1)}
 *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:5rem}body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-weight:400;line-height:1.65;overflow-x:hidden}body.nav-open{overflow:hidden}img,video{display:block;width:100%}a{color:inherit;text-decoration:none}button{color:inherit;font:inherit}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}.skip-link{position:fixed;z-index:200;top:.5rem;left:.5rem;padding:.65rem 1rem;background:var(--cream);transform:translateY(-150%)}.skip-link:focus{transform:none}:focus-visible{outline:2px solid var(--gold);outline-offset:4px}.section-pad{padding-left:var(--pad);padding-right:var(--pad)}
@@ -198,3 +198,32 @@ body.viewer-open{overflow:hidden}
  .slideshow-hero .hero-slides{height:min(66.6667vw,calc(100svh - 9rem))}
  .social-section{grid-template-columns:minmax(0,1fr);gap:2rem;padding-top:2.5rem;padding-bottom:2.5rem}.instagram-qr{justify-self:start}.social-links{gap:1rem 2rem}
 }
+
+/* A clearer, more substantial wordmark alongside the original lens artwork. */
+.site-header .brand-wordmark>span{font:500 clamp(1.15rem,1.6vw,1.4rem)/1.15 "Cinzel",Georgia,serif;letter-spacing:.11em}
+.site-header .brand-wordmark small{font-weight:500;font-size:.5625rem;line-height:1.25;letter-spacing:.27em;color:var(--gold);margin-top:.35rem}
+.slideshow-hero .hero-slide img{object-fit:cover;object-position:center 25%}
+.social-links>a{flex-direction:row;align-items:center;gap:.75rem;padding:.7rem .1rem}
+.social-icon{display:block;flex:none;width:1.75rem;height:1.75rem}
+.photographer-story{align-items:start}
+.photographer-story .photographer-portrait{position:sticky;top:2rem}
+.photographer-bio h1{font-size:clamp(2.8rem,4.4vw,4rem);margin-bottom:1.5rem}
+.photographer-bio h1>span{display:block}
+.photographer-bio .photographer-role{font:400 clamp(1.3rem,2vw,1.65rem)/1.4 var(--serif);letter-spacing:0;margin-top:.65rem;max-width:25rem}
+.photographer-bio>p:last-of-type{font-style:italic}
+.feedback-section{padding-top:1rem;padding-bottom:3.5rem}
+.feedback-rating legend{font-size:.875rem;margin-bottom:.6rem}
+.rating-options{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:.4rem}
+.enquiry-fields .rating-options label{display:flex;flex-direction:row;align-items:center;justify-content:center;gap:.4rem;min-height:44px;padding:.6rem .3rem;border:1px solid #8b887f;background:var(--paper);cursor:pointer}
+.enquiry-fields .rating-options input{width:1rem;min-width:1rem;min-height:1rem;height:1rem;margin:0;padding:0;accent-color:var(--ink);cursor:pointer}
+.enquiry-fields .rating-options label>span{font-size:.9375rem}
+.rating-options label:has(input:checked){background:var(--sage);border-color:var(--ink);box-shadow:inset 0 0 0 1px var(--ink)}
+.rating-options label:has(input:focus-visible){outline:2px solid var(--ink);outline-offset:3px}
+.feedback-rating .content-note{font-size:.75rem;margin:.6rem 0 0}
+@media(max-width:1440px) and (min-width:1181px){.site-nav{gap:1rem;font-size:.8125rem;letter-spacing:.05em}.site-header{padding-left:2rem;padding-right:2rem}}
+@media(max-width:760px){.site-header .brand-wordmark>span{font-size:1.05rem;letter-spacing:.09em}.site-header .brand-wordmark small{font-size:.5rem}.photographer-story .photographer-portrait{position:static}.photographer-bio .photographer-role{font-size:1.4rem}.feedback-section{padding-top:.5rem}.enquiry-fields .rating-options input{width:.875rem;min-width:.875rem;height:.875rem;min-height:.875rem}}
+
+@media(max-width:360px){.site-header{gap:.5rem}}
+
+.footer-grid a[href^="mailto:"]{font-size:.875rem;line-height:1.6}
+@media(max-width:760px){.footer-grid>div:last-child{grid-column:1/-1}}
