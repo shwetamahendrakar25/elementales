@@ -157,14 +157,15 @@
     const pause = slideshow.querySelector('[data-slide-pause]');
     const status = slideshow.querySelector('[data-slide-status]');
     const full = slideshow.querySelector('[data-slide-full]');
-    let current = 0, timer = null, paused = motion.matches, hovering = false, onScreen = true, pointerPauseIntent = null;
+    let current = 0, timer = null, paused = motion.matches, onScreen = true, pointerPauseIntent = null;
     function schedule() {
       clearTimeout(timer);
-      pause.textContent = paused ? 'Resume slideshow' : 'Pause slideshow';
-      if (paused || hovering || !onScreen || document.hidden) return;
+      pause.textContent = paused ? 'Play' : 'Pause';
+      pause.setAttribute('aria-label', paused ? 'Play slideshow' : 'Pause slideshow');
+      if (paused || !onScreen || document.hidden) return;
       // Prepare only the next photograph, keeping the initial page light.
       slides[(current + 1) % slides.length].querySelector('img').loading = 'eager';
-      timer = setTimeout(() => { show(current + 1); }, 5000);
+      timer = setTimeout(() => { show(current + 1); }, 3000);
     }
     function show(index, announce = false) {
       current = (index + slides.length) % slides.length;
@@ -192,8 +193,6 @@
       // Pause on entry. Keep the pause/resume button operable on repeated clicks.
       if (!slideshow.contains(event.relatedTarget)) { paused = true; schedule(); }
     });
-    slideshow.addEventListener('mouseenter', () => { hovering = true; schedule(); });
-    slideshow.addEventListener('mouseleave', () => { hovering = false; schedule(); });
     slideshow.addEventListener('keydown', event => {
       if (event.key !== 'ArrowLeft' && event.key !== 'ArrowRight') return;
       event.preventDefault(); paused = true;

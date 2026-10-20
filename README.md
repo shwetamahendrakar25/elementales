@@ -37,10 +37,16 @@ Keep `main` unchanged until review and merge approval. Existing GitHub Pages pub
 
 ## Homepage slideshow and enquiry flow
 
-The homepage cycles through five approved photographs every five seconds. It provides pause/resume, direct slide selection, previous/next, and full-image links. Manual navigation pauses rotation; hover, off-screen content, and hidden tabs suspend it. Reduced-motion visitors start paused. The previous photo montage remains on Films & Reels only.
+The homepage cycles through five approved photographs every three seconds. It provides pause/resume, direct slide selection, previous/next, and full-image links. Manual navigation pauses rotation; off-screen content and hidden tabs suspend it. Reduced-motion visitors start paused. The previous photo montage remains on Films & Reels only.
 
 The existing contact URL now presents Hire Me, with the wedding enquiry process moved there and category-specific links directly below all four galleries. The enquiry fields are enabled and prepare a mailto draft to the supplied business email, Lyckaclicksbysony@gmail.com. Visitors review and send from their own email app; there is no server submission or delivery confirmation. A direct email link is also available. Google Calendar scheduling still requires Sony’s appointment-booking URL.
 
 ## Full-width pastel revision
 
 The slideshow spans the viewport, with a cropped cover presentation on desktop and complete 3:2 frames on smaller screens. Full-photograph links remain available. Hero copy, controls, film section, and footer use ivory, sage, and blush with charcoal text. Sony Kurapati’s supplied name and contact address are shown without adding an unapproved biography. The mailbox has not been tested by sending a message.
+
+## Three-second slideshow and starting prices
+
+The slideshow advances every 3 seconds and no longer pauses when hovered. Explicit pause/play, keyboard focus, manual photo selection, reduced-motion preferences, off-screen state, and hidden tabs continue to control rotation. The pastel controls are inside the image. Numbered labels beneath portfolio photos are removed while image alt descriptions and viewer captions remain.
+
+Owner-supplied starting rates: wedding photography $300/hour; basic family sessions $380/hour; family portraits $380/hour; professional headshots $380/hour. Starting prices appear on Home and Hire Me, with relevant rates on Weddings, Family, and session information. Each is a starting guide, with final quotes tailored to each customer. No maternity or dance rate is inferred. Family portraits and professional headshots are available as enquiry selections.
