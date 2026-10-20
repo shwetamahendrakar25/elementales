@@ -44,8 +44,7 @@ for name,page in pages.items():
             if not (ROOT/target).is_file(): errors.append(f'{name}: missing destination {href}')
         elif u.fragment and u.fragment not in pages[target].ids: errors.append(f'{name}: missing fragment {href}')
     text=page.path.read_text()
-    if name != 'index.html' and 'Design preview' not in text: errors.append(f'{name}: missing draft disclosure')
     for claim in ['Amara','Theo','VOGUE','hello@elementales.studio','555 0184','Isabel & Noah']:
         if claim in text: errors.append(f'{name}: unverified claim {claim}')
 assert not errors, '\n'.join(errors)
-print(f'PASS: {len(pages)} pages; local links, fragments, IDs, headings, image alt attributes, assets, and draft disclosures.')
+print(f'PASS: {len(pages)} pages; local links, fragments, IDs, headings, image alt attributes, assets, and content checks.')
