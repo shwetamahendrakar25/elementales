@@ -154,25 +154,40 @@
   if (slideshow) {
     const slides = [...slideshow.querySelectorAll('[data-hero-slide]')];
     const dots = [...slideshow.querySelectorAll('[data-hero-dot]')];
-    const pause = slideshow.querySelector('[data-slide-pause]');
     const status = slideshow.querySelector('[data-slide-status]');
     const full = slideshow.querySelector('[data-slide-full]');
-    let current = 0, timer = null, paused = motion.matches, onScreen = true, pointerPauseIntent = null;
+    let current = 0, timer = null, request = 0;
+    let paused = motion.matches, focusPaused = false, touching = false, onScreen = true;
+    let touchStart = null;
+    slideshow.classList.add('is-enhanced');
+    slides.forEach((slide, i) => {
+      slide.hidden = false;
+      slide.classList.toggle('is-active', i === 0);
+      slide.setAttribute('aria-hidden', String(i !== 0));
+    });
     function schedule() {
       clearTimeout(timer);
-      pause.textContent = paused ? 'Play' : 'Pause';
-      pause.setAttribute('aria-label', paused ? 'Play slideshow' : 'Pause slideshow');
-      if (paused || !onScreen || document.hidden) return;
-      // Prepare only the next photograph, keeping the initial page light.
+      if (paused || focusPaused || touching || !onScreen || document.hidden) return;
       slides[(current + 1) % slides.length].querySelector('img').loading = 'eager';
       timer = setTimeout(() => { show(current + 1); }, 3000);
     }
-    function show(index, announce = false) {
-      current = (index + slides.length) % slides.length;
-      slides.forEach((slide, i) => { slide.hidden = i !== current; });
+    async function show(index, announce = false) {
+      clearTimeout(timer);
+      const target = (index + slides.length) % slides.length;
+      const token = ++request;
+      const photo = slides[target].querySelector('img');
+      photo.loading = 'eager';
+      // Keep the current photograph visible until its successor is decoded.
+      try { await photo.decode(); } catch (_) { /* Retain the current image on a loading failure. */ }
+      if (token !== request) return;
+      if (!photo.naturalWidth) { schedule(); return; }
+      current = target;
+      slides.forEach((slide, i) => {
+        slide.classList.toggle('is-active', i === current);
+        slide.setAttribute('aria-hidden', String(i !== current));
+      });
       dots.forEach((dot, i) => dot.setAttribute('aria-pressed', String(i === current)));
       const slide = slides[current];
-      slide.querySelector('img').loading = 'eager';
       const caption = `${slide.dataset.label} · ${current + 1} / ${slides.length}`;
       slideshow.querySelector('[data-slide-caption]').textContent = caption;
       full.href = slide.dataset.full;
@@ -181,29 +196,43 @@
       schedule();
     }
     slideshow.querySelector('[data-slide-controls]').hidden = false;
-    pause.addEventListener('pointerdown', () => { pointerPauseIntent = !paused; });
-    pause.addEventListener('click', () => {
-      paused = pointerPauseIntent === null ? !paused : pointerPauseIntent;
-      pointerPauseIntent = null; schedule();
-    });
-    dots.forEach((dot, index) => dot.addEventListener('click', () => { paused = true; show(index, true); }));
-    slideshow.querySelector('[data-slide-prev]').addEventListener('click', () => { paused = true; show(current - 1, true); });
-    slideshow.querySelector('[data-slide-next]').addEventListener('click', () => { paused = true; show(current + 1, true); });
+    dots.forEach((dot, index) => dot.addEventListener('click', () => { show(index, true); }));
     slideshow.addEventListener('focusin', event => {
-      // Pause on entry. Keep the pause/resume button operable on repeated clicks.
-      if (!slideshow.contains(event.relatedTarget)) { paused = true; schedule(); }
+      focusPaused = event.target.matches(':focus-visible'); schedule();
+    });
+    slideshow.addEventListener('focusout', event => {
+      if (!slideshow.contains(event.relatedTarget)) { focusPaused = false; schedule(); }
     });
     slideshow.addEventListener('keydown', event => {
-      if (event.key !== 'ArrowLeft' && event.key !== 'ArrowRight') return;
-      event.preventDefault(); paused = true;
-      show(current + (event.key === 'ArrowRight' ? 1 : -1), true);
+      if (event.key === ' ' && event.target === slideshow) {
+        event.preventDefault(); paused = !(paused || focusPaused); focusPaused = false;
+        status.textContent = paused ? 'Carousel paused.' : 'Carousel playing.'; schedule();
+      } else if (event.key === 'ArrowLeft' || event.key === 'ArrowRight') {
+        event.preventDefault(); focusPaused = true;
+        show(current + (event.key === 'ArrowRight' ? 1 : -1), true);
+      }
     });
-    motion.addEventListener('change', () => { if (motion.matches) paused = true; schedule(); });
+    slideshow.addEventListener('pointerdown', event => {
+      focusPaused = false;
+      if (event.pointerType === 'touch' && !event.target.closest('button, a')) {
+        touchStart = { x: event.clientX, y: event.clientY }; touching = true;
+      }
+      schedule();
+    });
+    slideshow.addEventListener('pointerup', event => {
+      if (!touchStart) return;
+      const dx = event.clientX - touchStart.x, dy = event.clientY - touchStart.y;
+      touchStart = null; touching = false;
+      if (Math.abs(dx) > 50 && Math.abs(dx) > Math.abs(dy)) show(current + (dx < 0 ? 1 : -1), true);
+      else schedule();
+    });
+    slideshow.addEventListener('pointercancel', () => { touchStart = null; touching = false; schedule(); });
+    motion.addEventListener('change', () => { paused = motion.matches; schedule(); });
     document.addEventListener('visibilitychange', schedule);
     if ('IntersectionObserver' in window) new IntersectionObserver(entries => {
       onScreen = entries[0].isIntersecting; schedule();
     }, { threshold: 0.15 }).observe(slideshow);
-    show(0);
+    schedule();
   }
   const enquiryService = document.querySelector('[data-enquiry-service]');
   if (enquiryService) {
