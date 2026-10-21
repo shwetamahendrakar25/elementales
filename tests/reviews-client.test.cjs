@@ -2,10 +2,10 @@ const { test } = require('node:test');
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const vm = require('node:vm');
-const { randomUUID } = require('node:crypto');
+const { randomUUID, webcrypto } = require('node:crypto');
 const source = fs.readFileSync('reviews.js', 'utf8');
 
-function client(endpoint = 'https://script.google.com/macros/s/test-deployment/exec') {
+function client(endpoint = 'https://script.google.com/macros/s/test-deployment/exec', cryptoApi = { randomUUID }) {
   const listeners = {};
   const timers = new Map();
   const sent = [];
@@ -27,7 +27,7 @@ function client(endpoint = 'https://script.google.com/macros/s/test-deployment/e
     body: { append() {} }
   };
   const window = {
-    ELEMENTALES_REVIEWS: { endpoint }, crypto: { randomUUID },
+    ELEMENTALES_REVIEWS: { endpoint }, crypto: cryptoApi,
     addEventListener: (type, fn) => { listeners[type] = fn; },
     removeEventListener: type => { delete listeners[type]; }
   };
@@ -106,4 +106,11 @@ test('double submission is prevented while a save is pending', () => {
   assert.equal(c.sent[0].parentOrigin, 'https://elementales.biz');
   assert.equal(c.sent[0].email, 'client@example.com');
   assert.equal(c.sent[0].consent, undefined);
+});
+test('secure random UUID fallback works when randomUUID is unavailable', () => {
+  const c = client(undefined, { getRandomValues: bytes => webcrypto.getRandomValues(bytes) });
+  c.submit();
+  assert.match(c.sent[0].requestId, /^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/);
+  c.ack(reply(c));
+  assert.equal(c.status.dataset.state, 'success');
 });

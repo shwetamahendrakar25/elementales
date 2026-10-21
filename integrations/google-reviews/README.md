@@ -1,9 +1,10 @@
 # Private customer reviews in Google Sheets
 
-Status: source is ready for deployment. `reviews-config.js` deliberately has no
-endpoint until the service is deployed under `elementalesbysony@gmail.com` and
-a real browser submission is confirmed in the private spreadsheet. Do not merge
-the website change with an empty endpoint.
+Status: the intake is deployed under `elementalesbysony@gmail.com`, and
+`reviews-config.js` contains its public submission URL. A browser submission was
+acknowledged and read back from the private spreadsheet with consent No and
+status Pending. Resubmitting its identical ID was acknowledged without adding
+a second row. These were clearly labeled synthetic tests, not testimonials.
 
 ## Owner setup
 
@@ -14,10 +15,14 @@ the website change with an empty endpoint.
    the bound project. In Project Settings enable the manifest view and copy
    `appsscript.json`. The only requested OAuth scope is Google Sheets; no Gmail,
    Contacts, Drive-wide, or Calendar scope is needed.
-3. Save the project as **Elementales — Private Review Intake**. Select and run
-   `setupReviews_` from the editor. The owner must authorize spreadsheet access.
-   Setup records the spreadsheet ID in private Script Properties. It never
-   changes file sharing. Do not put that ID or OAuth tokens in website code.
+3. Save the project as **Elementales — Private Review Intake**. Functions ending
+   in an underscore do not appear in the editor's Run selector. Temporarily add
+   `function initializeReviews() { return setupReviews_(); }`, save, select
+   **initializeReviews**, and run it. The owner must authorize spreadsheet access.
+   Confirm execution completes, then remove this temporary wrapper before
+   deployment. Setup records the spreadsheet ID in private Script Properties
+   and preserves existing review rows. It never changes sharing. Do not put that
+   ID or OAuth tokens in website code.
 4. Deploy a **Web app**, execute as **Me (elementalesbysony@gmail.com)**, access
    **Anyone** (including visitors who are not signed in). The deployment exposes
    submission handling, not the spreadsheet. Copy the deployment's `/exec` URL.

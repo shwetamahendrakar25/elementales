@@ -18,7 +18,16 @@
     status.dataset.state = state;
   }
 
-  if (!allowedEndpoint.test(endpoint) || !window.crypto?.randomUUID) {
+  function createRequestId() {
+    if (window.crypto.randomUUID) return window.crypto.randomUUID();
+    const bytes = window.crypto.getRandomValues(new Uint8Array(16));
+    bytes[6] = (bytes[6] & 15) | 64;
+    bytes[8] = (bytes[8] & 63) | 128;
+    const hex = Array.from(bytes, byte => byte.toString(16).padStart(2, '0')).join('');
+    return `${hex.slice(0, 8)}-${hex.slice(8, 12)}-${hex.slice(12, 16)}-${hex.slice(16, 20)}-${hex.slice(20)}`;
+  }
+
+  if (!allowedEndpoint.test(endpoint) || !window.crypto?.getRandomValues && !window.crypto?.randomUUID) {
     showStatus('Online reviews are being connected. You can email Sony using the link below.', 'unavailable');
     return;
   }
@@ -31,7 +40,7 @@
     const payload = Object.fromEntries(new FormData(form));
     const fingerprint = JSON.stringify(payload);
     if (fingerprint !== previousPayload) {
-      requestId = crypto.randomUUID();
+      requestId = createRequestId();
       previousPayload = fingerprint;
     }
     payload.requestId = requestId;
