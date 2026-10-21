@@ -140,3 +140,38 @@ test('only a unique valid POST can write, and replies contain no user HTML', () 
   assert.equal(result.ack.ok, true);
   assert.ok(!result.html.includes('<img'));
 });
+
+function published(instance, overrides = {}) {
+  const data = { action: 'published-reviews', parentOrigin: 'https://elementales.biz', requestId: crypto.randomUUID(), ...overrides };
+  const event = { parameter: data, parameters: Object.fromEntries(Object.entries(data).map(([k,v])=>[k,[v]])) };
+  const html = instance.context.doGet(event).html;
+  const match = html.match(/postMessage\((\{.*?\}),/);
+  return { html, ack: match && JSON.parse(match[1]) };
+}
+test('public feed requires both approval and consent, excludes tests, exposes only four fields', () => {
+  const a = app();
+  for (const [name, consent, status] of [['Pending client','Yes','Pending'],['Private client','No','Approved'],['INTEGRATION TEST','Yes','Approved'],['Approved client','Yes','Approved']]) {
+    a.rows.push([crypto.randomUUID(),'private timestamp',name,'secret@example.com','Family',4,'A lovely experience.',consent,status,'secret private note']);
+  }
+  const r = published(a);
+  assert.equal(r.ack.ok,true);
+  assert.deepEqual(r.ack.reviews,[{name:'Approved client',service:'Family',rating:4,message:'A lovely experience.'}]);
+  for (const secret of ['secret@example.com','secret private note','private timestamp','private-sheet-id','Private client','Pending client','INTEGRATION TEST']) assert.ok(!r.html.includes(secret));
+  a.rows[4][8]='Pending';
+  assert.equal(published(a).ack.reviews.length,0);
+  a.rows[4][8]='Approved'; a.rows[4][7]='No';
+  assert.equal(published(a).ack.reviews.length,0);
+});
+test('feed fails closed for configuration, invalid origins/IDs and malformed approved rows', () => {
+  assert.equal(published(app({unconfigured:true})).ack.ok,false);
+  assert.equal(published(app(),{parentOrigin:'https://attacker.example'}).ack,null);
+  assert.equal(published(app(),{requestId:'invalid'}).ack,null);
+  const a=app(); a.rows.push(['id','time','Client','secret@example.com','Family',99,'Review','Yes','Approved','notes']);
+  assert.equal(published(a).ack.reviews.length,0);
+});
+test('public review text cannot escape the response script', () => {
+  const a=app(); const text='</script><script>alert(1)</script>';
+  a.rows.push(['id','time','Client','secret@example.com','Other',5,text,'Yes','Approved','notes']);
+  const r=published(a); assert.equal(r.ack.reviews[0].message,text);
+  assert.ok(!r.html.includes(text));
+});

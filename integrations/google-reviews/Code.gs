@@ -1,7 +1,8 @@
 /** Elementales review intake. The spreadsheet remains private to its owner.
  * Bind this project to Sony's private review spreadsheet, run setupReviews_
  * from the editor, then deploy as Sony with access set to Anyone.
- * No function returns customer records, emails, or spreadsheet identifiers.
+ * Only explicitly approved, consented testimonial fields are public.
+ * Emails, private notes and spreadsheet identifiers are never returned.
  */
 const REVIEW_HEADERS_ = [
   'Submission ID', 'Submitted at (UTC)', 'Name', 'Email (private)',
@@ -42,12 +43,56 @@ function setupReviews_() {
   return 'Review intake is configured. Keep the spreadsheet Restricted.';
 }
 
-// Public GET requests reveal no customer data or owner-only configuration.
-function doGet() {
+// Generic GET reveals nothing; the public feed contains only consented reviews.
+function doGet(event) {
+  const data = event && event.parameter || {};
+  if (data.action === 'published-reviews') return publishedReviewsReply_(event);
   return HtmlService.createHtmlOutput(
     '<!doctype html><html lang="en"><meta charset="utf-8"><title>Elementales reviews</title>' +
     '<p>Elementales review submission service. Please submit a review from the Elementales website.</p></html>'
   );
+}
+
+function publishedReviewsReply_(event) {
+  const data = event.parameter || {};
+  const origin = REVIEW_ORIGINS_.indexOf(data.parentOrigin) !== -1 ? data.parentOrigin : '';
+  const requestId = validRequestId_(data.requestId) ? data.requestId : '';
+  const result = { type: 'elementales-published-reviews', requestId: requestId, ok: false, reviews: [] };
+  try {
+    const repeated = Object.keys(event.parameters || {}).some(function (key) {
+      return event.parameters[key].length !== 1;
+    });
+    if (!origin || !requestId || repeated) throw reviewError_('VALIDATION');
+    const id = PropertiesService.getScriptProperties().getProperty('REVIEW_SPREADSHEET_ID');
+    if (!id) throw reviewError_('CONFIGURATION');
+    const sheet = SpreadsheetApp.openById(id).getSheetByName('Reviews');
+    if (!sheet) throw reviewError_('CONFIGURATION');
+    assertHeaders_(sheet);
+    const last = sheet.getLastRow();
+    const rows = last > 1 ? sheet.getRange(2, 1, last - 1, REVIEW_HEADERS_.length).getValues() : [];
+    // Read moderation on every request: withdrawing approval/consent removes it.
+    result.reviews = rows.filter(function (row) {
+      const name = String(row[2]).trim();
+      const message = String(row[6]).trim();
+      return String(row[7]).trim().toLowerCase() === 'yes' &&
+        String(row[8]).trim().toLowerCase() === 'approved' &&
+        !/integration[\s_-]*test|synthetic[\s_-]*test/i.test(name + ' ' + message) &&
+        name && name.length <= 120 && message && message.length <= 3000 &&
+        REVIEW_SERVICES_.indexOf(String(row[4])) !== -1 && /^[1-5]$/.test(String(row[5]));
+    }).reverse().map(function (row) {
+      // Explicit allowlist. Never serialize complete rows or add private fields.
+      return { name: String(row[2]).trim(), service: String(row[4]),
+        rating: Number(row[5]), message: String(row[6]).trim() };
+    });
+    result.ok = true;
+  } catch (_) {
+    result.reviews = [];
+  }
+  const serialized = JSON.stringify(result).replace(/</g, '\\u003c')
+    .replace(/\u2028/g, '\\u2028').replace(/\u2029/g, '\\u2029');
+  const reply = origin && requestId ? '<script>window.top.postMessage(' + serialized + ',' + JSON.stringify(origin) + ');</script>' : '';
+  return HtmlService.createHtmlOutput('<!doctype html><html lang="en"><meta charset="utf-8"><title>Elementales testimonials</title>' + reply + '</html>')
+    .setXFrameOptionsMode(HtmlService.XFrameOptionsMode.ALLOWALL);
 }
 
 function doPost(event) {

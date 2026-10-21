@@ -9,9 +9,10 @@
   <link rel="stylesheet" href="styles.css?v=20261020-gallery-films">
   <script src="script.js?v=20261020-gallery-films" defer></script>
   <script src="portfolio.js?v=20261020-gallery-films" defer></script>
-  <link rel="stylesheet" href="reviews.css?v=20261020-reviews">
+  <link rel="stylesheet" href="reviews.css?v=20261021-approved">
   <script src="reviews-config.js?v=20261020-reviews" defer></script>
   <script src="reviews.js?v=20261020-reviews" defer></script>
+  <script src="published-reviews.js?v=20261021-approved" defer></script>
 </head>
 <body id="top" class="inner-page">
   <a class="skip-link" href="#main">Skip to content</a>
@@ -30,6 +31,10 @@
 
 <main id="main" tabindex="-1">
     <section class="page-intro section-pad review-intro"><p class="kicker">The experience</p><h1>Your moments.<br><em>Your words.</em></h1><p class="page-lede">Thank you for trusting me with your moments. I’d love to hear what the experience felt like for you.</p></section>
+    <section class="published-reviews section-pad" data-published-reviews hidden aria-labelledby="published-reviews-title">
+      <p class="kicker">In your words</p><h2 id="published-reviews-title">Moments remembered.<br><em>Experiences shared.</em></h2>
+      <div class="testimonial-grid" data-testimonial-grid></div>
+    </section>
     <section id="feedback" class="enquiry-section feedback-section section-pad review-section" aria-labelledby="feedback-title">
       <div><p class="kicker">A note to Sony</p><h2 id="feedback-title">Your thoughts<br><em>matter.</em></h2><p>From our first conversation to your final photographs, tell me what you loved and what I could do better.</p><div class="review-note"><h3>Shared with care.</h3><p>Your feedback is saved privately for Sony to read. Your email address is never displayed publicly.</p><p>You choose whether your review may be shared. Reviews are checked before publication.</p></div></div>
       <form class="enquiry-form feedback-form review-form" data-review-form action="feedback.html" method="post" aria-label="Customer review" aria-describedby="review-status">

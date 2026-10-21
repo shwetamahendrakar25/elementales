@@ -46,11 +46,26 @@ photography type, 1–5 rating, review, publication consent, Pending status, and
 private notes. Setup preserves existing rows and rejects unexpected headers.
 
 Every new submission starts **Pending**, including submissions with permission
-to publish. The backend has no public read/review-list endpoint. Nothing is
-automatically published, and changing a status cell does not update the static
-website. Approved reviews can be selected for a separate publication change;
-emails and private notes must never be included. The website displays no fake
-sample reviews. This change does not modify the Hire Me enquiry form.
+to publish. Set **Status** to **Approved** and ensure **Permission to publish**
+is **Yes** to display a review on the Feedback page. Matching is case-insensitive
+and ignores surrounding spaces. Both conditions are required, with no minimum
+rating filter. Entries labeled INTEGRATION TEST or SYNTHETIC TEST are excluded.
+
+The website reads the filtered feed when opened, every 60 seconds while visible,
+and when the tab becomes visible again. Changing Status back to Pending (or
+Rejected), or consent to No, removes it on the next successful refresh. The feed
+reads current sheet values on every request without a server-side review cache.
+On a failed refresh/45-second timeout, existing cards are hidden. The approved
+section stays hidden when no eligible reviews exist; no sample reviews appear.
+
+Only name, photography type, rating and review text are public. IDs, timestamps,
+emails, consent values, status and private notes never enter the response. The
+spreadsheet stays Restricted. Generic GET requests return no records; the
+`published-reviews` GET action returns only the explicitly approved projection.
+Allowed origins constrain acknowledgement destinations, not access control:
+approved testimonials are intentionally public. No Google edit trigger, scheduled
+job, manual GitHub deployment, or broader OAuth permissions are needed when the
+owner approves or withdraws a review. This change does not modify Hire Me.
 
 ## Submission protocol
 
@@ -78,7 +93,8 @@ version, and its scope does not permit reading or sending Gmail.
 ## Checks
 
 ```sh
-node --test tests/reviews-server.test.cjs tests/reviews-client.test.cjs
+node --test tests/*.test.cjs
+node --check published-reviews.js
 node --check reviews.js
 node --check reviews-config.js
 node --check script.js
