@@ -21,13 +21,14 @@
 
 .published-reviews[hidden] { display: none; }
 .published-reviews { padding-top: 1rem; padding-bottom: clamp(3rem, 6vw, 6rem); }
-.published-reviews h2 { font-size: clamp(2.2rem, 4.5vw, 4rem); margin-bottom: 2rem; }
+.published-reviews h2 { font: 400 clamp(2.25rem, 3.5vw, 3.5rem)/1.12 var(--serif); margin: .5rem 0 1.25rem; }
+.published-reviews h2 em { font-weight: 400; }
 .testimonial-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem; align-items: start; }
 .testimonial-card { background: #eef1eb; border: 1px solid #d7ded2; border-radius: 12px; padding: clamp(1.5rem, 3vw, 2.5rem); min-width: 0; }
 .testimonial-card:nth-child(even) { background: #f3eeeb; border-color: #e3dcd6; }
 .testimonial-rating { color: #59644f; letter-spacing: .15em; margin: 0 0 1.25rem; font-size: 1.1rem; }
 .testimonial-card blockquote { margin: 0 0 1.75rem; padding: 0; border: 0; }
-.testimonial-card blockquote p { font-size: 1.05rem; line-height: 1.8; white-space: pre-wrap; overflow-wrap: anywhere; margin: 0; }
-.testimonial-card h3 { font-family: inherit; font-size: 1rem; font-weight: 600; margin: 0; overflow-wrap: anywhere; }
-.testimonial-service { font-size: .85rem; margin: .35rem 0 0; opacity: .8; }
+.testimonial-card blockquote p { font: 400 1rem/1.65 var(--sans); white-space: pre-wrap; overflow-wrap: anywhere; margin: 0; }
+.testimonial-card h3 { font: 400 1.45rem/1.2 var(--serif); margin: 0; overflow-wrap: anywhere; }
+.testimonial-service { font: 400 .875rem/1.65 var(--sans); margin: .35rem 0 0; opacity: .8; }
 @media (max-width: 700px) { .testimonial-grid { grid-template-columns: 1fr; } }
