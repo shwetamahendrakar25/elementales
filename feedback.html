@@ -9,6 +9,9 @@
   <link rel="stylesheet" href="styles.css?v=20261020-gallery-films">
   <script src="script.js?v=20261020-gallery-films" defer></script>
   <script src="portfolio.js?v=20261020-gallery-films" defer></script>
+  <link rel="stylesheet" href="reviews.css?v=20261020-reviews">
+  <script src="reviews-config.js?v=20261020-reviews" defer></script>
+  <script src="reviews.js?v=20261020-reviews" defer></script>
 </head>
 <body id="top" class="inner-page">
   <a class="skip-link" href="#main">Skip to content</a>
@@ -26,17 +29,22 @@
   </header>
 
 <main id="main" tabindex="-1">
-    <section class="page-intro section-pad"><p class="kicker">Your Elementales experience</p><h1>Share your<br><em>experience.</em></h1><p class="page-lede">Thank you for trusting me with your moments. I’d love to hear what the experience felt like for you.</p></section>
-    <section id="feedback" class="enquiry-section feedback-section section-pad" aria-labelledby="feedback-title">
-      <div><p class="kicker">A note to Sony</p><h2 id="feedback-title">Your thoughts<br><em>matter.</em></h2><p>From our first conversation to your final photographs, tell me what you loved and what I could do better.</p><p id="feedback-status" class="service-status">Your feedback opens in an email draft to Sony. Review and send it from your email app.</p></div>
-      <form class="enquiry-form feedback-form" data-email-feedback action="mailto:elementalesbysony@gmail.com" method="post" enctype="text/plain" aria-label="Customer feedback" aria-describedby="feedback-status">
-        <fieldset><legend class="sr-only">Your photography experience</legend><div class="enquiry-fields">
+    <section class="page-intro section-pad review-intro"><p class="kicker">The experience</p><h1>Your moments.<br><em>Your words.</em></h1><p class="page-lede">Thank you for trusting me with your moments. I’d love to hear what the experience felt like for you.</p></section>
+    <section id="feedback" class="enquiry-section feedback-section section-pad review-section" aria-labelledby="feedback-title">
+      <div><p class="kicker">A note to Sony</p><h2 id="feedback-title">Your thoughts<br><em>matter.</em></h2><p>From our first conversation to your final photographs, tell me what you loved and what I could do better.</p><div class="review-note"><h3>Shared with care.</h3><p>Your feedback is saved privately for Sony to read. Your email address is never displayed publicly.</p><p>You choose whether your review may be shared. Reviews are checked before publication.</p></div></div>
+      <form class="enquiry-form feedback-form review-form" data-review-form action="feedback.html" method="post" aria-label="Customer review" aria-describedby="review-status">
+        <h2>Share your experience.</h2><p>Tell Sony what made your session special, or what could be better.</p>
+        <noscript><p>Please enable JavaScript to submit online, or use the email link below.</p></noscript>
+        <fieldset disabled><legend class="sr-only">Your photography experience</legend><div class="enquiry-fields">
           <label>Your name<input name="name" autocomplete="name" type="text" required maxlength="120"></label>
           <label>Email address<input name="email" autocomplete="email" type="email" required maxlength="254"></label>
           <label class="field-wide">Photography type<select name="service" required><option value="">Choose photography type</option><option>Weddings</option><option>Maternity</option><option>Family</option><option>Family portraits</option><option>Professional headshots</option><option>Dreamy Projects</option><option>Films &amp; Reels</option><option>Other</option></select></label>
           <fieldset class="feedback-rating field-wide"><legend>Overall experience</legend><div class="rating-options"><label><input type="radio" name="rating" value="1" aria-label="1 star" required><span aria-hidden="true">1 ★</span></label><label><input type="radio" name="rating" value="2" aria-label="2 stars" required><span aria-hidden="true">2 ★</span></label><label><input type="radio" name="rating" value="3" aria-label="3 stars" required><span aria-hidden="true">3 ★</span></label><label><input type="radio" name="rating" value="4" aria-label="4 stars" required><span aria-hidden="true">4 ★</span></label><label><input type="radio" name="rating" value="5" aria-label="5 stars" required><span aria-hidden="true">5 ★</span></label></div><p class="content-note">1 = could be better · 5 = wonderful</p></fieldset>
           <label class="field-wide">Tell me about your experience<textarea name="message" rows="6" required maxlength="3000" placeholder="What did you enjoy? Is there anything I could improve?"></textarea></label>
-        </div><button type="submit" class="enquiry-submit">Open feedback email ↗</button><p class="enquiry-feedback" data-feedback-feedback role="status"></p><p class="content-note">Your feedback goes directly to Sony when you send the draft.<br>Prefer to write directly? <a class="direct-email" href="mailto:elementalesbysony@gmail.com?subject=Elementales%20customer%20feedback">elementalesbysony@gmail.com</a></p></fieldset>
+        <label class="review-consent field-wide"><input type="checkbox" name="consent" value="yes"><span>You may share my name, rating, photography type, and review on the Elementales website. My email stays private.</span></label>
+          <label class="review-trap" aria-hidden="true">Leave this field empty<input name="website" type="text" tabindex="-1" autocomplete="off"></label>
+        </div><button type="submit" class="enquiry-submit">Submit review</button></fieldset>
+        <p id="review-status" class="enquiry-feedback" data-review-status role="status" aria-live="polite" tabindex="-1">Loading the review form…</p><p class="content-note">Submitting a review does not publish it automatically.<br>Prefer to write directly? <a class="direct-email" href="mailto:elementalesbysony@gmail.com?subject=Elementales%20customer%20feedback">elementalesbysony@gmail.com</a></p>
       </form>
     </section>
   </main>  <footer id="contact" class="site-footer">
