@@ -266,6 +266,7 @@ body{overflow-x:clip}
 .collection-visual,.photographer-portrait{position:relative}
 .collection-visual{--watermark-size:clamp(.75rem,1.3vw,1.25rem)}
 .gallery-image-link,.photographer-portrait{--watermark-size:clamp(.65rem,1vw,1rem)}
+.collection-gallery .gallery-image-link{--watermark-size:13px}
 .viewer-photo{position:relative;display:inline-block;vertical-align:top;width:min(100%,calc(60dvh * var(--viewer-ratio,1)));max-width:100%;--watermark-size:clamp(.65rem,calc(1.2dvh * var(--viewer-ratio,1)),2rem)}
 .viewer-photo .viewer-image{width:100%;height:auto;max-height:none;background:transparent}
 @media(max-width:1180px){.viewer-photo{width:min(100%,calc(55dvh * var(--viewer-ratio,1)))}}
