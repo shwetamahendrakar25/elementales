@@ -192,7 +192,7 @@
       const caption = `${slide.dataset.label} · ${current + 1} / ${slides.length}`;
       slideshow.querySelector('[data-slide-caption]').textContent = caption;
       full.href = slide.dataset.full;
-      full.setAttribute('aria-label', `View full ${slide.dataset.label} photograph in a new tab`);
+      full.setAttribute('aria-label', `View full ${slide.dataset.label} photograph`);
       if (announce) status.textContent = caption;
       schedule();
     }
