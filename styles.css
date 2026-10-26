@@ -260,4 +260,14 @@ body{overflow-x:clip}
 @media(max-width:520px){.home-preview-pair{grid-template-columns:1fr}.reels-grid{grid-template-columns:minmax(0,1fr)}.reels-grid>article:last-child{grid-column:auto;width:100%}.youtube-short{max-width:22rem;margin-inline:auto}}
 
 /* A quiet signature stays over every slide and its crossfade. */
-.slideshow-hero .hero-watermark{position:absolute;z-index:2;left:50%;top:74%;transform:translate(-50%,-50%);font:500 clamp(.85rem,2vw,2rem)/1.2 "Cinzel",Georgia,serif;letter-spacing:.16em;text-transform:uppercase;white-space:nowrap;color:#fff;opacity:.55;text-shadow:0 1px 3px rgba(0,0,0,.65);pointer-events:none;user-select:none}
+.hero-watermark,.photo-watermark{position:absolute;z-index:2;left:50%;top:74%;transform:translate(-50%,-50%);font:500 var(--watermark-size,clamp(.85rem,2vw,2rem))/1.2 "Cinzel",Georgia,serif;letter-spacing:.16em;text-transform:uppercase;white-space:nowrap;color:#fff;opacity:.55;text-shadow:0 1px 3px rgba(0,0,0,.65);pointer-events:none;user-select:none}
+
+/* The signature belongs to the photograph, including enlarged previews. */
+.collection-visual,.photographer-portrait{position:relative}
+.collection-visual{--watermark-size:clamp(.75rem,1.3vw,1.25rem)}
+.gallery-image-link,.photographer-portrait{--watermark-size:clamp(.65rem,1vw,1rem)}
+.viewer-photo{position:relative;display:inline-block;vertical-align:top;width:min(100%,calc(60dvh * var(--viewer-ratio,1)));max-width:100%;--watermark-size:clamp(.65rem,calc(1.2dvh * var(--viewer-ratio,1)),2rem)}
+.viewer-photo .viewer-image{width:100%;height:auto;max-height:none;background:transparent}
+@media(max-width:1180px){.viewer-photo{width:min(100%,calc(55dvh * var(--viewer-ratio,1)))}}
+@media(max-width:760px){.photographer-story .photographer-portrait{position:relative}}
+@media(max-width:520px){.viewer-photo{width:min(100%,calc(48dvh * var(--viewer-ratio,1)))}}
