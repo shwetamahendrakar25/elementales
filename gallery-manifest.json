@@ -1,0 +1,1969 @@
+{
+  "schema": 1,
+  "version": "initial-portfolio",
+  "settings": {
+    "watermarkOpacity": 0.55,
+    "watermarkSize": "standard"
+  },
+  "categories": {
+    "slideshow": [
+      {
+        "key": "slide-1",
+        "alt": "Bride and four women in pastel pink wedding attire standing together outdoors",
+        "width": 1600,
+        "height": 1066,
+        "variants": [
+          {
+            "src": "assets/photos/home-dsc00355-480.webp",
+            "width": 480
+          },
+          {
+            "src": "assets/photos/home-dsc00355-960.webp",
+            "width": 960
+          },
+          {
+            "src": "assets/photos/home-dsc00355-1600.webp",
+            "width": 1600
+          },
+          {
+            "src": "assets/photos/home-dsc00355-2048.webp",
+            "width": 2048
+          }
+        ],
+        "focalX": 50,
+        "focalY": 0,
+        "label": "Weddings"
+      },
+      {
+        "key": "slide-2",
+        "alt": "Couple in traditional wedding attire leaning together beneath trees",
+        "width": 1600,
+        "height": 1067,
+        "variants": [
+          {
+            "src": "assets/photos/weddings-110-480.webp",
+            "width": 480
+          },
+          {
+            "src": "assets/photos/weddings-110-960.webp",
+            "width": 960
+          },
+          {
+            "src": "assets/photos/weddings-110-1600.webp",
+            "width": 1600
+          },
+          {
+            "src": "assets/photos/weddings-110-2048.webp",
+            "width": 2048
+          }
+        ],
+        "focalX": 50,
+        "focalY": 0,
+        "label": "Weddings"
+      },
+      {
+        "key": "slide-3",
+        "alt": "Expectant mother in a gold sari holding a lotus beneath an open sky",
+        "width": 1600,
+        "height": 1067,
+        "variants": [
+          {
+            "src": "assets/photos/maternity-082-480.webp",
+            "width": 480
+          },
+          {
+            "src": "assets/photos/maternity-082-960.webp",
+            "width": 960
+          },
+          {
+            "src": "assets/photos/maternity-082-1600.webp",
+            "width": 1600
+          },
+          {
+            "src": "assets/photos/maternity-082-2200.webp",
+            "width": 2200
+          }
+        ],
+        "focalX": 50,
+        "focalY": 0,
+        "label": "Maternity"
+      },
+      {
+        "key": "slide-4",
+        "alt": "Expectant mother in a peach gown smiling at her partner beside a wooden wall",
+        "width": 1600,
+        "height": 2400,
+        "variants": [
+          {
+            "src": "assets/photos/home-lks07361-2-480.webp",
+            "width": 480
+          },
+          {
+            "src": "assets/photos/home-lks07361-2-960.webp",
+            "width": 960
+          },
+          {
+            "src": "assets/photos/home-lks07361-2-1600.webp",
+            "width": 1600
+          },
+          {
+            "src": "assets/photos/home-lks07361-2-2200.webp",
+            "width": 2200
+          }
+        ],
+        "focalX": 50,
+        "focalY": 12,
+        "label": "Family"
+      },
+      {
+        "key": "slide-5",
+        "alt": "Classical dancer in turquoise and red surrounded by warm orange and pale smoke",
+        "width": 1600,
+        "height": 1067,
+        "variants": [
+          {
+            "src": "assets/photos/dreamy-projects-179-480.webp",
+            "width": 480
+          },
+          {
+            "src": "assets/photos/dreamy-projects-179-960.webp",
+            "width": 960
+          },
+          {
+            "src": "assets/photos/dreamy-projects-179-1600.webp",
+            "width": 1600
+          },
+          {
+            "src": "assets/photos/dreamy-projects-179-2200.webp",
+            "width": 2200
+          }
+        ],
+        "focalX": 50,
+        "focalY": 0,
+        "label": "Dreamy Projects"
+      }
+    ],
+    "about": [
+      {
+        "key": "sony-kurapati",
+        "alt": "Sony Kurapati holding a camera",
+        "width": 800,
+        "height": 1193,
+        "variants": [
+          {
+            "src": "assets/photographer/sony-kurapati-480.webp",
+            "width": 480
+          },
+          {
+            "src": "assets/photographer/sony-kurapati-800.webp",
+            "width": 800
+          },
+          {
+            "src": "assets/photographer/sony-kurapati-1200.webp",
+            "width": 1200
+          }
+        ],
+        "focalX": 50,
+        "focalY": 50
+      }
+    ],
+    "weddings": [
+      {
+        "key": "weddings-110",
+        "alt": "Couple in traditional wedding attire leaning together beneath trees",
+        "width": 960,
+        "height": 640,
+        "variants": [
+          {
+            "src": "assets/photos/weddings-110-480.webp",
+            "width": 480
+          },
+          {
+            "src": "assets/photos/weddings-110-960.webp",
+            "width": 960
+          },
+          {
+            "src": "assets/photos/weddings-110-1600.webp",
+            "width": 1600
+          },
+          {
+            "src": "assets/photos/weddings-110-2048.webp",
+            "width": 2048
+          }
+        ],
+        "focalX": 50,
+        "focalY": 50
+      },
+      {
+        "key": "weddings-135",
+        "alt": "Bride smiling as grains fall over her hair during a wedding ceremony",
+        "width": 960,
+        "height": 640,
+        "variants": [
+          {
+            "src": "assets/photos/weddings-135-480.webp",
+            "width": 480
+          },
+          {
+            "src": "assets/photos/weddings-135-960.webp",
+            "width": 960
+          },
+          {
+            "src": "assets/photos/weddings-135-1600.webp",
+            "width": 1600
+          },
+          {
+            "src": "assets/photos/weddings-135-2048.webp",
+            "width": 2048
+          }
+        ],
+        "focalX": 50,
+        "focalY": 50
+      },
+      {
+        "key": "weddings-004",
+        "alt": "Partner kissing the cheek of a smiling woman in orange and gold wedding attire",
+        "width": 960,
+        "height": 1440,
+        "variants": [
+          {
+            "src": "assets/photos/weddings-004-480.webp",
+            "width": 480
+          },
+          {
+            "src": "assets/photos/weddings-004-960.webp",
+            "width": 960
+          },
+          {
+            "src": "assets/photos/weddings-004-1365.webp",
+            "width": 1365
+          }
+        ],
+        "focalX": 50,
+        "focalY": 50
+      },
+      {
+        "key": "weddings-116",
+        "alt": "Wedding couple holding hands, with henna and jewelry in close detail",
+        "width": 960,
+        "height": 640,
+        "variants": [
+          {
+            "src": "assets/photos/weddings-116-480.webp",
+            "width": 480
+          },
+          {
+            "src": "assets/photos/weddings-116-960.webp",
+            "width": 960
+          },
+          {
+            "src": "assets/photos/weddings-116-1600.webp",
+            "width": 1600
+          },
+          {
+            "src": "assets/photos/weddings-116-2048.webp",
+            "width": 2048
+          }
+        ],
+        "focalX": 50,
+        "focalY": 50
+      },
+      {
+        "key": "weddings-139",
+        "alt": "Couple seated together during a wedding ceremony, surrounded by guests",
+        "width": 960,
+        "height": 640,
+        "variants": [
+          {
+            "src": "assets/photos/weddings-139-480.webp",
+            "width": 480
+          },
+          {
+            "src": "assets/photos/weddings-139-960.webp",
+            "width": 960
+          },
+          {
+            "src": "assets/photos/weddings-139-1600.webp",
+            "width": 1600
+          },
+          {
+            "src": "assets/photos/weddings-139-2048.webp",
+            "width": 2048
+          }
+        ],
+        "focalX": 50,
+        "focalY": 50
+      },
+      {
+        "key": "weddings-140",
+        "alt": "Bride in a pale gold sari with flowers in her hair",
+        "width": 960,
+        "height": 1440,
+        "variants": [
+          {
+            "src": "assets/photos/weddings-140-480.webp",
+            "width": 480
+          },
+          {
+            "src": "assets/photos/weddings-140-960.webp",
+            "width": 960
+          },
+          {
+            "src": "assets/photos/weddings-140-1365.webp",
+            "width": 1365
+          }
+        ],
+        "focalX": 50,
+        "focalY": 50
+      },
+      {
+        "key": "weddings-151",
+        "alt": "Guests throwing flower petals during a joyful turmeric celebration",
+        "width": 960,
+        "height": 640,
+        "variants": [
+          {
+            "src": "assets/photos/weddings-151-480.webp",
+            "width": 480
+          },
+          {
+            "src": "assets/photos/weddings-151-960.webp",
+            "width": 960
+          },
+          {
+            "src": "assets/photos/weddings-151-1600.webp",
+            "width": 1600
+          },
+          {
+            "src": "assets/photos/weddings-151-2048.webp",
+            "width": 2048
+          }
+        ],
+        "focalX": 50,
+        "focalY": 50
+      },
+      {
+        "key": "weddings-153",
+        "alt": "Turmeric and water being poured over a person during a pre-wedding celebration",
+        "width": 960,
+        "height": 826,
+        "variants": [
+          {
+            "src": "assets/photos/weddings-153-480.webp",
+            "width": 480
+          },
+          {
+            "src": "assets/photos/weddings-153-960.webp",
+            "width": 960
+          },
+          {
+            "src": "assets/photos/weddings-153-1600.webp",
+            "width": 1600
+          },
+          {
+            "src": "assets/photos/weddings-153-2048.webp",
+            "width": 2048
+          }
+        ],
+        "focalX": 50,
+        "focalY": 50
+      },
+      {
+        "key": "weddings-156",
+        "alt": "Woman in yellow smiling beside a young child during a pre-wedding celebration",
+        "width": 960,
+        "height": 784,
+        "variants": [
+          {
+            "src": "assets/photos/weddings-156-480.webp",
+            "width": 480
+          },
+          {
+            "src": "assets/photos/weddings-156-960.webp",
+            "width": 960
+          },
+          {
+            "src": "assets/photos/weddings-156-1600.webp",
+            "width": 1600
+          },
+          {
+            "src": "assets/photos/weddings-156-2048.webp",
+            "width": 2048
+          }
+        ],
+        "focalX": 50,
+        "focalY": 50
+      },
+      {
+        "key": "weddings-148",
+        "alt": "Outdoor wedding mandap decorated with pale flowers and hanging garlands",
+        "width": 960,
+        "height": 640,
+        "variants": [
+          {
+            "src": "assets/photos/weddings-148-480.webp",
+            "width": 480
+          },
+          {
+            "src": "assets/photos/weddings-148-960.webp",
+            "width": 960
+          },
+          {
+            "src": "assets/photos/weddings-148-1600.webp",
+            "width": 1600
+          },
+          {
+            "src": "assets/photos/weddings-148-2048.webp",
+            "width": 2048
+          }
+        ],
+        "focalX": 50,
+        "focalY": 50
+      },
+      {
+        "key": "weddings-137",
+        "alt": "Wedding couple seated beneath a floral mandap",
+        "width": 960,
+        "height": 1440,
+        "variants": [
+          {
+            "src": "assets/photos/weddings-137-480.webp",
+            "width": 480
+          },
+          {
+            "src": "assets/photos/weddings-137-960.webp",
+            "width": 960
+          },
+          {
+            "src": "assets/photos/weddings-137-1365.webp",
+            "width": 1365
+          }
+        ],
+        "focalX": 50,
+        "focalY": 50
+      },
+      {
+        "key": "weddings-029",
+        "alt": "Man in a white traditional outfit standing in a doorway",
+        "width": 960,
+        "height": 1656,
+        "variants": [
+          {
+            "src": "assets/photos/weddings-029-480.webp",
+            "width": 480
+          },
+          {
+            "src": "assets/photos/weddings-029-960.webp",
+            "width": 960
+          },
+          {
+            "src": "assets/photos/weddings-029-1187.webp",
+            "width": 1187
+          }
+        ],
+        "focalX": 50,
+        "focalY": 50
+      },
+      {
+        "key": "weddings-008",
+        "alt": "Couple sharing a quiet embrace in front of a decorated wedding stage",
+        "width": 960,
+        "height": 1440,
+        "variants": [
+          {
+            "src": "assets/photos/weddings-008-480.webp",
+            "width": 480
+          },
+          {
+            "src": "assets/photos/weddings-008-960.webp",
+            "width": 960
+          },
+          {
+            "src": "assets/photos/weddings-008-1365.webp",
+            "width": 1365
+          }
+        ],
+        "focalX": 50,
+        "focalY": 50
+      },
+      {
+        "key": "weddings-143",
+        "alt": "Wedding couple holding hands and smiling at one another outdoors",
+        "width": 960,
+        "height": 775,
+        "variants": [
+          {
+            "src": "assets/photos/weddings-143-480.webp",
+            "width": 480
+          },
+          {
+            "src": "assets/photos/weddings-143-960.webp",
+            "width": 960
+          },
+          {
+            "src": "assets/photos/weddings-143-1600.webp",
+            "width": 1600
+          },
+          {
+            "src": "assets/photos/weddings-143-2048.webp",
+            "width": 2048
+          }
+        ],
+        "focalX": 50,
+        "focalY": 50
+      },
+      {
+        "key": "weddings-165",
+        "alt": "Couple in purple evening attire smiling during their ring ceremony",
+        "width": 960,
+        "height": 1440,
+        "variants": [
+          {
+            "src": "assets/photos/weddings-165-480.webp",
+            "width": 480
+          },
+          {
+            "src": "assets/photos/weddings-165-960.webp",
+            "width": 960
+          },
+          {
+            "src": "assets/photos/weddings-165-1365.webp",
+            "width": 1365
+          }
+        ],
+        "focalX": 50,
+        "focalY": 50
+      },
+      {
+        "key": "weddings-167",
+        "alt": "Couple exchanging rings with warm lights behind them",
+        "width": 960,
+        "height": 640,
+        "variants": [
+          {
+            "src": "assets/photos/weddings-167-480.webp",
+            "width": 480
+          },
+          {
+            "src": "assets/photos/weddings-167-960.webp",
+            "width": 960
+          },
+          {
+            "src": "assets/photos/weddings-167-1600.webp",
+            "width": 1600
+          },
+          {
+            "src": "assets/photos/weddings-167-2048.webp",
+            "width": 2048
+          }
+        ],
+        "focalX": 50,
+        "focalY": 50
+      },
+      {
+        "key": "weddings-170",
+        "alt": "Candlelit reception table with flowers and glasses",
+        "width": 960,
+        "height": 640,
+        "variants": [
+          {
+            "src": "assets/photos/weddings-170-480.webp",
+            "width": 480
+          },
+          {
+            "src": "assets/photos/weddings-170-960.webp",
+            "width": 960
+          },
+          {
+            "src": "assets/photos/weddings-170-1600.webp",
+            "width": 1600
+          },
+          {
+            "src": "assets/photos/weddings-170-2048.webp",
+            "width": 2048
+          }
+        ],
+        "focalX": 50,
+        "focalY": 50
+      },
+      {
+        "key": "weddings-009",
+        "alt": "Pastel gift bags tied with ribbons at a wedding celebration",
+        "width": 960,
+        "height": 640,
+        "variants": [
+          {
+            "src": "assets/photos/weddings-009-480.webp",
+            "width": 480
+          },
+          {
+            "src": "assets/photos/weddings-009-960.webp",
+            "width": 960
+          },
+          {
+            "src": "assets/photos/weddings-009-1600.webp",
+            "width": 1600
+          },
+          {
+            "src": "assets/photos/weddings-009-2048.webp",
+            "width": 2048
+          }
+        ],
+        "focalX": 50,
+        "focalY": 50
+      },
+      {
+        "key": "weddings-186",
+        "alt": "Woman in a pink and gold sari holding a ceremonial tray",
+        "width": 960,
+        "height": 1440,
+        "variants": [
+          {
+            "src": "assets/photos/weddings-186-480.webp",
+            "width": 480
+          },
+          {
+            "src": "assets/photos/weddings-186-960.webp",
+            "width": 960
+          },
+          {
+            "src": "assets/photos/weddings-186-1365.webp",
+            "width": 1365
+          }
+        ],
+        "focalX": 50,
+        "focalY": 50
+      },
+      {
+        "key": "weddings-188",
+        "alt": "Couple in traditional clothing holding trays during a ceremony",
+        "width": 960,
+        "height": 1440,
+        "variants": [
+          {
+            "src": "assets/photos/weddings-188-480.webp",
+            "width": 480
+          },
+          {
+            "src": "assets/photos/weddings-188-960.webp",
+            "width": 960
+          },
+          {
+            "src": "assets/photos/weddings-188-1365.webp",
+            "width": 1365
+          }
+        ],
+        "focalX": 50,
+        "focalY": 50
+      },
+      {
+        "key": "weddings-180",
+        "alt": "Couple standing together during a ceremony in a decorated doorway",
+        "width": 960,
+        "height": 640,
+        "variants": [
+          {
+            "src": "assets/photos/weddings-180-480.webp",
+            "width": 480
+          },
+          {
+            "src": "assets/photos/weddings-180-960.webp",
+            "width": 960
+          },
+          {
+            "src": "assets/photos/weddings-180-1600.webp",
+            "width": 1600
+          },
+          {
+            "src": "assets/photos/weddings-180-2048.webp",
+            "width": 2048
+          }
+        ],
+        "focalX": 50,
+        "focalY": 50
+      },
+      {
+        "key": "weddings-162",
+        "alt": "Couple in pink and gold traditional attire surrounded by white floral decorations",
+        "width": 960,
+        "height": 640,
+        "variants": [
+          {
+            "src": "assets/photos/weddings-162-480.webp",
+            "width": 480
+          },
+          {
+            "src": "assets/photos/weddings-162-960.webp",
+            "width": 960
+          },
+          {
+            "src": "assets/photos/weddings-162-1600.webp",
+            "width": 1600
+          },
+          {
+            "src": "assets/photos/weddings-162-2048.webp",
+            "width": 2048
+          }
+        ],
+        "focalX": 50,
+        "focalY": 50
+      },
+      {
+        "key": "weddings-077",
+        "alt": "Wedding stage with white seating, gold frames, and floral arches",
+        "width": 960,
+        "height": 640,
+        "variants": [
+          {
+            "src": "assets/photos/weddings-077-480.webp",
+            "width": 480
+          },
+          {
+            "src": "assets/photos/weddings-077-960.webp",
+            "width": 960
+          },
+          {
+            "src": "assets/photos/weddings-077-1600.webp",
+            "width": 1600
+          },
+          {
+            "src": "assets/photos/weddings-077-2048.webp",
+            "width": 2048
+          }
+        ],
+        "focalX": 50,
+        "focalY": 50
+      },
+      {
+        "key": "weddings-028",
+        "alt": "Hands preparing ceremonial ingredients on a leaf",
+        "width": 960,
+        "height": 640,
+        "variants": [
+          {
+            "src": "assets/photos/weddings-028-480.webp",
+            "width": 480
+          },
+          {
+            "src": "assets/photos/weddings-028-960.webp",
+            "width": 960
+          },
+          {
+            "src": "assets/photos/weddings-028-1600.webp",
+            "width": 1600
+          },
+          {
+            "src": "assets/photos/weddings-028-2048.webp",
+            "width": 2048
+          }
+        ],
+        "focalX": 50,
+        "focalY": 50
+      }
+    ],
+    "maternity": [
+      {
+        "key": "maternity-040",
+        "alt": "Expectant mother in a red sari with fabric flowing across a dramatic lakeside scene",
+        "width": 960,
+        "height": 640,
+        "variants": [
+          {
+            "src": "assets/photos/maternity-040-480.webp",
+            "width": 480
+          },
+          {
+            "src": "assets/photos/maternity-040-960.webp",
+            "width": 960
+          },
+          {
+            "src": "assets/photos/maternity-040-1600.webp",
+            "width": 1600
+          },
+          {
+            "src": "assets/photos/maternity-040-2200.webp",
+            "width": 2200
+          }
+        ],
+        "focalX": 50,
+        "focalY": 50
+      },
+      {
+        "key": "maternity-082",
+        "alt": "Expectant mother in a gold sari holding a lotus beneath an open sky",
+        "width": 960,
+        "height": 640,
+        "variants": [
+          {
+            "src": "assets/photos/maternity-082-480.webp",
+            "width": 480
+          },
+          {
+            "src": "assets/photos/maternity-082-960.webp",
+            "width": 960
+          },
+          {
+            "src": "assets/photos/maternity-082-1600.webp",
+            "width": 1600
+          },
+          {
+            "src": "assets/photos/maternity-082-2200.webp",
+            "width": 2200
+          }
+        ],
+        "focalX": 50,
+        "focalY": 50
+      },
+      {
+        "key": "maternity-195",
+        "alt": "Expectant mother in a peach gown leaning toward her partner beside a wooden wall",
+        "width": 960,
+        "height": 1440,
+        "variants": [
+          {
+            "src": "assets/photos/maternity-195-480.webp",
+            "width": 480
+          },
+          {
+            "src": "assets/photos/maternity-195-960.webp",
+            "width": 960
+          },
+          {
+            "src": "assets/photos/maternity-195-1467.webp",
+            "width": 1467
+          }
+        ],
+        "focalX": 50,
+        "focalY": 50
+      },
+      {
+        "key": "maternity-056",
+        "alt": "Expectant mother in a red sari smiling down at her belly",
+        "width": 960,
+        "height": 640,
+        "variants": [
+          {
+            "src": "assets/photos/maternity-056-480.webp",
+            "width": 480
+          },
+          {
+            "src": "assets/photos/maternity-056-960.webp",
+            "width": 960
+          },
+          {
+            "src": "assets/photos/maternity-056-1600.webp",
+            "width": 1600
+          },
+          {
+            "src": "assets/photos/maternity-056-2200.webp",
+            "width": 2200
+          }
+        ],
+        "focalX": 50,
+        "focalY": 50
+      },
+      {
+        "key": "maternity-085",
+        "alt": "Expectant mother holding a sunflower as a gold drape flows around her",
+        "width": 960,
+        "height": 640,
+        "variants": [
+          {
+            "src": "assets/photos/maternity-085-480.webp",
+            "width": 480
+          },
+          {
+            "src": "assets/photos/maternity-085-960.webp",
+            "width": 960
+          },
+          {
+            "src": "assets/photos/maternity-085-1600.webp",
+            "width": 1600
+          },
+          {
+            "src": "assets/photos/maternity-085-2200.webp",
+            "width": 2200
+          }
+        ],
+        "focalX": 50,
+        "focalY": 50
+      },
+      {
+        "key": "maternity-088",
+        "alt": "Expectant mother in a pink gown beneath a flowering tree",
+        "width": 960,
+        "height": 640,
+        "variants": [
+          {
+            "src": "assets/photos/maternity-088-480.webp",
+            "width": 480
+          },
+          {
+            "src": "assets/photos/maternity-088-960.webp",
+            "width": 960
+          },
+          {
+            "src": "assets/photos/maternity-088-1600.webp",
+            "width": 1600
+          },
+          {
+            "src": "assets/photos/maternity-088-2200.webp",
+            "width": 2200
+          }
+        ],
+        "focalX": 50,
+        "focalY": 50
+      },
+      {
+        "key": "maternity-084",
+        "alt": "Expectant couple seated facing one another in a field",
+        "width": 960,
+        "height": 640,
+        "variants": [
+          {
+            "src": "assets/photos/maternity-084-480.webp",
+            "width": 480
+          },
+          {
+            "src": "assets/photos/maternity-084-960.webp",
+            "width": 960
+          },
+          {
+            "src": "assets/photos/maternity-084-1600.webp",
+            "width": 1600
+          },
+          {
+            "src": "assets/photos/maternity-084-2200.webp",
+            "width": 2200
+          }
+        ],
+        "focalX": 50,
+        "focalY": 50
+      },
+      {
+        "key": "maternity-037",
+        "alt": "Partner kissing an expectant mother on the forehead while a child stands beside them",
+        "width": 960,
+        "height": 640,
+        "variants": [
+          {
+            "src": "assets/photos/maternity-037-480.webp",
+            "width": 480
+          },
+          {
+            "src": "assets/photos/maternity-037-960.webp",
+            "width": 960
+          },
+          {
+            "src": "assets/photos/maternity-037-1600.webp",
+            "width": 1600
+          },
+          {
+            "src": "assets/photos/maternity-037-2200.webp",
+            "width": 2200
+          }
+        ],
+        "focalX": 50,
+        "focalY": 50
+      },
+      {
+        "key": "maternity-193",
+        "alt": "Expectant mother in a textured peach gown beside a white porch",
+        "width": 960,
+        "height": 1440,
+        "variants": [
+          {
+            "src": "assets/photos/maternity-193-480.webp",
+            "width": 480
+          },
+          {
+            "src": "assets/photos/maternity-193-960.webp",
+            "width": 960
+          },
+          {
+            "src": "assets/photos/maternity-193-1467.webp",
+            "width": 1467
+          }
+        ],
+        "focalX": 50,
+        "focalY": 50
+      },
+      {
+        "key": "maternity-086",
+        "alt": "Family gathered around an expectant mother in a gold drape",
+        "width": 960,
+        "height": 640,
+        "variants": [
+          {
+            "src": "assets/photos/maternity-086-480.webp",
+            "width": 480
+          },
+          {
+            "src": "assets/photos/maternity-086-960.webp",
+            "width": 960
+          },
+          {
+            "src": "assets/photos/maternity-086-1600.webp",
+            "width": 1600
+          },
+          {
+            "src": "assets/photos/maternity-086-2200.webp",
+            "width": 2200
+          }
+        ],
+        "focalX": 50,
+        "focalY": 50
+      },
+      {
+        "key": "maternity-197",
+        "alt": "Expectant mother in a red embroidered sari beside a dark lake",
+        "width": 960,
+        "height": 768,
+        "variants": [
+          {
+            "src": "assets/photos/maternity-197-480.webp",
+            "width": 480
+          },
+          {
+            "src": "assets/photos/maternity-197-960.webp",
+            "width": 960
+          },
+          {
+            "src": "assets/photos/maternity-197-1600.webp",
+            "width": 1600
+          },
+          {
+            "src": "assets/photos/maternity-197-2200.webp",
+            "width": 2200
+          }
+        ],
+        "focalX": 50,
+        "focalY": 50
+      },
+      {
+        "key": "maternity-199",
+        "alt": "Expectant mother in red standing with her partner and a child against a warm backdrop",
+        "width": 960,
+        "height": 1200,
+        "variants": [
+          {
+            "src": "assets/photos/maternity-199-480.webp",
+            "width": 480
+          },
+          {
+            "src": "assets/photos/maternity-199-960.webp",
+            "width": 960
+          },
+          {
+            "src": "assets/photos/maternity-199-1600.webp",
+            "width": 1600
+          },
+          {
+            "src": "assets/photos/maternity-199-1760.webp",
+            "width": 1760
+          }
+        ],
+        "focalX": 50,
+        "focalY": 50
+      },
+      {
+        "key": "maternity-215",
+        "alt": "Expectant mother in a red outfit standing in patterned window light",
+        "width": 960,
+        "height": 1200,
+        "variants": [
+          {
+            "src": "assets/photos/maternity-215-480.webp",
+            "width": 480
+          },
+          {
+            "src": "assets/photos/maternity-215-960.webp",
+            "width": 960
+          },
+          {
+            "src": "assets/photos/maternity-215-1600.webp",
+            "width": 1600
+          },
+          {
+            "src": "assets/photos/maternity-215-1760.webp",
+            "width": 1760
+          }
+        ],
+        "focalX": 50,
+        "focalY": 50
+      },
+      {
+        "key": "maternity-087",
+        "alt": "Expectant mother in a gold sari framed by flowers and a tree",
+        "width": 960,
+        "height": 1200,
+        "variants": [
+          {
+            "src": "assets/photos/maternity-087-480.webp",
+            "width": 480
+          },
+          {
+            "src": "assets/photos/maternity-087-960.webp",
+            "width": 960
+          },
+          {
+            "src": "assets/photos/maternity-087-1600.webp",
+            "width": 1600
+          },
+          {
+            "src": "assets/photos/maternity-087-1760.webp",
+            "width": 1760
+          }
+        ],
+        "focalX": 50,
+        "focalY": 50
+      },
+      {
+        "key": "maternity-089",
+        "alt": "Expectant mother in a pink gown with flowing fabric against a dark woodland background",
+        "width": 960,
+        "height": 640,
+        "variants": [
+          {
+            "src": "assets/photos/maternity-089-480.webp",
+            "width": 480
+          },
+          {
+            "src": "assets/photos/maternity-089-960.webp",
+            "width": 960
+          },
+          {
+            "src": "assets/photos/maternity-089-1600.webp",
+            "width": 1600
+          },
+          {
+            "src": "assets/photos/maternity-089-2200.webp",
+            "width": 2200
+          }
+        ],
+        "focalX": 50,
+        "focalY": 50
+      },
+      {
+        "key": "maternity-061",
+        "alt": "Expectant mother in a red sari holding a lit ceremonial plate",
+        "width": 960,
+        "height": 1440,
+        "variants": [
+          {
+            "src": "assets/photos/maternity-061-480.webp",
+            "width": 480
+          },
+          {
+            "src": "assets/photos/maternity-061-960.webp",
+            "width": 960
+          },
+          {
+            "src": "assets/photos/maternity-061-1467.webp",
+            "width": 1467
+          }
+        ],
+        "focalX": 50,
+        "focalY": 50
+      }
+    ],
+    "family": [
+      {
+        "key": "family-067",
+        "alt": "Two parents smiling down at the baby held between them outdoors",
+        "width": 960,
+        "height": 1440,
+        "variants": [
+          {
+            "src": "assets/photos/family-067-480.webp",
+            "width": 480
+          },
+          {
+            "src": "assets/photos/family-067-960.webp",
+            "width": 960
+          },
+          {
+            "src": "assets/photos/family-067-1365.webp",
+            "width": 1365
+          }
+        ],
+        "focalX": 50,
+        "focalY": 50
+      },
+      {
+        "key": "family-070",
+        "alt": "Baby peeking out from beneath a soft cream blanket",
+        "width": 960,
+        "height": 679,
+        "variants": [
+          {
+            "src": "assets/photos/family-070-480.webp",
+            "width": 480
+          },
+          {
+            "src": "assets/photos/family-070-960.webp",
+            "width": 960
+          },
+          {
+            "src": "assets/photos/family-070-1600.webp",
+            "width": 1600
+          },
+          {
+            "src": "assets/photos/family-070-2048.webp",
+            "width": 2048
+          }
+        ],
+        "focalX": 50,
+        "focalY": 50
+      },
+      {
+        "key": "family-031",
+        "alt": "Woman sitting on a wooden bridge with a young child in her arms",
+        "width": 960,
+        "height": 640,
+        "variants": [
+          {
+            "src": "assets/photos/family-031-480.webp",
+            "width": 480
+          },
+          {
+            "src": "assets/photos/family-031-960.webp",
+            "width": 960
+          },
+          {
+            "src": "assets/photos/family-031-1600.webp",
+            "width": 1600
+          },
+          {
+            "src": "assets/photos/family-031-2048.webp",
+            "width": 2048
+          }
+        ],
+        "focalX": 50,
+        "focalY": 50
+      },
+      {
+        "key": "family-128",
+        "alt": "Young child in a blue suit holding two adults by the hands",
+        "width": 960,
+        "height": 1596,
+        "variants": [
+          {
+            "src": "assets/photos/family-128-480.webp",
+            "width": 480
+          },
+          {
+            "src": "assets/photos/family-128-960.webp",
+            "width": 960
+          },
+          {
+            "src": "assets/photos/family-128-1232.webp",
+            "width": 1232
+          }
+        ],
+        "focalX": 50,
+        "focalY": 50
+      },
+      {
+        "key": "family-129",
+        "alt": "Silhouette of a family lifting a young child into the sky",
+        "width": 960,
+        "height": 765,
+        "variants": [
+          {
+            "src": "assets/photos/family-129-480.webp",
+            "width": 480
+          },
+          {
+            "src": "assets/photos/family-129-960.webp",
+            "width": 960
+          },
+          {
+            "src": "assets/photos/family-129-1600.webp",
+            "width": 1600
+          },
+          {
+            "src": "assets/photos/family-129-2048.webp",
+            "width": 2048
+          }
+        ],
+        "focalX": 50,
+        "focalY": 50
+      },
+      {
+        "key": "family-130",
+        "alt": "Family of three smiling together outdoors in formal clothing",
+        "width": 960,
+        "height": 640,
+        "variants": [
+          {
+            "src": "assets/photos/family-130-480.webp",
+            "width": 480
+          },
+          {
+            "src": "assets/photos/family-130-960.webp",
+            "width": 960
+          },
+          {
+            "src": "assets/photos/family-130-1600.webp",
+            "width": 1600
+          },
+          {
+            "src": "assets/photos/family-130-2048.webp",
+            "width": 2048
+          }
+        ],
+        "focalX": 50,
+        "focalY": 50
+      },
+      {
+        "key": "family-071",
+        "alt": "Baby in a soft bear outfit sitting among plush toys",
+        "width": 960,
+        "height": 640,
+        "variants": [
+          {
+            "src": "assets/photos/family-071-480.webp",
+            "width": 480
+          },
+          {
+            "src": "assets/photos/family-071-960.webp",
+            "width": 960
+          },
+          {
+            "src": "assets/photos/family-071-1600.webp",
+            "width": 1600
+          },
+          {
+            "src": "assets/photos/family-071-2048.webp",
+            "width": 2048
+          }
+        ],
+        "focalX": 50,
+        "focalY": 50
+      },
+      {
+        "key": "family-057",
+        "alt": "Young boy in traditional clothing seated against warm gold drapery",
+        "width": 960,
+        "height": 1440,
+        "variants": [
+          {
+            "src": "assets/photos/family-057-480.webp",
+            "width": 480
+          },
+          {
+            "src": "assets/photos/family-057-960.webp",
+            "width": 960
+          },
+          {
+            "src": "assets/photos/family-057-1467.webp",
+            "width": 1467
+          }
+        ],
+        "focalX": 50,
+        "focalY": 50
+      },
+      {
+        "key": "family-034",
+        "alt": "Family posing beside balloons at a first-birthday celebration",
+        "width": 960,
+        "height": 1440,
+        "variants": [
+          {
+            "src": "assets/photos/family-034-480.webp",
+            "width": 480
+          },
+          {
+            "src": "assets/photos/family-034-960.webp",
+            "width": 960
+          },
+          {
+            "src": "assets/photos/family-034-1365.webp",
+            "width": 1365
+          }
+        ],
+        "focalX": 50,
+        "focalY": 50
+      },
+      {
+        "key": "family-223",
+        "alt": "Two families with young children standing together beneath flowering trees",
+        "width": 960,
+        "height": 1440,
+        "variants": [
+          {
+            "src": "assets/photos/family-223-480.webp",
+            "width": 480
+          },
+          {
+            "src": "assets/photos/family-223-960.webp",
+            "width": 960
+          },
+          {
+            "src": "assets/photos/family-223-1365.webp",
+            "width": 1365
+          }
+        ],
+        "focalX": 50,
+        "focalY": 50
+      },
+      {
+        "key": "family-226",
+        "alt": "Family smiling together on the steps outside a home",
+        "width": 960,
+        "height": 1507,
+        "variants": [
+          {
+            "src": "assets/photos/family-226-480.webp",
+            "width": 480
+          },
+          {
+            "src": "assets/photos/family-226-960.webp",
+            "width": 960
+          },
+          {
+            "src": "assets/photos/family-226-1305.webp",
+            "width": 1305
+          }
+        ],
+        "focalX": 50,
+        "focalY": 50
+      },
+      {
+        "key": "family-032",
+        "alt": "Young child in blue traditional clothing standing on a wooden bridge",
+        "width": 960,
+        "height": 640,
+        "variants": [
+          {
+            "src": "assets/photos/family-032-480.webp",
+            "width": 480
+          },
+          {
+            "src": "assets/photos/family-032-960.webp",
+            "width": 960
+          },
+          {
+            "src": "assets/photos/family-032-1600.webp",
+            "width": 1600
+          },
+          {
+            "src": "assets/photos/family-032-2048.webp",
+            "width": 2048
+          }
+        ],
+        "focalX": 50,
+        "focalY": 50
+      }
+    ],
+    "dreamy-projects": [
+      {
+        "key": "dreamy-projects-179",
+        "alt": "Classical dancer in turquoise and red surrounded by warm orange and pale smoke",
+        "width": 960,
+        "height": 640,
+        "variants": [
+          {
+            "src": "assets/photos/dreamy-projects-179-480.webp",
+            "width": 480
+          },
+          {
+            "src": "assets/photos/dreamy-projects-179-960.webp",
+            "width": 960
+          },
+          {
+            "src": "assets/photos/dreamy-projects-179-1600.webp",
+            "width": 1600
+          },
+          {
+            "src": "assets/photos/dreamy-projects-179-2200.webp",
+            "width": 2200
+          }
+        ],
+        "focalX": 50,
+        "focalY": 50
+      },
+      {
+        "key": "dreamy-projects-044",
+        "alt": "Classical dancer in red posing beneath a glowing ornate arch",
+        "width": 960,
+        "height": 1440,
+        "variants": [
+          {
+            "src": "assets/photos/dreamy-projects-044-480.webp",
+            "width": 480
+          },
+          {
+            "src": "assets/photos/dreamy-projects-044-960.webp",
+            "width": 960
+          },
+          {
+            "src": "assets/photos/dreamy-projects-044-1467.webp",
+            "width": 1467
+          }
+        ],
+        "focalX": 50,
+        "focalY": 50
+      },
+      {
+        "key": "dreamy-projects-001",
+        "alt": "Classical dancer in blue and turquoise holding a brass plate",
+        "width": 960,
+        "height": 1438,
+        "variants": [
+          {
+            "src": "assets/photos/dreamy-projects-001-480.webp",
+            "width": 480
+          },
+          {
+            "src": "assets/photos/dreamy-projects-001-960.webp",
+            "width": 960
+          },
+          {
+            "src": "assets/photos/dreamy-projects-001-1469.webp",
+            "width": 1469
+          }
+        ],
+        "focalX": 50,
+        "focalY": 50
+      },
+      {
+        "key": "dreamy-projects-047",
+        "alt": "Classical dancer in purple and white holding an expressive hand gesture",
+        "width": 960,
+        "height": 1440,
+        "variants": [
+          {
+            "src": "assets/photos/dreamy-projects-047-480.webp",
+            "width": 480
+          },
+          {
+            "src": "assets/photos/dreamy-projects-047-960.webp",
+            "width": 960
+          },
+          {
+            "src": "assets/photos/dreamy-projects-047-1467.webp",
+            "width": 1467
+          }
+        ],
+        "focalX": 50,
+        "focalY": 50
+      },
+      {
+        "key": "dreamy-projects-205",
+        "alt": "Close detail of a dancer holding ankle bells in warm light",
+        "width": 960,
+        "height": 1440,
+        "variants": [
+          {
+            "src": "assets/photos/dreamy-projects-205-480.webp",
+            "width": 480
+          },
+          {
+            "src": "assets/photos/dreamy-projects-205-960.webp",
+            "width": 960
+          },
+          {
+            "src": "assets/photos/dreamy-projects-205-1365.webp",
+            "width": 1365
+          }
+        ],
+        "focalX": 50,
+        "focalY": 50
+      },
+      {
+        "key": "dreamy-projects-049",
+        "alt": "Classical dancer in green and red standing in an ornate golden setting",
+        "width": 960,
+        "height": 1440,
+        "variants": [
+          {
+            "src": "assets/photos/dreamy-projects-049-480.webp",
+            "width": 480
+          },
+          {
+            "src": "assets/photos/dreamy-projects-049-960.webp",
+            "width": 960
+          },
+          {
+            "src": "assets/photos/dreamy-projects-049-1467.webp",
+            "width": 1467
+          }
+        ],
+        "focalX": 50,
+        "focalY": 50
+      },
+      {
+        "key": "dreamy-projects-190",
+        "alt": "Classical dancer holding a flute in a sunlit field of flowers",
+        "width": 960,
+        "height": 640,
+        "variants": [
+          {
+            "src": "assets/photos/dreamy-projects-190-480.webp",
+            "width": 480
+          },
+          {
+            "src": "assets/photos/dreamy-projects-190-960.webp",
+            "width": 960
+          },
+          {
+            "src": "assets/photos/dreamy-projects-190-1600.webp",
+            "width": 1600
+          },
+          {
+            "src": "assets/photos/dreamy-projects-190-2200.webp",
+            "width": 2200
+          }
+        ],
+        "focalX": 50,
+        "focalY": 50
+      },
+      {
+        "key": "dreamy-projects-091",
+        "alt": "Classical dancer in red and purple in a poised studio stance",
+        "width": 960,
+        "height": 1440,
+        "variants": [
+          {
+            "src": "assets/photos/dreamy-projects-091-480.webp",
+            "width": 480
+          },
+          {
+            "src": "assets/photos/dreamy-projects-091-960.webp",
+            "width": 960
+          },
+          {
+            "src": "assets/photos/dreamy-projects-091-1467.webp",
+            "width": 1467
+          }
+        ],
+        "focalX": 50,
+        "focalY": 50
+      },
+      {
+        "key": "dreamy-projects-108",
+        "alt": "Dancers in pale costumes captured with flowing motion blur on stage",
+        "width": 960,
+        "height": 640,
+        "variants": [
+          {
+            "src": "assets/photos/dreamy-projects-108-480.webp",
+            "width": 480
+          },
+          {
+            "src": "assets/photos/dreamy-projects-108-960.webp",
+            "width": 960
+          },
+          {
+            "src": "assets/photos/dreamy-projects-108-1600.webp",
+            "width": 1600
+          },
+          {
+            "src": "assets/photos/dreamy-projects-108-2048.webp",
+            "width": 2048
+          }
+        ],
+        "focalX": 50,
+        "focalY": 50
+      },
+      {
+        "key": "dreamy-projects-107",
+        "alt": "Ensemble of dancers performing across a stage before a colorful backdrop",
+        "width": 960,
+        "height": 640,
+        "variants": [
+          {
+            "src": "assets/photos/dreamy-projects-107-480.webp",
+            "width": 480
+          },
+          {
+            "src": "assets/photos/dreamy-projects-107-960.webp",
+            "width": 960
+          },
+          {
+            "src": "assets/photos/dreamy-projects-107-1600.webp",
+            "width": 1600
+          },
+          {
+            "src": "assets/photos/dreamy-projects-107-2048.webp",
+            "width": 2048
+          }
+        ],
+        "focalX": 50,
+        "focalY": 50
+      },
+      {
+        "key": "dreamy-projects-092",
+        "alt": "Classical dancer framed by a circular arrangement of costume pieces and ornaments",
+        "width": 960,
+        "height": 1200,
+        "variants": [
+          {
+            "src": "assets/photos/dreamy-projects-092-480.webp",
+            "width": 480
+          },
+          {
+            "src": "assets/photos/dreamy-projects-092-960.webp",
+            "width": 960
+          },
+          {
+            "src": "assets/photos/dreamy-projects-092-1600.webp",
+            "width": 1600
+          },
+          {
+            "src": "assets/photos/dreamy-projects-092-1760.webp",
+            "width": 1760
+          }
+        ],
+        "focalX": 50,
+        "focalY": 50
+      },
+      {
+        "key": "dreamy-projects-053",
+        "alt": "Classical dancer in red using expressive hand gestures against a smoky background",
+        "width": 960,
+        "height": 1440,
+        "variants": [
+          {
+            "src": "assets/photos/dreamy-projects-053-480.webp",
+            "width": 480
+          },
+          {
+            "src": "assets/photos/dreamy-projects-053-960.webp",
+            "width": 960
+          },
+          {
+            "src": "assets/photos/dreamy-projects-053-1467.webp",
+            "width": 1467
+          }
+        ],
+        "focalX": 50,
+        "focalY": 50
+      },
+      {
+        "key": "dreamy-projects-054",
+        "alt": "Classical dancer framing her face with both hands in warm golden light",
+        "width": 960,
+        "height": 1440,
+        "variants": [
+          {
+            "src": "assets/photos/dreamy-projects-054-480.webp",
+            "width": 480
+          },
+          {
+            "src": "assets/photos/dreamy-projects-054-960.webp",
+            "width": 960
+          },
+          {
+            "src": "assets/photos/dreamy-projects-054-1467.webp",
+            "width": 1467
+          }
+        ],
+        "focalX": 50,
+        "focalY": 50
+      },
+      {
+        "key": "dreamy-projects-025",
+        "alt": "Classical dancer in blue and turquoise in a portrait against a pale smoky background",
+        "width": 960,
+        "height": 1438,
+        "variants": [
+          {
+            "src": "assets/photos/dreamy-projects-025-480.webp",
+            "width": 480
+          },
+          {
+            "src": "assets/photos/dreamy-projects-025-960.webp",
+            "width": 960
+          },
+          {
+            "src": "assets/photos/dreamy-projects-025-1469.webp",
+            "width": 1469
+          }
+        ],
+        "focalX": 50,
+        "focalY": 50
+      },
+      {
+        "key": "dreamy-projects-206",
+        "alt": "Classical dancer in orange and purple standing outdoors beneath a blue evening sky",
+        "width": 960,
+        "height": 640,
+        "variants": [
+          {
+            "src": "assets/photos/dreamy-projects-206-480.webp",
+            "width": 480
+          },
+          {
+            "src": "assets/photos/dreamy-projects-206-960.webp",
+            "width": 960
+          },
+          {
+            "src": "assets/photos/dreamy-projects-206-1600.webp",
+            "width": 1600
+          },
+          {
+            "src": "assets/photos/dreamy-projects-206-2048.webp",
+            "width": 2048
+          }
+        ],
+        "focalX": 50,
+        "focalY": 50
+      },
+      {
+        "key": "dreamy-projects-204",
+        "alt": "Classical dancer seen from behind with raised arms on a glowing staircase",
+        "width": 960,
+        "height": 640,
+        "variants": [
+          {
+            "src": "assets/photos/dreamy-projects-204-480.webp",
+            "width": 480
+          },
+          {
+            "src": "assets/photos/dreamy-projects-204-960.webp",
+            "width": 960
+          },
+          {
+            "src": "assets/photos/dreamy-projects-204-1600.webp",
+            "width": 1600
+          },
+          {
+            "src": "assets/photos/dreamy-projects-204-2200.webp",
+            "width": 2200
+          }
+        ],
+        "focalX": 50,
+        "focalY": 50
+      },
+      {
+        "key": "dreamy-projects-048",
+        "alt": "Black-and-white detail of a dancer fastening ankle bells",
+        "width": 960,
+        "height": 1440,
+        "variants": [
+          {
+            "src": "assets/photos/dreamy-projects-048-480.webp",
+            "width": 480
+          },
+          {
+            "src": "assets/photos/dreamy-projects-048-960.webp",
+            "width": 960
+          },
+          {
+            "src": "assets/photos/dreamy-projects-048-1467.webp",
+            "width": 1467
+          }
+        ],
+        "focalX": 50,
+        "focalY": 50
+      },
+      {
+        "key": "dreamy-projects-103",
+        "alt": "Dancer captured in a flowing turn with intentional motion blur",
+        "width": 960,
+        "height": 640,
+        "variants": [
+          {
+            "src": "assets/photos/dreamy-projects-103-480.webp",
+            "width": 480
+          },
+          {
+            "src": "assets/photos/dreamy-projects-103-960.webp",
+            "width": 960
+          },
+          {
+            "src": "assets/photos/dreamy-projects-103-1600.webp",
+            "width": 1600
+          },
+          {
+            "src": "assets/photos/dreamy-projects-103-2048.webp",
+            "width": 2048
+          }
+        ],
+        "focalX": 50,
+        "focalY": 50
+      },
+      {
+        "key": "dreamy-projects-119",
+        "alt": "Stage ensemble rendered as sweeping bands of color through intentional motion blur",
+        "width": 960,
+        "height": 640,
+        "variants": [
+          {
+            "src": "assets/photos/dreamy-projects-119-480.webp",
+            "width": 480
+          },
+          {
+            "src": "assets/photos/dreamy-projects-119-960.webp",
+            "width": 960
+          },
+          {
+            "src": "assets/photos/dreamy-projects-119-1600.webp",
+            "width": 1600
+          },
+          {
+            "src": "assets/photos/dreamy-projects-119-2048.webp",
+            "width": 2048
+          }
+        ],
+        "focalX": 50,
+        "focalY": 50
+      },
+      {
+        "key": "dreamy-projects-219",
+        "alt": "Composite of a classical dancer making several expressive gestures around a bright center",
+        "width": 960,
+        "height": 823,
+        "variants": [
+          {
+            "src": "assets/photos/dreamy-projects-219-480.webp",
+            "width": 480
+          },
+          {
+            "src": "assets/photos/dreamy-projects-219-960.webp",
+            "width": 960
+          },
+          {
+            "src": "assets/photos/dreamy-projects-219-1600.webp",
+            "width": 1600
+          },
+          {
+            "src": "assets/photos/dreamy-projects-219-2200.webp",
+            "width": 2200
+          }
+        ],
+        "focalX": 50,
+        "focalY": 50
+      }
+    ]
+  },
+  "homeFeatured": {
+    "weddings": [
+      "weddings-110",
+      "weddings-004",
+      "weddings-140",
+      "weddings-135"
+    ],
+    "maternity": [
+      "maternity-040",
+      "maternity-195",
+      "maternity-193",
+      "maternity-082"
+    ],
+    "family": [
+      "family-067",
+      "family-070",
+      "family-031",
+      "family-057"
+    ],
+    "dreamy-projects": [
+      "dreamy-projects-179",
+      "dreamy-projects-044",
+      "dreamy-projects-001",
+      "dreamy-projects-107"
+    ]
+  }
+}
