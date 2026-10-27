@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Elementales — Photo Studio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{color-scheme:light;--ivory:#faf8f4;--ink:#283f39;--sage:#e4ebe1;--blush:#f1e6e4;--line:#d8dfd5;--muted:#626b63}*{box-sizing:border-box}body{margin:0;background:var(--ivory);color:var(--ink);font:16px/1.6 'DM Sans',sans-serif}header{padding:24px max(24px,5vw);border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;gap:20px;background:#f1f3ed}h1,h2,h3{font-family:'Cormorant Garamond',Georgia,serif;font-weight:500;line-height:1.1}h1{font-size:clamp(38px,5vw,64px);margin:8px 0 16px}h2{font-size:32px;margin:0 0 16px}h3{font-size:25px;margin:0 0 10px}.wordmark{font:600 24px Georgia,serif;letter-spacing:.16em}.eyebrow{font-size:12px;text-transform:uppercase;letter-spacing:.16em;color:var(--muted)}.account{font-size:13px;overflow-wrap:anywhere}main{max-width:1440px;margin:auto;padding:44px max(24px,5vw) 80px}.lede{max-width:660px;color:var(--muted);margin:0 0 28px}.panel{background:#fffdf9;border:1px solid var(--line);border-radius:14px;padding:26px;margin:24px 0}.toolbar{display:flex;gap:12px;flex-wrap:wrap;align-items:center}.toolbar.spread{justify-content:space-between}button,.button{font:500 14px 'DM Sans',sans-serif;border:1px solid #aebdb0;color:var(--ink);background:#fffdf9;border-radius:40px;padding:12px 20px;text-decoration:none;cursor:pointer;min-height:44px;display:inline-flex;align-items:center;justify-content:center;gap:8px}.primary{background:var(--ink);color:#fff}.soft{background:var(--sage)}button:disabled{opacity:.45;cursor:wait}button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,iframe:focus-visible{outline:3px solid #a66d79;outline-offset:3px}a{color:inherit}small,.muted{color:var(--muted);font-size:13px}#status{padding:14px 18px;border-radius:10px;background:var(--sage);white-space:pre-wrap;overflow-wrap:anywhere}#status.error{background:#f4dddd;color:#722f36}#status:empty{display:none}[hidden]{display:none!important}.folder-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:20px}.folder-link{display:block;padding:16px;border:1px solid var(--line);border-radius:10px;text-decoration:none}.folder-link:hover{background:var(--sage)}.folder-link span{display:block;font-size:12px;color:var(--muted)}.setup-columns{display:grid;grid-template-columns:1fr 1fr;gap:24px}.setup-columns>div{background:var(--sage);padding:22px;border-radius:12px}.summary{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.summary div{padding:16px;background:var(--sage);border-radius:10px}.summary strong{display:block;font-size:15px}.summary span{font-size:13px;color:var(--muted)}label{display:block;font-size:13px;font-weight:500}input,select{font:inherit;color:var(--ink);background:#fffdf9;border:1px solid #b6c3b7;padding:10px;border-radius:7px;max-width:100%}input[type=text],input[type=password]{width:100%}input[type=checkbox]{width:18px;height:18px;accent-color:var(--ink)}input[type=range]{padding:0;width:100%}.field{margin:14px 0}.field small{display:block;margin-top:5px}.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin:24px 0}.photo-card{border:1px solid var(--line);border-radius:12px;overflow:hidden;background:#fffdf9;min-width:0}.photo-card img{width:100%;height:210px;object-fit:contain;background:var(--sage);display:block}.photo-card .body{padding:16px}.filename{font-size:12px;color:var(--muted);overflow-wrap:anywhere;margin:0 0 12px}.ordering{display:flex;gap:8px;justify-content:space-between;margin-top:12px}.ordering button{padding:8px 12px}.preview-shell{background:var(--sage);padding:20px;border-radius:12px;margin-top:18px;overflow:auto}.preview-shell iframe{display:block;width:100%;height:760px;margin:auto;background:white;border:1px solid var(--line);border-radius:8px}.preview-shell.mobile iframe{width:390px;max-width:100%}.checkline{display:flex;gap:12px;align-items:flex-start;font-size:14px;margin:18px 0}.history-row{display:flex;justify-content:space-between;gap:16px;align-items:center;padding:18px 0;border-bottom:1px solid var(--line)}.history-row:last-child{border-bottom:0}.history-row strong{display:block;font-size:15px}.history-row small{display:block}.details{margin-top:18px}.details summary{cursor:pointer}.settings-description{max-width:750px}.publish-note{border-left:3px solid #b7c4b2;padding-left:16px}.busy-indicator{display:inline-block;width:9px;height:9px;background:#849d85;border-radius:50%;margin-right:6px}footer{font-size:13px;color:var(--muted);padding-top:24px;border-top:1px solid var(--line)}@media(max-width:900px){.folder-grid,.summary{grid-template-columns:repeat(2,minmax(0,1fr))}.cards{grid-template-columns:repeat(2,minmax(0,1fr))}.setup-columns{grid-template-columns:1fr}}@media(max-width:560px){header{align-items:flex-start;flex-direction:column;padding:20px}main{padding:28px 18px}.panel{padding:18px}.cards,.folder-grid,.summary{grid-template-columns:1fr}.toolbar>*{flex-grow:1}.history-row{align-items:flex-start;flex-direction:column}.preview-shell{padding:8px}}
+</style>
+</head>
+<body>
+<header><div><div class="wordmark">ELEMENTALES</div><div class="eyebrow">Private photo studio</div></div><div class="account">Sony Kurapati<br><span class="muted">elementalesbysony@gmail.com</span></div></header>
+<main>
+<div class="eyebrow">Your photographs. Your final say.</div>
+<h1>A little space<br>to shape your stories.</h1>
+<p class="lede">Organize your photographs in Drive, preview the website, and publish when it feels right. Every published selection stays available to restore.</p>
+<p id="status" role="status" aria-live="polite"></p>
+<section class="panel" id="setup" hidden aria-labelledby="setup-title"><h2 id="setup-title">Set up your photo folders</h2><p>Start with a copy of the current website selection. Your original Drive photos and live galleries stay as they are.</p><div class="setup-columns"><div><h3>1. Create your workspace</h3><p>Six category folders, plus a private system folder for saved previews and versions.</p><button class="primary" id="initialize">Create photo folders</button></div><div><h3>2. Copy the current selection</h3><p id="seed-count">Copies are numbered to preserve the current order.</p><button id="seed" disabled>Copy current photos</button></div></div></section>
+<section class="panel" id="workspace" hidden aria-labelledby="workspace-title"><div class="toolbar spread"><div><h2 id="workspace-title">Your Drive folders</h2><small>Add, remove, or move photos here, then sync. JPG, PNG, and WebP · up to 25 MB each.</small></div><button class="primary" id="sync">Sync &amp; Preview</button></div><div class="folder-grid" id="folders"></div><details class="details"><summary>Photo order and folder guidelines</summary><p>Number filenames such as <strong>001, 002, 003</strong> to set their order, or use the ordering buttons in the preview. Keep exactly <strong>five</strong> photos in Homepage Slideshow and <strong>one</strong> portrait in About. Category folders need at least one photo. Subfolders are not scanned.</p><p>Drive edits never publish automatically. Leave the system folder intact: it stores private drafts and version records.</p></details></section>
+<section class="panel" id="draft" hidden aria-labelledby="draft-title"><div class="toolbar spread"><h2 id="draft-title">Review your selection</h2><small id="draft-kind">Private draft · live website unchanged</small></div><div id="changes" class="summary"></div><div class="toolbar" style="margin-top:24px"><label>Photo category <select id="category"></select></label><button id="save-edits">Save order &amp; framing</button></div><p class="muted">Descriptions are for accessibility and are not displayed below photos. Framing controls apply to the slideshow, category header, and portrait; gallery photos retain their natural proportions.</p><div class="cards" id="photos"></div>
+<div class="toolbar"><label>Website page <select id="page"><option value="index.html">Home</option><option value="weddings.html">Weddings</option><option value="maternity.html">Maternity</option><option value="family.html">Family</option><option value="dreamy-projects.html">Dreamy Projects</option><option value="about.html">About</option></select></label><button class="soft" id="preview">Open website preview</button><button id="device" aria-pressed="false">Mobile view</button></div><div class="preview-shell" id="preview-shell" hidden><iframe id="website-preview" title="Private website photo preview" sandbox="allow-scripts"></iframe></div>
+<div class="publish-note"><label class="checkline"><input type="checkbox" id="confirm"><span>I have checked this photo selection and its website preview. Publish these photos to elementales.biz.</span></label><button id="publish" class="primary" disabled>Publish selection</button><p class="muted">Publishing may take a few minutes. Saved photos stay available for rollback. This does not change your Drive folders.</p></div></section>
+<section class="panel" id="publication" hidden><h2>Publishing your selection</h2><p id="publication-status">Preparing your photos…</p><div class="toolbar"><button id="resume-publication" class="primary">Resume publication</button><button id="cancel-publication">Cancel unfinished publication</button></div></section>
+<section class="panel" id="history" hidden aria-labelledby="history-title"><h2 id="history-title">Version history</h2><p class="muted">Restore opens a private preview of that selection. You can review it before publishing. Source photos can be missing from Drive; published image copies are retained.</p><div id="versions"></div></section>
+<section class="panel" aria-labelledby="settings-title"><h2 id="settings-title">Publishing connection</h2><p class="settings-description" id="connection-state">Checking your connection…</p><details id="connection-details"><summary>Connect or replace the GitHub publishing key</summary><p class="muted">Use a fine-grained token from the repository owner, restricted to <strong>shwetamahendrakar25/elementales</strong>, with <strong>Contents: read and write</strong> and <strong>Actions: read</strong>. No account-wide or workflow editing permission is needed. Set an expiry and replace it here before it expires.</p><form id="token-form"><div class="field"><label for="token">GitHub publishing token</label><input id="token" type="password" autocomplete="off" required placeholder="github_pat_…"><small>Stored in this private script’s server settings. Never added to the website or returned to this browser.</small></div><button type="submit">Save publishing connection</button></form></details></section>
+<footer>Elementales Photo Studio · Private access for Sony · Watermarks remain at 55% · Slideshow timing remains 3 seconds</footer>
+</main>
+<script>
+'use strict';
+let state=null,draft=null,busy=false,previewRevision=null;
+const thumbnails=new Map();
+const $=id=>document.getElementById(id);
+const categories=['weddings','maternity','family','dreamy-projects','slideshow','about'];
+const labels={weddings:'Weddings',maternity:'Maternity',family:'Family','dreamy-projects':'Dreamy Projects',slideshow:'Homepage Slideshow',about:'About'};
+function call(name,...args){return new Promise((resolve,reject)=>{
+  if(!window.google?.script?.run){reject(new Error('Open this dashboard from its private Google Apps Script link.'));return;}
+  google.script.run.withSuccessHandler(resolve).withFailureHandler(e=>reject(new Error(e.message||'Could not complete this operation.')))[name](...args);
+});}
+function message(text,error=false){$('status').textContent=text;$('status').classList.toggle('error',error);}
+function setBusy(value){busy=value;document.querySelectorAll('button').forEach(b=>{if(value){b.dataset.wasDisabled=String(b.disabled);b.disabled=true;}else{b.disabled=b.dataset.wasDisabled==='true';delete b.dataset.wasDisabled;}});if(!value){$('initialize').disabled=!!state?.initialized;$('seed').disabled=!state?.initialized||state.seedDone;document.querySelectorAll('[data-move-boundary]').forEach(b=>b.disabled=b.dataset.moveBoundary==='true');updatePublish();}}
+async function action(fn){if(busy)return;setBusy(true);try{await fn();}catch(e){message(e.message,true);}finally{setBusy(false);}}
+function updatePublish(){$('publish').disabled=busy||!state?.connected||!draft?.ready||previewRevision!==draft?.revision||!$('confirm').checked;}
+function invalidatePreview(){previewRevision=null;$('confirm').checked=false;updatePublish();}
+function collectEdits(){if(!draft)return;const category=$('photos').dataset.category||$('category').value;document.querySelectorAll('[data-photo-key]').forEach(card=>{const photo=draft.manifest.categories[category].find(p=>p.key===card.dataset.photoKey);photo.alt=card.querySelector('[data-alt]').value;photo.focalX=Number(card.querySelector('[data-x]').value);photo.focalY=Number(card.querySelector('[data-y]').value);});}
+async function loadState(){state=await call('getPhotoAdminState');renderState();}
+function renderState(){
+ $('setup').hidden=!!state?.seedDone;$('workspace').hidden=!state?.seedDone;$('history').hidden=!state?.initialized;
+ $('initialize').textContent=state?.initialized?'Folders created':'Create photo folders';$('initialize').disabled=busy||state?.initialized;
+ $('seed-count').textContent=state?.initialized?`${state.seedCompleted} of ${state.seedTotal} photos copied. You can resume if interrupted.`:'Copies are numbered to preserve the current order.';
+ $('seed').disabled=busy||!state?.initialized||state?.seedDone;
+ $('connection-state').textContent=state?.connected?'GitHub publishing is connected. Preview changes before sending them to the website.':'Preview is available after folder setup. Connect GitHub below to enable publishing.';
+ $('connection-details').open=!state?.connected;
+ $('publication').hidden=!state?.publication;
+ $('folders').replaceChildren();(state?.folders||[]).forEach(folder=>{const a=document.createElement('a');a.className='folder-link';a.href=folder.url;a.target='_blank';a.rel='noopener';a.textContent=folder.name;const span=document.createElement('span');span.textContent='Open folder ↗';a.append(span);$('folders').append(a);});
+ $('versions').replaceChildren();(state?.history||[]).forEach(version=>{const row=document.createElement('div');row.className='history-row';const text=document.createElement('div');const title=document.createElement('strong');title.textContent=version.label+(version.id===state.liveVersion?' · Latest submitted selection':'');const meta=document.createElement('small');meta.textContent=new Date(version.created).toLocaleString()+' · '+version.commit.slice(0,7);text.append(title,meta);const button=document.createElement('button');button.textContent='Preview restore';button.disabled=busy;button.onclick=()=>action(async()=>{draft=await call('preparePhotoRestore',version.id);invalidatePreview();await showDraft();message('Saved selection restored into a private preview. Drive folders and the live site are unchanged.');});row.append(text,button);$('versions').append(row);});
+ updatePublish();
+}
+function makeField(labelText,input){const label=document.createElement('label');label.className='field';label.textContent=labelText;label.append(input);return label;}
+async function showDraft(){
+ $('draft').hidden=!draft;if(!draft)return;
+ $('draft-kind').textContent='Private draft · live website unchanged';$('changes').replaceChildren();
+ draft.changes.forEach(change=>{const card=document.createElement('div');const title=document.createElement('strong');title.textContent=labels[change.category];const detail=document.createElement('span');detail.textContent=`${change.total} photos · ${change.added} added · ${change.removed} removed${change.reordered?' · reordered':''}`;card.append(title,detail);$('changes').append(card);});
+ if(!$('category').options.length)categories.forEach(category=>{const o=document.createElement('option');o.value=category;o.textContent=labels[category];$('category').append(o);});
+ await showPhotos();updatePublish();
+}
+async function showPhotos(){
+ const category=$('category').value;$('photos').replaceChildren();$('photos').dataset.category=category;if(!draft)return;
+ const photos=draft.manifest.categories[category];
+ for(let index=0;index<photos.length;index++){
+  const photo=photos[index],item=draft.items.find(i=>i.key===photo.key);
+  const card=document.createElement('article');card.className='photo-card';card.dataset.photoKey=photo.key;
+  const image=document.createElement('img');image.alt=photo.alt;image.loading='lazy';
+  const body=document.createElement('div');body.className='body';const filename=document.createElement('p');filename.className='filename';filename.textContent=`${String(index+1).padStart(2,'0')} · ${item.name}`;
+  const alt=document.createElement('input');alt.type='text';alt.maxLength=500;alt.value=photo.alt;alt.dataset.alt='';
+  const x=document.createElement('input');x.type='range';x.min=0;x.max=100;x.value=photo.focalX;x.dataset.x='';
+  const y=document.createElement('input');y.type='range';y.min=0;y.max=100;y.value=photo.focalY;y.dataset.y='';
+  const ordering=document.createElement('div');ordering.className='ordering';
+  for(const [delta,label] of [[-1,'↑ Earlier'],[1,'↓ Later']]){const move=document.createElement('button');move.type='button';move.textContent=label;move.dataset.moveBoundary=String(index+delta<0||index+delta>=photos.length);move.disabled=busy||move.dataset.moveBoundary==='true';move.onclick=()=>action(async()=>{collectEdits();[photos[index],photos[index+delta]]=[photos[index+delta],photos[index]];invalidatePreview();await showPhotos();message('Order changed in this draft. Save order & framing before opening the website preview.');});ordering.append(move);}
+  body.append(filename,makeField('Accessibility description',alt),makeField('Horizontal framing',x),makeField('Vertical framing (top → bottom)',y),ordering);card.append(image,body);$('photos').append(card);
+  [alt,x,y].forEach(input=>input.addEventListener('input',()=>{collectEdits();invalidatePreview();}));
+  if(item.prepared){if(!thumbnails.has(photo.key))thumbnails.set(photo.key,await call('getPhotoThumbnail',draft.id,photo.key));image.src=thumbnails.get(photo.key);}
+ }
+}
+async function prepareDraft(){
+ for(const [index,item] of draft.items.entries()){
+  if(item.prepared)continue;
+  message(`Preparing ${index+1} of ${draft.items.length}: ${item.name}. Keep this page open.`);
+  const source=await call('getPhotoSource',draft.id,item.key),image=new Image();
+  image.src=`data:${source.mime};base64,${source.data}`;await image.decode();
+  const dimensions={width:image.naturalWidth,height:image.naturalHeight};
+  if(!dimensions.width||!dimensions.height||dimensions.width>40000||dimensions.height>40000)throw new Error('This photo cannot be prepared. Resize it in Drive and sync again.');
+  const widths=[480,960,1600,2048].filter(w=>w<dimensions.width);widths.push(Math.min(2048,dimensions.width));
+  const variants=widths.map(width=>{const canvas=document.createElement('canvas');canvas.width=width;canvas.height=Math.round(width*dimensions.height/dimensions.width);canvas.getContext('2d').drawImage(image,0,0,canvas.width,canvas.height);const encoded=canvas.toDataURL('image/webp',0.88);if(!encoded.startsWith('data:image/webp;base64,'))throw new Error('This browser cannot prepare WebP photos. Use a current Chrome, Edge, Safari, or Firefox.');return{width,data:encoded.split(',')[1]};});
+  await call('savePreparedPhoto',draft.id,item.key,variants,dimensions);
+ }
+ draft=await call('getPhotoDraft');
+}
+async function saveEdits(){collectEdits();const edits={categories:{}};categories.forEach(category=>edits.categories[category]=draft.manifest.categories[category].map(({key,alt,focalX,focalY})=>({key,alt,focalX,focalY})));draft=await call('savePhotoEdits',draft.id,draft.revision,edits);invalidatePreview();}
+async function runPublication(){
+ $('publication').hidden=false;let progress;
+ if(state.publication){progress={id:state.publication.id,ready:false};}
+ else{progress=await call('beginPhotoPublication',draft.id,draft.revision,'PUBLISH');await loadState();}
+ while(!progress.ready&&!progress.commit){$('publication-status').textContent=`Uploading prepared photos${progress.pending!==undefined?` · ${progress.pending} image sizes remaining`:''}…`;progress=await call('uploadPhotoPublication',progress.id);}
+ $('publication-status').textContent='Submitting the reviewed website version…';
+ const result=await call('finalizePhotoPublication',progress.id);draft=null;$('draft').hidden=true;invalidatePreview();await loadState();
+ message('Photo selection submitted. GitHub Pages is deploying it; checking the result…');
+ for(let attempt=0;attempt<18;attempt++){
+  await new Promise(resolve=>setTimeout(resolve,10000));const deployment=await call('getPhotoDeployment');
+  if(deployment?.status==='completed'){if(deployment.conclusion==='success'){message('Published successfully. Your updated photos are live at elementales.biz.');return;}throw new Error('GitHub Pages did not finish successfully. The selection is saved in version history; retry deployment or restore the previous selection.');}
+ }
+ message('The photo selection is saved and deployment is still pending. Use Check deployment status below.');
+}
+$('initialize').onclick=()=>action(async()=>{state=await call('initializePhotoAdmin');renderState();message('Your private photo folders are ready. Copy the current selection next.');});
+$('seed').onclick=()=>action(async()=>{do{state=await call('seedPhotoFolders');renderState();message(`Copying the current website selection: ${state.seedCompleted} of ${state.seedTotal}.`);}while(!state.seedDone);message('All current website photos are copied into your category folders. Sync & Preview is ready.');});
+$('sync').onclick=()=>action(async()=>{draft=await call('syncPhotoDraft');invalidatePreview();await prepareDraft();await showDraft();message('Your private draft is ready. Check the changes, then open the website preview.');});
+$('category').onchange=()=>action(async()=>{collectEdits();await showPhotos();});
+$('save-edits').onclick=()=>action(async()=>{await saveEdits();await showDraft();message('Order and framing saved. Open the latest website preview before publishing.');});
+$('preview').onclick=()=>action(async()=>{await saveEdits();const preview=await call('getPhotoPreview',draft.id,$('page').value);$('website-preview').srcdoc=preview.html;$('preview-shell').hidden=false;previewRevision=preview.revision;message('Private website preview loaded. Use Mobile view to check the smaller layout.');});
+$('device').onclick=()=>{const mobile=$('preview-shell').classList.toggle('mobile');$('device').textContent=mobile?'Desktop view':'Mobile view';$('device').setAttribute('aria-pressed',String(mobile));};
+$('confirm').onchange=updatePublish;
+$('publish').onclick=()=>action(runPublication);
+$('resume-publication').onclick=()=>action(runPublication);
+$('cancel-publication').onclick=()=>action(async()=>{state=await call('cancelPhotoPublication');renderState();message('Unfinished publication cancelled. Uploaded image copies remain available; live photos were not changed.');});
+$('token-form').onsubmit=event=>{event.preventDefault();action(async()=>{const field=$('token');try{await call('connectPhotoPublishing',field.value.trim());}finally{field.value='';}await loadState();message('Publishing connection saved privately.');});};
+const deploymentButton=document.createElement('button');deploymentButton.textContent='Check deployment status';deploymentButton.onclick=()=>action(async()=>{const result=await call('getPhotoDeployment');message(!result?'No photo publication has been submitted yet.':result.status==='completed'?`Deployment ${result.conclusion}.`:`Deployment ${result.status}.`);});$('publication').after(deploymentButton);
+action(async()=>{await loadState();if(state.draft){draft=await call('getPhotoDraft');if(!draft.ready)await prepareDraft();await showDraft();}message(state.initialized?'Welcome back, Sony. Your live website changes only when you publish.':'Welcome, Sony. Create the private folders to begin.');});
+</script>
+</body>
+</html>

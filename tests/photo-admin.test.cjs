@@ -1,0 +1,78 @@
+const test = require('node:test');
+const assert = require('node:assert/strict');
+const fs = require('node:fs');
+const vm = require('node:vm');
+const path = require('node:path');
+const root = path.resolve(__dirname,'..');
+const initial = JSON.parse(fs.readFileSync(path.join(root,'gallery-manifest.json'),'utf8'));
+const read = p => fs.readFileSync(path.join(root,p),'utf8');
+const clone = data => JSON.parse(JSON.stringify(data));
+function harness() {
+ let counter=0,clock=1000,head='a'.repeat(40),owner='elementalesbysony@gmail.com',fetchFailure=null;
+ const files=new Map(),folders=new Map(),props=new Map(),commits=new Map(),trees=new Map(),blobs=new Map(),requests=[];
+ const id=prefix=>prefix+(++counter);
+ const blob=bytes=>({getBytes:()=>Array.from(Buffer.from(bytes)),getDataAsString:()=>Buffer.from(bytes).toString('utf8'),setName(name){this.name=name;return this;},setContentType(){return this;}});
+ const iterator=values=>{let i=0;return {hasNext:()=>i<values.length,next:()=>values[i++]};};
+ function folder(name,parent){const key=id('folder');const value={key,name,parent,trashed:false,files:[],children:[],getId(){return key;},getUrl(){return 'https://drive.google.com/drive/folders/'+key;},isTrashed(){return this.trashed;},createFolder(n){const f=folder(n,key);this.children.push(f);return f;},createFile(a,b,c){let bytes,name;if(typeof a==='string'){name=a;bytes=Buffer.from(b);}else{bytes=Buffer.from(a.getBytes());name=a.name||'photo';}const f=file(name,bytes,key);this.files.push(f);return f;},getFiles(){return iterator(this.files.filter(f=>!f.trashed));},getFilesByName(n){return iterator(this.files.filter(f=>!f.trashed&&f.name===n));}};folders.set(key,value);return value;}
+ function file(name,bytes,parent){const key=id('file');const value={key,name,bytes:Buffer.from(bytes),parent,updated:++clock,trashed:false,mime:name.endsWith('.json')?'text/plain':'image/webp',getId(){return key;},getName(){return this.name;},getSize(){return this.bytes.length;},getMimeType(){return this.mime;},getLastUpdated(){return new Date(this.updated);},getBlob(){return blob(this.bytes);},isTrashed(){return this.trashed;},setContent(s){this.bytes=Buffer.from(s);this.updated=++clock;return this;},makeCopy(n,target){const f=target.createFile(blob(this.bytes).setName(n));f.mime=this.mime;return f;}};files.set(key,value);return value;}
+ const initialFiles=Object.fromEntries(['gallery-manifest.json',...['index','weddings','maternity','family','dreamy-projects','about'].map(p=>p+'.html')].map(p=>[p,read(p)]));
+ commits.set(head,{sha:head,tree:{sha:'tree-initial'},files:initialFiles});trees.set('tree-initial',initialFiles);
+ const response=(data,code=200)=>({getResponseCode:()=>code,getContentText:()=>typeof data==='string'?data:JSON.stringify(data),getBlob:()=>blob('RIFF0000WEBPmock')});
+ const context={console,Buffer,Set,URL,Date,JSON,Math,Number,Object,Array,String,RegExp,isFinite,
+  Session:{getActiveUser:()=>({getEmail:()=>owner})},
+  PropertiesService:{getScriptProperties:()=>({getProperty:key=>props.get(key)||null,setProperty:(k,v)=>props.set(k,v),deleteProperty:k=>props.delete(k)})},
+  LockService:{getScriptLock:()=>({tryLock:()=>true,releaseLock:()=>{}})},
+  DriveApp:{createFolder:n=>folder(n),getFolderById:key=>{const v=folders.get(key);if(!v)throw new Error('Drive access denied');return v;},getFileById:key=>{const v=files.get(key);if(!v)throw new Error('Drive access denied');return v;}},
+  MimeType:{PLAIN_TEXT:'text/plain'},
+  Utilities:{getUuid:()=>String(++counter).padStart(32,'0'),base64Encode:b=>Buffer.from(b).toString('base64'),base64Decode:s=>Array.from(Buffer.from(s,'base64')),newBlob:(b,mime,name)=>Object.assign(blob(typeof b==='string'?Buffer.from(b):Buffer.from(b)),{name,mime})},
+  HtmlService:{createHtmlOutputFromFile:()=>({setTitle:()=>({ok:true})})},
+  UrlFetchApp:{fetch:(url,options={})=>{
+   requests.push({url,method:options.method||'get'});if(fetchFailure&&fetchFailure(url))throw new Error('Network unavailable');
+   if(url.startsWith('https://raw.githubusercontent.com/'))return response('image');
+   const part=url.split('/elementales/')[1]||'',method=options.method||'get',data=options.payload?JSON.parse(options.payload):null;
+   if(part==='git/ref/heads/main')return response({object:{sha:head}});
+   if(part.startsWith('contents/')){const [p,query]=part.slice(9).split('?ref=');const commit=commits.get(decodeURIComponent(query));return response({encoding:'base64',content:Buffer.from(commit.files[p]).toString('base64')});}
+   if(part==='')return response({permissions:{push:true}});
+   if(part==='git/blobs'&&method==='post'){const sha=id('blob');blobs.set(sha,Buffer.from(data.content,data.encoding==='base64'?'base64':'utf8'));return response({sha});}
+   if(part.startsWith('git/commits/'))return response(commits.get(part.slice(12)));
+   if(part==='git/trees'&&method==='post'){const result={...trees.get(data.base_tree)};for(const entry of data.tree)result[entry.path]=entry.content!==undefined?entry.content:blobs.get(entry.sha);const sha=id('tree');trees.set(sha,result);return response({sha});}
+   if(part==='git/commits'&&method==='post'){const sha=id('commit');commits.set(sha,{sha,tree:{sha:data.tree},files:trees.get(data.tree),parents:data.parents});return response({sha});}
+   if(part==='git/refs/heads/main'&&method==='patch'){if(commits.get(data.sha).parents[0]!==head)return response('conflict',422);head=data.sha;return response({object:{sha:head}});}
+   if(part.startsWith('actions/runs'))return response({workflow_runs:[{id:1,name:'pages build and deployment',status:'completed',conclusion:'success'}]});
+   throw new Error('Unhandled GitHub '+method+' '+part);
+  }}
+ };
+ vm.createContext(context);vm.runInContext(read('integrations/photo-admin/Render.gs')+'\n'+read('integrations/photo-admin/Code.gs'),context);
+ return {c:context,files,folders,props,requests,commits,get head(){return head;},setOwner:v=>owner=v,failFetch:v=>fetchFailure=v,
+  advanceHead(){const old=commits.get(head);head=id('external');const tree=id('external-tree'),files={...old.files,'README.md':'unrelated update'};trees.set(tree,files);commits.set(head,{...old,sha:head,tree:{sha:tree},files,parents:[old.sha]});},
+  setup(){context.initializePhotoAdmin();let state;do{state=context.seedPhotoFolders();}while(!state.seedDone);return state;},
+  source(category){const s=context.statePhoto_();return folders.get(s.folders[category]).files;},
+  publish(draft){context.getPhotoPreview(draft.id,'index.html');const job=context.beginPhotoPublication(draft.id,draft.revision,'PUBLISH');let progress=job;while(!progress.ready)progress=context.uploadPhotoPublication(job.id);return context.finalizePhotoPublication(job.id);}
+ };
+}
+
+test('all server entry points enforce the owner account, independent of deployment access',()=>{const h=harness();h.setOwner('intruder@example.com');for(const [name,args] of [['doGet',[]],['getPhotoAdminState',[]],['initializePhotoAdmin',[]],['syncPhotoDraft',[]],['getPhotoDraft',[]],['getPhotoSource',['x','y']],['savePreparedPhoto',[]],['savePhotoEdits',[]],['getPhotoPreview',[]],['getPhotoThumbnail',[]],['connectPhotoPublishing',['github_pat_'+'x'.repeat(30)]],['beginPhotoPublication',[]],['uploadPhotoPublication',[]],['finalizePhotoPublication',[]],['preparePhotoRestore',[]],['cancelPhotoPublication',[]],['getPhotoDeployment',[]]])assert.throws(()=>h.c[name](...args),/owner account/);});
+
+test('setup copies 78 current photos into private folders and is resumable without duplicates',()=>{const h=harness();h.c.initializePhotoAdmin();h.c.seedPhotoFolders();const first=h.files.size;h.c.initializePhotoAdmin();assert.equal(h.files.size,first);const s=h.setup();assert.equal(s.seedCompleted,78);assert.equal(s.folders.length,6);const count=h.files.size;h.c.seedPhotoFolders();assert.equal(h.files.size,count);assert.equal(h.requests.filter(r=>r.method!=='get').length,0);});
+
+test('existing page markup changes only by inert managed-region comments',()=>{for(const p of ['index','weddings','maternity','family','dreamy-projects','about']){const html=read(p+'.html');assert.match(html,/<!-- photos:start /);assert.equal((html.match(/<!-- photos:start /g)||[]).length,(html.match(/<!-- photos:end /g)||[]).length);}assert.equal(Object.values(initial.categories).reduce((n,a)=>n+a.length,0),78);});
+
+test('unchanged Drive selection previews with no photo additions or removals; seed order preserved',()=>{const h=harness();h.setup();const d=h.c.syncPhotoDraft();assert.equal(d.ready,true);assert.ok(d.changes.every(c=>c.added===0&&c.removed===0&&!c.reordered));assert.deepEqual(clone(d.manifest.categories.weddings),initial.categories.weddings);assert.equal(h.requests.filter(r=>r.method!=='get').length,0);});
+
+test('missing access, empty category, invalid slideshow count, unsupported and oversized files stop sync',()=>{for(const reason of ['access','empty','slides','mime','size']){const h=harness();h.setup();const state=h.c.statePhoto_();if(reason==='access')h.folders.delete(state.folders.family);if(reason==='empty')h.source('family').forEach(f=>f.trashed=true);if(reason==='slides')h.source('slideshow')[0].trashed=true;if(reason==='mime')h.source('family')[0].mime='image/heic';if(reason==='size')h.source('family')[0].getSize=()=>26*1024*1024;assert.throws(()=>h.c.syncPhotoDraft());assert.equal(h.c.statePhoto_().draft,undefined);assert.equal(h.requests.filter(r=>r.method!=='get').length,0);}});
+
+test('removed photo appears in changes while original published image bytes remain reachable',()=>{const h=harness();h.setup();const original=initial.categories.family[0];h.source('family')[0].trashed=true;const d=h.c.syncPhotoDraft();assert.equal(d.changes.find(c=>c.category==='family').removed,1);assert.ok(!d.manifest.categories.family.some(p=>p.key===original.key));const html=h.c.getPhotoPreview(d.id,'family.html').html;assert.ok(!html.includes('href="'+original.variants.at(-1).src+'"'));assert.equal(h.head,'a'.repeat(40));});
+
+test('new source is frozen in a private copy and prepared image stays out of GitHub until Publish',()=>{const h=harness();h.setup();const s=h.c.statePhoto_();const newFile=h.folders.get(s.folders.family).createFile({name:'999 new.webp',getBytes:()=>Buffer.from('RIFF0000WEBPnew')});let d=h.c.syncPhotoDraft();const item=d.items.find(i=>i.name==='999 new.webp');assert.equal(item.prepared,false);const original=h.c.getPhotoSource(d.id,item.key);newFile.setContent('changed later');assert.equal(h.c.getPhotoSource(d.id,item.key).data,original.data);const data=Buffer.from('RIFF0000WEBPprepared').toString('base64');h.c.savePreparedPhoto(d.id,item.key,[{width:480,data},{width:800,data}],{width:800,height:1200});d=h.c.getPhotoDraft();assert.equal(d.ready,true);const preview=h.c.getPhotoPreview(d.id,'family.html');assert.match(preview.html,/data:image\/webp;base64,/);assert.equal(h.requests.filter(r=>r.method!=='get').length,0);assert.equal(h.c.getPhotoThumbnail(d.id,item.key),'data:image/webp;base64,'+data);});
+
+test('source changed before snapshot requires a new sync',()=>{const h=harness();h.setup();h.source('family')[0].setContent('new photo');const d=h.c.syncPhotoDraft();const item=d.items.find(i=>!i.prepared);h.source('family')[0].setContent('different photo');assert.throws(()=>h.c.getPhotoSource(d.id,item.key),/changed during sync/);});
+
+test('publishing requires credential, current reviewed revision, and unchanged branch head',()=>{const h=harness();h.setup();let d=h.c.syncPhotoDraft();assert.throws(()=>h.c.beginPhotoPublication(d.id,d.revision,'PUBLISH'),/Connect GitHub/);h.c.connectPhotoPublishing('github_pat_'+'x'.repeat(30));assert.throws(()=>h.c.beginPhotoPublication(d.id,d.revision,'PUBLISH'),/latest website preview/);h.c.getPhotoPreview(d.id,'index.html');h.c.savePhotoEdits(d.id,d.revision,{categories:d.manifest.categories});d=h.c.getPhotoDraft();assert.throws(()=>h.c.beginPhotoPublication(d.id,d.revision,'PUBLISH'),/latest website preview/);h.c.getPhotoPreview(d.id,'index.html');h.advanceHead();assert.throws(()=>h.c.beginPhotoPublication(d.id,d.revision,'PUBLISH'),/website changed/);});
+
+test('atomic publish changes photo files only; rollback works after sources disappear and retains newer site code',()=>{const h=harness();h.setup();h.c.connectPhotoPublishing('github_pat_'+'x'.repeat(30));const original=h.c.statePhoto_().history[0];h.source('family')[0].trashed=true;let d=h.c.syncPhotoDraft();const result=h.publish(d);assert.equal(result.commit,h.head);assert.equal(h.c.statePhoto_().history.length,2);assert.equal(h.c.getPhotoDeployment().conclusion,'success');h.advanceHead();h.source('family').forEach(f=>f.trashed=true);d=h.c.preparePhotoRestore(original.id);assert.equal(d.manifest.categories.family.length,12);h.publish(d);const files=h.commits.get(h.head).files;assert.equal(files['README.md'],'unrelated update');assert.equal(JSON.parse(files['gallery-manifest.json']).categories.family.length,12);assert.ok(h.source('family').every(f=>f.trashed));const mutationPaths=h.requests.filter(r=>r.method!=='get').map(r=>r.url);assert.ok(mutationPaths.every(p=>/git\/(trees|commits|refs\/heads\/main|blobs)$/.test(p)));});
+
+test('interrupted finalize is retryable and branch conflicts never force overwrite',()=>{const h=harness();h.setup();h.c.connectPhotoPublishing('github_pat_'+'x'.repeat(30));const d=h.c.syncPhotoDraft();h.c.getPhotoPreview(d.id,'index.html');const job=h.c.beginPhotoPublication(d.id,d.revision,'PUBLISH');h.failFetch(url=>url.endsWith('git/refs/heads/main'));assert.throws(()=>h.c.finalizePhotoPublication(job.id),/Network/);assert.ok(h.c.statePhoto_().publication.commit);h.failFetch(null);h.advanceHead();assert.throws(()=>h.c.finalizePhotoPublication(job.id),/website changed/);h.c.cancelPhotoPublication();assert.equal(h.c.statePhoto_().publication,null);});
+
+test('rendering rejects injected paths, malformed keys, empty galleries, and duplicate managed slots',()=>{const h=harness();for(const change of [m=>m.categories.family=[],m=>m.categories.family[0].variants[0].src='javascript:alert(1)',m=>m.categories.family[0].key='<script>',m=>m.categories.family[0].focalY=NaN,m=>m.settings.watermarkOpacity=.2]){const manifest=clone(initial);change(manifest);assert.throws(()=>h.c.validatePhotoManifest_(manifest));}assert.throws(()=>h.c.replacePhotoSlot_('<!-- photos:start x --><!-- photos:start x --><!-- photos:end x -->','x',''),/missing/);const m=clone(initial);m.categories.family[0].alt='"><script>alert(1)</script>';const html=h.c.renderPhotoPage_(read('family.html'),'family.html',m);assert.ok(!html.includes('alt=""><script>'));assert.match(html,/&lt;script&gt;/);});
+
+test('all previews preserve watermark overlays, 3 second slideshow source, and accessibility without captions',()=>{const h=harness();for(const page of ['index.html','weddings.html','maternity.html','family.html','dreamy-projects.html','about.html']){const rendered=h.c.renderPhotoPage_(read(page),page,clone(initial));assert.match(rendered,/photo-watermark/);for(const region of rendered.matchAll(/<!-- photos:start [^>]+ -->([\s\S]*?)<!-- photos:end /g))assert.ok(!region[1].includes('<figcaption'));assert.match(rendered,/alt="[^"]+"/);}assert.match(read('script.js'),/3000/);const manifest=JSON.parse(read('integrations/photo-admin/appsscript.json'));assert.equal(manifest.webapp.access,'MYSELF');assert.equal(manifest.webapp.executeAs,'USER_ACCESSING');assert.ok(!read('gallery-manifest.json').includes('drive.google.com'));});
