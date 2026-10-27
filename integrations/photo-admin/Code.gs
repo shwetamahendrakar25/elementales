@@ -6,7 +6,7 @@ var PHOTO_STATE_PROPERTY_ = 'PHOTO_ADMIN_STATE_FILE';
 var PHOTO_MAX_BYTES_ = 25 * 1024 * 1024;
 
 function requirePhotoOwner_() {
-  // USER_ACCESSING + Google's MYSELF access gate, with an independent identity check.
+  // Google's MYSELF gate restricts the owner-run deployment; blank/other identities fail closed.
   var email = Session.getActiveUser().getEmail().toLowerCase();
   if (email !== PHOTO_OWNER_) throw new Error('Sign in with the Elementales owner account to manage photos.');
 }
