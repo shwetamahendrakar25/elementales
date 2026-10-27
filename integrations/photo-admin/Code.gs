@@ -172,7 +172,11 @@ function getPhotoDraft_() {
     return {category:category,added:after.filter(function(p) { return !oldKeys.includes(p.key); }).length,removed:before.filter(function(p) { return !newKeys.includes(p.key); }).length,total:after.length,reordered:oldKeys.filter(function(k) { return newKeys.includes(k); }).join() !== newKeys.filter(function(k) { return oldKeys.includes(k); }).join()};
   });
   return {id:draft.id,revision:draft.revision,baseHead:draft.baseHead,manifest:draft.manifest,changes:changes,
-    items:Object.keys(draft.items).map(function(key) { var item = draft.items[key]; return {key:key,category:item.category,name:item.source.name,prepared:item.prepared,previewed:!!item.previewed}; }),
+    items:Object.keys(draft.items).map(function(key) {
+      var item = draft.items[key];
+      return {key:key,category:item.category,name:item.source.name,prepared:item.prepared,previewed:!!item.previewed,
+        thumbnail:item.prepared && !item.files ? 'https://raw.githubusercontent.com/' + PHOTO_REPO_ + '/' + draft.baseHead + '/' + photoVariant_(item.photo,480).src : null};
+    }),
     ready:Object.keys(draft.items).every(function(key) { return draft.items[key].prepared; })};
 }
 function getPhotoDraft() { requirePhotoOwner_(); return getPhotoDraft_(); }
